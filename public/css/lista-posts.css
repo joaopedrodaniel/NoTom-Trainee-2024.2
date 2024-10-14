@@ -52,3 +52,30 @@ body {
   height: 180px;
   border-radius: 10px;
 }
+
+.post-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.post-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-titulo {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.post-conteudo-texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
