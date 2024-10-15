@@ -32,7 +32,7 @@ a {
 .barra-busca-container {
   position: absolute;
   height: 100%;
-  left: calc(100vw / 2 - 750px);
+  left: calc(100vw / 2 - 720px);
 }
 
 .barra-busca {
