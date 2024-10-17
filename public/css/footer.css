@@ -1,10 +1,29 @@
 .footer{
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 width: 100%;
 height: 200px;
 background-color: black;
 color: white;
 }
 
-.esquerda{
+.coluna{
+width:100%;
+height: 200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 40px;
 
+}
+
+.coluna-unitaria{
+    width: 33%;
+}
+
+
+.paragrafo-sobrenos{
+font-size: 50%;
 }
