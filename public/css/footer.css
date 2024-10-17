@@ -1,37 +1,47 @@
-.footer{
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 100%;
-height: 100%;
-background-color: black;
-color: white;
-}
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
-.coluna{
-width:100%;
-height: 200px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: 40px;
 
-}
-
-.coluna-unitaria{
-    width: 33%;
+.footer {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: nowrap; 
+    width: 100%;
     height: 200px;
+    background-color: black;
+    color: white;
 }
 
-#titulo-sobre-nos {
-font-size: 80%;
-display: flex;
-flex-direction: column;
-align-items: top;
-justify-content: center;
+.coluna-mae {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#paragrafo-sobre-nos{
-    font-size: 40%;
-    }
+.subcoluna-esquerda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.mini-titulo{
+font-size = 20px;
+font-family: 'Lobster', sans-serif;
+}
+
+
+.mini-paragrafo{
+
+}
