@@ -11,4 +11,17 @@ body{
     height: 15%;
     color: white;
     text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.btlogin{
+    background-color: #F9CB7A;
+    padding: 0.5% 5%;
+    border: 1px solid #F9CB7A;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: larger;
 }
