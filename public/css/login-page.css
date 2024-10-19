@@ -1,9 +1,19 @@
 body{
     background-color: #122620;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
+}
+
+.parte-superior{
+gap: 5px;
+}
+
+.parte-inferior{
+    gap: 5px;
 }
 
 .coluna-central{
