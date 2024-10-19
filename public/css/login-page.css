@@ -13,7 +13,7 @@ gap: 5px;
 }
 
 .parte-inferior{
-    gap: 5px;
+    gap: 100px;
 }
 
 .coluna-central{
@@ -26,12 +26,29 @@ gap: 5px;
 }
 
 .btlogin{
+    line-height: 10px;
     background-color: #F9CB7A;
-    padding: 0.5% 5%;
+    padding: 0.% 2%;
     border: 1px solid #F9CB7A;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
     align-items: center;
     font-size: larger;
+    margin: 20px;
+}
+
+.text-input{
+    line-height: 20px;
+    background-color: #F9CB7A;
+    padding: 0.% 2%;
+    border: 1px solid #F9CB7A;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: larger;
+    padding: 10px;
+    margin: 5px;
+
 }
