@@ -6,9 +6,9 @@ const verificaTamanhoTelaParaAjustarBarraBusca = () => {
     return;
   }
   iconeLupa.classList.remove("barra-busca-dinamica");
-  const iconeX = barraBusca.querySelector('[name="close-outline"]');
-  if (iconeX) {
-    iconeX.remove();
+  const iconeRetornar = barraBusca.querySelector('[name="arrow-back-outline"]');
+  if (iconeRetornar) {
+    iconeRetornar.remove();
     barraBusca.classList.remove("barra-busca-aberta");
     iconeLupa.classList.remove("barra-busca-aberta");
   }
@@ -26,15 +26,15 @@ document
       const input = barraBusca.querySelector("input");
       input.classList.toggle("barra-busca-aberta");
       iconeLupa.classList.toggle("barra-busca-aberta");
-      const iconeX = document.createElement("ion-icon");
-      iconeX.setAttribute("name", "close-outline");
-      iconeX.addEventListener("click", () => {
+      const iconeRetornar = document.createElement("ion-icon");
+      iconeRetornar.setAttribute("name", "arrow-back-outline");
+      iconeRetornar.addEventListener("click", () => {
         barraBusca.classList.remove("barra-busca-aberta");
         iconeLupa.classList.remove("barra-busca-aberta");
-        iconeX.remove();
+        iconeRetornar.remove();
       });
 
-      barraBusca.appendChild(iconeX);
+      barraBusca.appendChild(iconeRetornar);
     }
   });
 
