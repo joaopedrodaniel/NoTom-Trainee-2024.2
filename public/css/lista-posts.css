@@ -29,14 +29,14 @@ a {
   flex-direction: column;
   gap: 10px;
 
-  padding: 40px 10px 24px 10px;
+  padding: 40px 5px 24px 5px;
   align-items: center;
 }
 
 .barra-busca-container {
   position: absolute;
   height: 100%;
-  left: calc(100vw / 2 - 732px);
+  left: calc(100vw / 2 - 722px);
 }
 
 .barra-busca {
@@ -148,23 +148,23 @@ ion-icon:hover {
 .paginacao-elemento:hover {
   background-color: #8d9a94;
 }
-@media (max-width: 1485px) {
+@media (max-width: 1475px) {
   .barra-busca-container {
-    left: 10px;
+    left: 15px;
   }
 
   .conteudo-central {
-    margin-left: calc(1485px - 100vw);
+    margin-left: calc(1475px - 100vw);
   }
 }
 
-@media (max-width: 1172px) {
+@media (max-width: 1162px) {
   .conteudo-central {
-    margin-left: calc(313px - (1172px - 100vw));
+    margin-left: calc(313px - (1162px - 100vw));
   }
 
   .barra-busca-container {
-    left: calc((100vw / 2 - 256px) - (1172px - 100vw) / 2);
+    left: calc((100vw / 2 - 256px) - (1157px - 100vw) / 2);
   }
 
   .barra-busca {
@@ -191,9 +191,9 @@ ion-icon:hover {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 850px) {
   .barra-busca-container {
-    left: 18px;
+    left: 15px;
   }
 
   .conteudo-central {
