@@ -16,7 +16,7 @@ a {
   display: flex;
   background: #122620;
   justify-content: center;
-  padding: 10px;
+  padding: 0px;
   overflow-y: auto;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -29,7 +29,7 @@ a {
   flex-direction: column;
   gap: 10px;
 
-  padding: 24px 10px 24px 10px;
+  padding: 40px 10px 24px 10px;
   align-items: center;
 }
 
@@ -41,7 +41,7 @@ a {
 
 .barra-busca {
   position: sticky;
-  top: 12px;
+  top: 8px;
   z-index: 1;
   display: flex;
   gap: 5px;
@@ -77,19 +77,21 @@ ion-icon:hover {
 }
 
 .lista-posts {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 820px;
+  width: fit-content;
   padding: 10px;
 }
 
 .post {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 800px;
-  height: 240px;
+  width: 820px;
+  min-height: 240px;
   background: #f9cb7a;
   border-radius: 10px;
   padding: 0 10px 0 10px;
@@ -189,7 +191,11 @@ ion-icon:hover {
   }
 }
 
-/*@media (max-width: 860px) {
+@media (max-width: 860px) {
+  .barra-busca-container {
+    left: 18px;
+  }
+
   .conteudo-central {
     margin-left: 0;
     margin-right: 0;
@@ -200,5 +206,7 @@ ion-icon:hover {
   }
   .post {
     width: 100%;
+    min-height: 240px;
+    height: fit-content;
   }
-}*/
+}
