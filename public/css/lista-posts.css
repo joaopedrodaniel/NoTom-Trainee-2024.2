@@ -89,7 +89,7 @@ ion-icon:hover {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  width: 820px;
+  width: 800px;
   min-height: 240px;
   background: #f9cb7a;
   border-radius: 10px;
@@ -163,7 +163,7 @@ ion-icon:hover {
   }
 
   .barra-busca-container {
-    left: calc((100vw / 2 - 256px) - (1157px - 100vw) / 2);
+    left: calc((100vw / 2 - 256px) - (1137px - 100vw) / 2);
   }
 
   .barra-busca {
