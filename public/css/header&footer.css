@@ -94,3 +94,13 @@ body {
     font-size: larger;
 }
 
+.texto-botoes{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    margin: 0px;
+    padding: 0;
+    width: 50%;
+}
