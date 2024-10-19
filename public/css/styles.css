@@ -1,0 +1,47 @@
+.img {
+    background-image:url("notom.jpeg");
+    background-color: rgb(8, 44, 11);
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .text {
+    text-align:center;
+    position: absolute;
+    top:50%;
+    left: 27%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+  }
+
+  .text2 {
+    text-align:center;
+    top:80%;
+    left: 40%;
+    color: rgb(255, 255, 255);
+    transform: translate(-1%, -130%);
+  }
+
+  .text3 {
+    text-align:center;
+    position: absolute;
+    top:130%;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+  }
+
+  .text4 {
+    text-align:center;
+    top:140%;
+    left: 50%;
+    color: rgb(232, 191, 8);
+    transform: translate(-1%, -100%);
+  }
+
+  .b {
+     background-color: rgb(12, 16, 20);
+  }
