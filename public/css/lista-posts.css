@@ -41,7 +41,6 @@ a {
 
 .barra-busca {
   position: sticky;
-  top: 44px;
   z-index: 1;
   display: flex;
   gap: 5px;
@@ -61,11 +60,12 @@ a {
   font-size: 20px;
   outline: none;
   border: none;
+  transition: width 0.5s;
 }
 
 ion-icon {
   border-radius: 20px;
-  padding: 0 0px;
+  padding: 1.6px 2px;
   transition: background 0.2s;
 }
 
@@ -154,3 +154,50 @@ ion-icon:hover {
     margin-left: calc(1485px - 100vw);
   }
 }
+
+@media (max-width: 1172px) {
+  .conteudo-central {
+    margin-left: calc(313px - (1172px - 100vw));
+  }
+
+  .barra-busca-container {
+    left: calc((100vw / 2 - 256px) - (1172px - 100vw) / 2);
+  }
+
+  .barra-busca {
+    padding: 0;
+    gap: 0;
+  }
+
+  .barra-busca input {
+    opacity: 0;
+    width: 0;
+    padding: 0;
+  }
+
+  .barra-busca.barra-busca-aberta {
+    width: fit-content;
+    padding: 0 5px;
+    gap: 5px;
+  }
+
+  .barra-busca.barra-busca-aberta input {
+    opacity: 100%;
+    padding: 0 10px;
+    width: 240px;
+  }
+}
+
+/*@media (max-width: 860px) {
+  .conteudo-central {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .lista-posts {
+    width: 100%;
+  }
+  .post {
+    width: 100%;
+  }
+}*/
