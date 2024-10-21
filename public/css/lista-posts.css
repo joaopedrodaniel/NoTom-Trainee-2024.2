@@ -207,5 +207,7 @@ ion-icon:hover {
     width: 100%;
     min-height: 240px;
     height: fit-content;
+    flex-direction: column;
+    padding-top: 10px;
   }
 }
