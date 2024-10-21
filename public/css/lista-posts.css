@@ -159,11 +159,11 @@ ion-icon:hover {
 
 @media (max-width: 1162px) {
   .conteudo-central {
-    margin-left: calc(313px - (1162px - 100vw));
+    margin-left: 0;
   }
 
   .barra-busca-container {
-    left: calc((100vw / 2 - 256px) - (1137px - 100vw) / 2);
+    left: calc(((100vw / 2 - 219px) - (1162px - 100vw) / 2) / 2);
   }
 
   .barra-busca {
