@@ -33,14 +33,15 @@ a {
 }
 
 .barra-busca-container {
-  position: absolute;
+  box-sizing: border-box;
+  position: fixed;
+  margin-top: 8px;
   height: 100%;
-  left: calc(100vw / 2 - 722px);
+  left: calc(100vw / 2 - 759px);
 }
 
 .barra-busca {
   position: sticky;
-  top: 8px;
   z-index: 1;
   display: flex;
   gap: 5px;
@@ -60,7 +61,6 @@ a {
   font-size: 20px;
   outline: none;
   border: none;
-  transition: width 0.5s;
 }
 
 ion-icon {
@@ -147,13 +147,13 @@ ion-icon:hover {
 .paginacao-elemento:hover {
   background-color: #8d9a94;
 }
-@media (max-width: 1475px) {
+@media (max-width: 1548px) {
   .barra-busca-container {
     left: 15px;
   }
 
   .conteudo-central {
-    margin-left: calc(1475px - 100vw);
+    margin-left: calc(1548px - 100vw);
   }
 }
 
@@ -165,34 +165,18 @@ ion-icon:hover {
   .barra-busca-container {
     left: calc(((100vw / 2 - 219px) - (1162px - 100vw) / 2) / 2);
   }
-
-  .barra-busca {
-    padding: 0;
-    gap: 0;
-  }
-
-  .barra-busca input {
-    opacity: 0;
-    width: 0;
-    padding: 0;
-  }
-
-  .barra-busca.barra-busca-aberta {
-    width: fit-content;
-    padding: 0 5px;
-    gap: 5px;
-  }
-
-  .barra-busca.barra-busca-aberta input {
-    opacity: 100%;
-    padding: 0 10px;
-    width: 240px;
-  }
 }
 
 @media (max-width: 830px) {
   .barra-busca-container {
-    left: 15px;
+    padding: 0 15px;
+    left: 0;
+    width: 100%;
+  }
+
+  .barra-busca input {
+    transition: width 0.5s;
+    width: 100%;
   }
 
   .conteudo-central {
