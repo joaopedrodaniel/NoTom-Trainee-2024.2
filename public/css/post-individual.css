@@ -19,6 +19,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .header {
   background-color: black;
@@ -36,8 +38,36 @@ body {
   color: #f9cb7a;
   padding-left: 2vw;
   font-family: "Lobster", cursive;
-  font-size: 48px;
+  font-size: 2.5vw;
 }
+@media (max-width: 900px) {
+  .container {
+    height: 80vh;
+  }
+  .header {
+    height: 20vh;
+  }
+  .mid {
+    height: 60vh;
+    font-size: 2px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .footer {
+    flex-direction: column;
+    height: 3vh;
+    padding: auto;
+  }
+  .titulo {
+    font-size: 6vw;
+  }
+  .footer {
+    flex-direction: column;
+    height: 2vh;
+    padding: auto;
+  }
+}
+
 .mid {
   height: 47vh;
   display: flex;
@@ -45,6 +75,8 @@ body {
   margin: 25px;
   color: #000000;
   font-family: "Lobster", cursive;
+  overflow-y: auto;
+  padding-right: 5px;
 }
 .sobre {
   font-size: 36px;
@@ -67,4 +99,22 @@ body {
 }
 .data {
   padding-left: 2vw;
+}
+.mid::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.mid::-webkit-scrollbar-track {
+  background: rgba(155, 54, 54, 0);
+  border-radius: 5px;
+}
+
+.mid::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.mid::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
