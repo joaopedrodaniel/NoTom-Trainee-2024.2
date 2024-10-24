@@ -1,126 +1,117 @@
-*{
-  margin:0%;
-  padding: 0%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .img {
-    background-image:url("notom.jpeg");
-    background-color: rgb(16, 42, 38);
-    height: 650px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .fundo {
-    background-color:rgb(16, 41, 36);
-    height: 1800px;
-  }
-
-  .text {
-    text-align:center;
-    position: absolute;
-    top:50%;
-    left: 27%;
-    color: rgb(255, 255, 255);
-    transform: translate(-50%, -50%);
-    font-family: 'Lobster';
-    margin-top: -20px;
-  }
-
-  .text2 {
-    text-align:center;
-    top:80%;
-    left: 40%;
-    color: rgb(255, 255, 255);
-    transform: translate(-1%, -130%);
-    font-family: 'Roboto';
-    margin-top: 60px;
-  }
-
-  .text3 {
-    text-align:center;
-    position: absolute;
-    top:130%;
-    left: 50%;
-    color: rgb(255, 255, 255);
-    transform: translate(-50%, -50%);
-    margin-top: 150px;
-    font-family: 'Roboto'
-  }
-
-  .text4 {
-    text-align:center;
-    top:150%;
-    left: 50%;
-    color: rgb(232, 191, 8);
-    transform: translate(-1%, -50%);
-    margin-top: 50px;
-    font-family: 'Roboto'
-  }
-
-  .centro{
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    margin-top: 90px;
-  }
-
-  .red {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin: 0 10px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-  }
-
-  .red img {
-    width: 100%;
-    max-width: 100%; 
-    height: auto; 
+  background-image: url("notom.jpeg");
+  background-color: rgb(16, 42, 38);
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-  .text5 {
-    text-align:center;
-    position: absolute;
-    top:240%;
-    left: 50%;
-    color: rgb(232, 191, 8);
-    transform: translate(-145%, -50%);
-    font-family: 'Roboto';
-    margin-left: 60px;
-  }
+.fundo {
+  background-color: rgb(16, 41, 36);
+  height: auto; 
+  padding-bottom: 20px; 
+}
 
-  .text6 {
-    text-align:center;
-    top:150%;
-    left: 50%;
-    color: rgb(255, 255, 255);
-    transform: translate(-1%, -2%);
-    font-family: 'Roboto';
-    margin-top: 50px;
-  }
+.text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 27%; 
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: 'Lobster';
+  margin-top: -40px;
+}
+
+.text2 {
+  text-align: center;
+  position: relative;
+  top: 80%;
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto';
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.text3 {
+  text-align: center;
+  position: relative; 
+  color: rgb(255, 255, 255);
+  margin-top: 150px;
+  font-family: 'Roboto'
+}
+
+.text4 {
+  text-align: center;
+  color: rgb(232, 191, 8);
+  margin-top: 50px;
+  font-family: 'Roboto'
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-top: 90px;
+}
+
+.red {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red img {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  display: block;
+}
 
 
-  .carrossel{
-    background-color: black;
-    border-radius: 20px;
-    width: 24%; 
-    height: auto;
-    margin-left: 750px;
-    margin-top: 600px;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Roboto';
-  }
+.text5 {
+  text-align: center;
+  position: relative; 
+  color: rgb(232, 191, 8);
+  font-family: 'Roboto';
+  margin-top: 150px;
+}
 
-  .car1 img{
-    max-width: 100%;
-    width: 100%; 
-    height: 300px;
-  }
+.text6 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+
+.carrossel {
+  background-color: black;
+  border-radius: 20px;
+  width: 60%; 
+  max-width: 300px; 
+  margin: 0 auto; 
+  margin-top: 60px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.car1 img {
+  max-width: 100%;
+  height: auto;
+}
+
