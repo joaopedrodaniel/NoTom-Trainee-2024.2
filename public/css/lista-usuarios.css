@@ -39,6 +39,11 @@ a {
 #div-botao-criar-usuario {
   text-align: left;
 }
+
+.celula-botoes button {
+  margin-bottom: 5px;
+}
+
 .pagina-lista-usuarios {
   padding: 12px 15px;
   display: flex;
