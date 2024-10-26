@@ -36,8 +36,8 @@ a {
 .barra-busca-container {
   box-sizing: border-box;
   position: fixed;
-  margin-top: 8px;
-  height: 100%;
+  top: 20px;
+  height: fit-content;
   left: calc(100vw / 2);
   transform: translateX(-50%);
 }
