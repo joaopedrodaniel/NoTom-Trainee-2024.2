@@ -148,6 +148,7 @@ ion-icon:hover {
 
 .paginacao-elemento:hover {
   background-color: #8d9a94;
+  color: #f9cb7a;
 }
 
 @media (max-width: 830px) {
