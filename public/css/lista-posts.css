@@ -38,7 +38,8 @@ a {
   position: fixed;
   margin-top: 8px;
   height: 100%;
-  left: calc(100vw / 2 - 759px);
+  left: calc(100vw / 2);
+  transform: translateX(-50%);
 }
 
 .barra-busca {
@@ -58,7 +59,7 @@ a {
 
 .barra-busca input {
   padding: 0 5px;
-  width: 240px;
+  width: 440px;
   font-size: 20px;
   outline: none;
   border: none;
@@ -148,28 +149,10 @@ ion-icon:hover {
 .paginacao-elemento:hover {
   background-color: #8d9a94;
 }
-@media (max-width: 1548px) {
-  .barra-busca-container {
-    left: 15px;
-  }
-
-  .conteudo-central {
-    margin-left: calc(1548px - 100vw);
-  }
-}
-
-@media (max-width: 1162px) {
-  .conteudo-central {
-    margin-left: 0;
-  }
-
-  .barra-busca-container {
-    left: calc(((100vw / 2 - 219px) - (1162px - 100vw) / 2) / 2);
-  }
-}
 
 @media (max-width: 830px) {
   .barra-busca-container {
+    transform: translateX(0);
     padding: 0 15px;
     left: 0;
     width: 100%;
