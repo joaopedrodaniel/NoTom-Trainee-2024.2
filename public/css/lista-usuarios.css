@@ -10,7 +10,8 @@ body {
 table,
 th,
 td {
-  border: solid 1px white;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
   border-collapse: collapse;
 }
 
