@@ -12,6 +12,23 @@ a {
   text-decoration: none;
 }
 
+ion-icon {
+  display: none;
+}
+
+ion-icon.icone-ativo {
+  display: block;
+  border-radius: 20px;
+  padding: 1.6px 2px;
+  transition: background 0.2s;
+}
+
+ion-icon.icone-ativo:hover {
+  background: #8d9a94;
+  cursor: pointer;
+  color: white;
+}
+
 .pagina-lista-posts {
   display: flex;
   padding-top: 12px;
@@ -58,7 +75,7 @@ a {
   align-items: center;
   background: white;
   border-radius: 20px;
-  width: fit-content;
+  width: 780px;
   height: 32px;
   padding: 0 10px;
   font-size: 28px;
@@ -66,7 +83,7 @@ a {
 
 .barra-busca input {
   padding: 0 5px;
-  width: 440px;
+  width: 100%;
   font-size: 20px;
   outline: none;
   border: none;
@@ -74,18 +91,6 @@ a {
 
 .barra-busca-escondida {
   top: -100px;
-}
-
-ion-icon {
-  border-radius: 20px;
-  padding: 1.6px 2px;
-  transition: background 0.2s;
-}
-
-ion-icon:hover {
-  background: #8d9a94;
-  cursor: pointer;
-  color: white;
 }
 
 .lista-posts {
@@ -165,7 +170,7 @@ ion-icon:hover {
 @media (max-width: 830px) {
   .barra-busca-container {
     transform: translateX(0);
-    padding: 0 15px;
+    padding: 12px 15px;
     left: 0;
     width: 100%;
   }
