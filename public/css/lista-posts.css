@@ -119,6 +119,7 @@ ion-icon.icone-ativo:hover {
   width: 180px;
   height: 180px;
   border-radius: 10px;
+  transition: all 0.2s;
 }
 
 .post-texto {
@@ -202,8 +203,15 @@ ion-icon.icone-ativo:hover {
   }
 
   .post img {
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
+  }
+
+  @media (max-width: 350px) {
+    .post img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
