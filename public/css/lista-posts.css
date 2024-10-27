@@ -34,24 +34,31 @@ a {
 }
 
 .barra-busca-container {
+  display: flex;
   box-sizing: border-box;
+  top: 0px;
+  padding-top: 12px;
+  background-color: #122620;
   position: fixed;
-  top: 20px;
-  height: fit-content;
+  height: 62px;
+  width: 100%;
   left: calc(100vw / 2);
   transform: translateX(-50%);
+  transition: top 0.2s;
+  justify-content: center;
 }
 
 .barra-busca {
   position: sticky;
   z-index: 1;
   display: flex;
+  margin-top: 8px;
   gap: 5px;
   justify-content: center;
   align-items: center;
   background: white;
   border-radius: 20px;
-
+  width: fit-content;
   height: 32px;
   padding: 0 10px;
   font-size: 28px;
@@ -63,6 +70,10 @@ a {
   font-size: 20px;
   outline: none;
   border: none;
+}
+
+.barra-busca-escondida {
+  top: -100px;
 }
 
 ion-icon {
