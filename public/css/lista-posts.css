@@ -195,9 +195,15 @@ ion-icon.icone-ativo:hover {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .post {
     flex-direction: column;
     padding-top: 10px;
+  }
+
+  .post img {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
   }
 }
