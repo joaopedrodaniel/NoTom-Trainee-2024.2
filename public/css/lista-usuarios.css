@@ -7,14 +7,26 @@ body {
   background-color: #122620;
 }
 
+table {
+  border-top: solid 1px #8d9a94;
+  border-left: solid 1px #8d9a94;
+  border-right: solid 1px #8d9a94;
+}
+
 table,
-th,
-td {
-  border-top: solid 1px white;
-  border-bottom: solid 1px white;
+th {
+  border-bottom: solid 1px #8d9a94;
   border-collapse: collapse;
 }
 
+tr.accordion:hover {
+  cursor: pointer;
+}
+
+td {
+  border-top: solid 1px #8d9a94;
+  transition: all 0.5s;
+}
 th,
 td {
   padding: 5px;
@@ -41,10 +53,6 @@ a {
   text-align: left;
 }
 
-.celula-botoes button {
-  margin-bottom: 5px;
-}
-
 .pagina-lista-usuarios {
   padding: 12px 15px;
   display: flex;
@@ -64,6 +72,27 @@ a {
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
+}
+
+.open-accordion td {
+  border-bottom: none;
+}
+
+.hidden-content td {
+  border: none;
+  padding: 0px;
+}
+
+.hidden-content button {
+  display: none;
+}
+
+.display-content td {
+  border: none;
+}
+
+.display-content button {
+  display: inline;
 }
 
 .paginacao {
