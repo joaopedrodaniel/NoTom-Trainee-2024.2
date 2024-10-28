@@ -39,15 +39,20 @@ td {
 }
 
 button {
+  border-radius: 5px;
+  border: none;
   padding: 0px 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  background-color: white;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: #8d9a94;
+  color: white;
 }
 
 a {
