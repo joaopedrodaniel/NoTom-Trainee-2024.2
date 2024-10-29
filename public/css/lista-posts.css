@@ -31,7 +31,7 @@ ion-icon.icone-ativo:hover {
 
 .pagina-lista-posts {
   display: flex;
-  padding-top: 12px;
+  padding-top: 20px;
   background: #122620;
   justify-content: center;
   overflow-y: auto;
@@ -54,10 +54,10 @@ ion-icon.icone-ativo:hover {
   display: flex;
   box-sizing: border-box;
   top: 0px;
-  padding-top: 12px;
+  padding-top: 20px;
   background-color: #122620;
   position: fixed;
-  height: 62px;
+  height: 70px;
   width: 100%;
   left: calc(100vw / 2);
   transform: translateX(-50%);
