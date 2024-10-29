@@ -27,6 +27,7 @@ tr.accordion:hover {
 th {
   background-color: black;
   color: white;
+  font-size: 28px;
 }
 
 td {
