@@ -195,9 +195,6 @@ h1.barra-busca-container-fixa-titulo {
 
 @media (max-width: 830px) {
   .barra-busca-container {
-    transform: translateX(0);
-    padding: 12px 15px;
-    left: 0;
     width: 100%;
   }
 

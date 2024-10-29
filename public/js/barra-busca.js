@@ -10,7 +10,6 @@ const iconeX = document.querySelector(
 const buscaInput = barraBuscaContainer.querySelector("#busca-input");
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
   if (window.scrollY >= 135) {
     barraBuscaContainer.classList.remove(
       "barra-busca-container-com-espaco-para-titulo"
