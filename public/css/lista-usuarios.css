@@ -41,18 +41,40 @@ td {
 button {
   border-radius: 5px;
   border: none;
-  padding: 0px 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+  padding: 5px;
+  font-size: 32px;
   background-color: white;
+}
+
+button ion-icon {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.botao-construtivo {
+  background-color: lightgreen;
+  font-size: 40px;
+}
+
+button.botao-destrutivo {
+  background-color: red;
+  font-size: 32px;
 }
 
 button:hover {
   cursor: pointer;
   background-color: #8d9a94;
   color: white;
+}
+
+button.botao-construtivo:hover {
+  background-color: #409940;
+}
+
+button.botao-destrutivo:hover {
+  background-color: #aa0000;
 }
 
 a {
