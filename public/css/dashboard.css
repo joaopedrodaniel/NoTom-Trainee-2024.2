@@ -5,29 +5,27 @@
 }
 
 body{
-    background-color: black;
+    background:linear-gradient(to bottom, black, #262826, #595551);
 }
 
 .titulo h1{
     text-align: center;
-    color:  rgb(255, 255, 255);
+    color: #F9CB7A;
     font-family: 'Lobster';
     font-size: 70px;
-    margin-top: 1%;
+    margin-top: 0.4%;
 }
 
 .titulo img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 80px;
     align-items: center;
     justify-content: center;
-   
 }
 
 .titulo h3{
     text-align: center;
-    color: #F9CB7A;
-    font-family:'Roboto';
+    color: #ffffff;
     margin-top: 20px;
 }
 
@@ -36,16 +34,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 3.9%;
     margin-left: 30%;
     margin-right: 30%;
+    margin-bottom: 7.15%;
     height: 250px;
     border-radius: 10px;
 }
 
 button{
     background-color: rgb(209, 203, 147);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     margin: 0 15px;
     font-size: 20px;
@@ -54,4 +53,27 @@ button{
 
 button:hover{
     background-color: rgb(243, 206, 22);
+    color: white;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+
+.home{
+    border-radius: 100%;
+    padding: 10px;
+    margin-top: 1.5%;
+    margin-left: 5%
+}
+
+@media(max-width:480px){
+
+    button{
+        padding: 5px;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+    } 
 }
