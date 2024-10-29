@@ -16,6 +16,15 @@ ion-icon {
   display: none;
 }
 
+h1.titulo {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
 ion-icon.icone-ativo {
   display: block;
   border-radius: 20px;
@@ -29,8 +38,13 @@ ion-icon.icone-ativo:hover {
   color: white;
 }
 
+h1.barra-busca-container-fixa-titulo {
+  padding-bottom: 32px;
+}
+
 .pagina-lista-posts {
   display: flex;
+  flex-direction: column;
   padding-top: 20px;
   background: #122620;
   justify-content: center;
@@ -46,30 +60,41 @@ ion-icon.icone-ativo:hover {
   flex-direction: column;
   gap: 10px;
 
-  padding: 40px 5px 24px 5px;
+  padding: 0px 5px 24px 5px;
   align-items: center;
 }
 
 .barra-busca-container {
+  position: sticky;
   display: flex;
   box-sizing: border-box;
-  top: 0px;
-  padding-top: 20px;
-  background-color: #122620;
-  position: fixed;
-  height: 70px;
+
   width: 100%;
   left: calc(100vw / 2);
-  transform: translateX(-50%);
   transition: top 0.2s;
   justify-content: center;
+}
+
+.barra-busca-container-fixa {
+  position: fixed;
+  padding-top: 40px;
+  top: 0px;
+  height: 80px;
+  transform: translateX(-50%);
+  background-color: #122620;
+}
+
+.barra-busca-container-com-espaco-para-titulo {
+  top: 40px;
+  padding: 0px;
+  height: 40px;
+  transition: none;
 }
 
 .barra-busca {
   position: sticky;
   z-index: 1;
   display: flex;
-  margin-top: 8px;
   gap: 5px;
   justify-content: center;
   align-items: center;
