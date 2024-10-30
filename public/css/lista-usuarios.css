@@ -24,6 +24,12 @@ tr.accordion:hover {
   cursor: pointer;
 }
 
+tr.accordion:hover ion-icon {
+  border-radius: 5px;
+  background-color: #8d9a94;
+  color: white;
+}
+
 th {
   background-color: black;
   color: white;
@@ -47,7 +53,7 @@ button {
   background-color: white;
 }
 
-button ion-icon {
+ion-icon {
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -137,6 +143,11 @@ a {
 
 .display-content button {
   display: inline;
+}
+
+.celula-icone {
+  display: flex;
+  justify-content: center;
 }
 
 .paginacao {
