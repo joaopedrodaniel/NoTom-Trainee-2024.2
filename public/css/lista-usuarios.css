@@ -24,9 +24,16 @@ tr.accordion:hover {
   cursor: pointer;
 }
 
+tr.accordion:hover ion-icon {
+  border-radius: 5px;
+  background-color: #8d9a94;
+  color: white;
+}
+
 th {
   background-color: black;
   color: white;
+  font-size: 28px;
 }
 
 td {
@@ -41,12 +48,26 @@ td {
 button {
   border-radius: 5px;
   border: none;
-  padding: 0px 5px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
+  padding: 5px;
+  font-size: 32px;
   background-color: white;
+}
+
+ion-icon {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.botao-construtivo {
+  background-color: lightgreen;
+  font-size: 40px;
+}
+
+button.botao-destrutivo {
+  background-color: red;
+  font-size: 32px;
 }
 
 button:hover {
@@ -55,12 +76,21 @@ button:hover {
   color: white;
 }
 
+button.botao-construtivo:hover {
+  background-color: #409940;
+}
+
+button.botao-destrutivo:hover {
+  background-color: #aa0000;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
 #div-botao-criar-usuario {
+  padding-left: 20px;
   text-align: left;
 }
 
@@ -82,7 +112,7 @@ a {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
+  font-size: 60px;
 }
 
 .table-container {
@@ -93,6 +123,11 @@ a {
   padding: 20px;
   width: 100%;
   color: black;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
 }
 
 .open-accordion td {
@@ -114,6 +149,11 @@ a {
 
 .display-content button {
   display: inline;
+}
+
+.celula-icone {
+  text-align: center;
+  vertical-align: middle;
 }
 
 .paginacao {
