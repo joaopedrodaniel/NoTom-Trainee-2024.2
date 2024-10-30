@@ -125,6 +125,11 @@ a {
   color: black;
 }
 
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+
 .open-accordion td {
   border-bottom: none;
 }
@@ -147,8 +152,8 @@ a {
 }
 
 .celula-icone {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .paginacao {
