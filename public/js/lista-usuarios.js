@@ -17,7 +17,7 @@ accordions.forEach((accordion) => {
       cellDiv.appendChild(icon);
     }
     accordion.classList.toggle("open-accordion");
-    const panel = accordion.closest("tr").nextElementSibling;
+    const panel = accordion.nextElementSibling;
     panel.classList.toggle("hidden-content");
     panel.classList.toggle("display-content");
   });
