@@ -225,3 +225,43 @@ a {
 .modal-edicao .label-com-margem {
   margin-top: 10px;
 }
+
+.modal-edicao .titulo-conteudo-modal {
+  font-weight: 700;
+}
+
+.modal-edicao .conteudo-visualizacao {
+  border-radius: 30px;
+  background-color: #f9d28e;
+  padding: 5px;
+}
+
+.modal-edicao input {
+  border-radius: 30px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.modal-edicao .botao-fechar-modal {
+  background-color: black;
+  color: white;
+}
+
+.modal-edicao .botao-fechar-modal:hover {
+  background-color: #8d9a94;
+}
+
+.botoes-com-margem {
+  margin-top: 10px;
+}
+
+.dados-usuario-excluir {
+  text-align: center;
+}
+
+.modal-edicao .p-com-margem {
+  margin-top: 5px;
+}

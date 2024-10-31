@@ -149,23 +149,79 @@
         <a class="paginacao-elemento" href="#">></a>
       </div>
     </div>
-    <!--Modal-->
+    <!--Modal criação-->
     <div class="modal-edicao">
       <form action="">
-        <h1>Edição</h1>
-        <label for="input-nome">Nome:</label>
+        <h1>Criar usuário</h1>
+        <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
         <input id="input-nome" type="text" placeholder="Digite seu nome..." />
 
-        <label class="label-com-margem" for="email">E-mail:</label>
+        <label class="label-com-margem titulo-conteudo-modal" for="email"
+          >E-mail:</label
+        >
         <input id="email" type="email" placeholder="exemplo@email.com" />
 
-        <label class="label-com-margem" for="senha">Senha:</label>
+        <label class="label-com-margem titulo-conteudo-modal" for="senha"
+          >Senha:</label
+        >
         <input id="senha" type="password" placeholder="Digite sua senha..." />
         <div class="modal-edicao-botoes">
           <button class="botao-destrutivo">Cancelar</button>
-          <button class="botao-construtivo">Confirmar</button>
+          <button class="botao-construtivo">Criar</button>
         </div>
       </form>
+    </div>
+    <!--Modal visualização-->
+    <div class="modal-edicao">
+      <form action="">
+        <h1>Visualização</h1>
+        <label class="titulo-conteudo-modal" for="input-nome">ID:</label>
+        <p class="conteudo-visualizacao">12345</p>
+
+        <label class="label-com-margem titulo-conteudo-modal" for="email"
+          >Nome:</label
+        >
+        <p class="conteudo-visualizacao">Fulano da Silva</p>
+
+        <label class="label-com-margem titulo-conteudo-modal" for="senha"
+          >Email:</label
+        >
+        <p class="conteudo-visualizacao">exemplo@email.com</p>
+        <div class="modal-edicao-botoes">
+          <button class="botao-fechar-modal">Fechar</button>
+        </div>
+      </form>
+    </div>
+    <!--Modal edição-->
+    <div class="modal-edicao">
+      <form action="">
+        <h1>Edição</h1>
+        <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
+        <input id="input-nome" type="text" placeholder="Digite seu nome..." />
+
+        <label class="label-com-margem titulo-conteudo-modal" for="email"
+          >E-mail:</label
+        >
+        <input id="email" type="email" placeholder="exemplo@email.com" />
+
+        <label class="label-com-margem titulo-conteudo-modal" for="senha"
+          >Senha:</label
+        >
+        <input id="senha" type="password" placeholder="Digite sua senha..." />
+        <div class="modal-edicao-botoes">
+          <button class="botao-destrutivo">Cancelar</button>
+          <button class="botao-construtivo">Salvar</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-edicao">
+      <h1>Excluir</h1>
+      <p class="dados-usuario-excluir p-com-margem">ID: 1234</p>
+      <p class="dados-usuario-excluir">Nome: Fulano da Silva</p>
+      <div class="modal-edicao-botoes botoes-com-margem">
+        <button class="botao-fechar-modal">Cancelar</button>
+        <button class="botao-destrutivo">Excluir</button>
+      </div>
     </div>
     <script
       type="module"
