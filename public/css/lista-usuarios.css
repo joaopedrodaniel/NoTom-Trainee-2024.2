@@ -185,6 +185,43 @@ a {
 /*Modal*/
 
 .modal-edicao {
+  border-radius: 25px;
   background-color: #f9cb7a;
   padding: 20px;
+  width: 253.6px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-edicao h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+}
+
+.modal-edicao form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-edicao button {
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-edicao-botoes {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.modal-edicao .label-com-margem {
+  margin-top: 10px;
 }

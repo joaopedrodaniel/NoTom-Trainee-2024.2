@@ -152,16 +152,19 @@
     <!--Modal-->
     <div class="modal-edicao">
       <form action="">
+        <h1>Edição</h1>
         <label for="input-nome">Nome:</label>
-        <input name="input-nome" type="text" />
-        <br />
-        <label for="email">E-mail:</label>
-        <input name="email" type="text" />
-        <br />
-        <label for="senha">Senha:</label>
-        <input name="senha" type="text" />
-        <button>Cancelar</button>
-        <button>Confirmar</button>
+        <input id="input-nome" type="text" placeholder="Digite seu nome..." />
+
+        <label class="label-com-margem" for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="exemplo@email.com" />
+
+        <label class="label-com-margem" for="senha">Senha:</label>
+        <input id="senha" type="password" placeholder="Digite sua senha..." />
+        <div class="modal-edicao-botoes">
+          <button class="botao-destrutivo">Cancelar</button>
+          <button class="botao-construtivo">Confirmar</button>
+        </div>
       </form>
     </div>
     <script
