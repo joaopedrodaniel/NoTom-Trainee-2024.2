@@ -181,3 +181,10 @@ a {
 .paginacao-elemento:hover {
   background-color: #8d9a94;
 }
+
+/*Modal*/
+
+.modal-edicao {
+  background-color: #f9cb7a;
+  padding: 20px;
+}
