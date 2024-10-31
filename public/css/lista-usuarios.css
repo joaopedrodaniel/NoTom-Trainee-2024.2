@@ -265,3 +265,9 @@ a {
 .modal-edicao .p-com-margem {
   margin-top: 5px;
 }
+
+@media (max-width: 300px) {
+  .modal-edicao {
+    width: 220px;
+  }
+}
