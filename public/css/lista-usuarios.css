@@ -184,7 +184,7 @@ a {
 
 /*Modal*/
 
-.modal-edicao {
+.modal {
   border-radius: 25px;
   background-color: #f9cb7a;
   padding: 20px;
@@ -196,7 +196,7 @@ a {
   box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
-.modal-edicao h1 {
+.modal h1 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -204,39 +204,39 @@ a {
   text-align: center;
 }
 
-.modal-edicao form {
+.modal form {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.modal-edicao button {
+.modal button {
   font-size: 16px;
   width: 100%;
   box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
-.modal-edicao-botoes {
+.modal-botoes {
   display: flex;
   gap: 5px;
   width: 100%;
 }
 
-.modal-edicao .label-com-margem {
+.modal .label-com-margem {
   margin-top: 10px;
 }
 
-.modal-edicao .titulo-conteudo-modal {
+.modal .titulo-conteudo-modal {
   font-weight: 700;
 }
 
-.modal-edicao .conteudo-visualizacao {
+.modal .conteudo-visualizacao {
   border-radius: 30px;
   background-color: #f9d28e;
   padding: 5px;
 }
 
-.modal-edicao input {
+.modal input {
   border-radius: 30px;
   padding: 5px;
   font-family: "Roboto", sans-serif;
@@ -245,12 +245,12 @@ a {
   font-size: 16px;
 }
 
-.modal-edicao .botao-fechar-modal {
+.modal .botao-fechar-modal {
   background-color: black;
   color: white;
 }
 
-.modal-edicao .botao-fechar-modal:hover {
+.modal .botao-fechar-modal:hover {
   background-color: #8d9a94;
 }
 
@@ -262,12 +262,12 @@ a {
   text-align: center;
 }
 
-.modal-edicao .p-com-margem {
+.modal .p-com-margem {
   margin-top: 5px;
 }
 
 @media (max-width: 300px) {
-  .modal-edicao {
+  .modal {
     width: 220px;
   }
 }
