@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
@@ -56,6 +56,10 @@ body{
   margin-right: 5%;
 }
 
+.containerimagem h2{
+  font-size: 30px;
+}
+
 .containerimagem h3 {
   text-align: center;
   color: #F9CB7A;
@@ -106,57 +110,68 @@ body{
 }
 
 
-.postagem {
+.swiper-container {
   text-align: center;
   display: flex;
-  flex-direction: row;
   width: 100%;
   color: #F9CB7A;
   padding-bottom: 50px;
   margin-top: 10%;
-  gap: 10%;
+  margin-left: 2%;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.info{
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 10;
+}
+
+.swiper-wrapper{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
-.info h2{
-  color:#F9CB7A ;
-  
-}
-
-.info h3{
-  margin-top: 5%;
-}
-
-.carrossel {
+.swiper-slide {
   background-color: rgb(255, 253, 223);
   border-radius: 20px;
-  width: 40%; 
-  max-width: 360px; 
+  max-width: 400px;
   text-align: center;
   display: flex;
   padding: 1%;
+  flex-direction: column;
 }
 
-.carrossel img{
+.swiper-slide img{
   border-radius: 20px;
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 25 / 20;
   object-fit: cover;
 }
 
 .car1 button{
   color: black;
+  padding: 15px;
 }
 
 .car1 p{
@@ -189,6 +204,8 @@ button{
   height: auto;
 }
 
+
+
 @media (max-width:768px){
  .textos{
   width: 100%;
@@ -218,11 +235,8 @@ button{
     gap: 4px;
   }
 
-  .info{
-    margin-top: 10%;
-  }
-
-  .carrossel{
+  
+  .swiper-slide{
     margin-top: 14%;
     width: 400px;
   }
