@@ -22,3 +22,7 @@ accordions.forEach((accordion) => {
     panel.classList.toggle("display-content");
   });
 });
+
+// Aperta botao = abre o modal separado:
+
+
