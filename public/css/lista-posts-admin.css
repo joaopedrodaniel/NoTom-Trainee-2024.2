@@ -195,3 +195,12 @@ display: flex;
 justify-content: center;
 allign-items: center;
 }
+
+.caixa-popup{
+  height: 250px;
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}

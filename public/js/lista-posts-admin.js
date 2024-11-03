@@ -25,4 +25,4 @@ accordions.forEach((accordion) => {
 
 // Aperta botao = abre o modal separado:
 
-
+document.querySelectorAll(".btn-editar").forEach((btn) => {
