@@ -19,11 +19,16 @@
   <body>
     <div class="pagina-lista-usuarios">
       <h1 class="titulo texto-branco">Posts</h1>
+      
+
       <div id="div-botao-criar-usuario">
-        <button class="botao-construtivo">
+        <button class="botao-construtivo" id="botao-construtivo"  >
           <ion-icon name="add-outline"></ion-icon>
         </button>
       </div>
+      
+
+      
       <div class="table-container">
         <table>
           <thead>
@@ -154,23 +159,44 @@
         <a class="paginacao-elemento" href="#">10</a>
         <a class="paginacao-elemento" href="#">></a>
       </div>
+
+
+
+      <!-- pop ups criar post -->
+      <div class="background-popup">      
+        <div class="caixa-popup">
+        <h1>Crie seu Post</h1>
+        <div class = text-input ></div>
+        <input class="text-input" placeholder="Titulo *" />
+        <input class="text-input" placeholder="Conteudo *" />
+        <h2>Adicione sua Imagem</h2>
+          <input type="file" id="foto" name="foto" accept="image/*" required>
+
+          <div></div>
+          <button class ="botao-construtivo" id="botao-criar-post">Criar</button>
+          <button class ="botao-destrutivo" id="botao-cancelar">Cancelar</button> 
+
+    </div>
     </div>
 
-    <div class="background-popup">
-      <div class="caixa-popup">
-      <h1>Criar Post</h1>
-    </div>
-    </div>
+
+    
+    
+
 
 
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../../../public/js/lista-posts-admin.js"></script>
+    
+    <script src="../../../public/js/lista-posts-admin.js"
+    ></script>
+
   </body>
 </html>

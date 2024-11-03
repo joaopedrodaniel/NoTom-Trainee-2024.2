@@ -1,3 +1,7 @@
+// Aperta botao = abre o modal separado:
+
+
+// Acordeao tabela
 const accordions = document.querySelectorAll(".accordion");
 accordions.forEach((accordion) => {
   accordion.addEventListener("click", () => {
@@ -23,6 +27,3 @@ accordions.forEach((accordion) => {
   });
 });
 
-// Aperta botao = abre o modal separado:
-
-document.querySelectorAll(".btn-editar").forEach((btn) => {
