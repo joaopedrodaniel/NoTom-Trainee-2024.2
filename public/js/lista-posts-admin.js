@@ -1,4 +1,8 @@
 // Aperta botao = Abre o Modal Separado:
+
+//Verificar erros/bugs com Scrum em uma data futura
+
+//Muito provavelmente deve ter como fazer as 4 funções abaixo em uma so, verificar novamente no futuro com alguem
 function abirModalCriar(modalCriar){
   document.getElementById(modalCriar).style.display = "flex";
 }
@@ -14,6 +18,7 @@ function abirModalExcluir(modalExcluir){
 function fecharModalExcluir(modalExcluir){
   document.getElementById(modalExcluir).style.display = "none";
 }
+
 
 // Acordeao tabela
 const accordions = document.querySelectorAll(".accordion");

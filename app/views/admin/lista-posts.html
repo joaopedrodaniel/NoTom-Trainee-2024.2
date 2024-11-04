@@ -55,7 +55,9 @@
           <tr class="hidden-content">
             <td colspan="4">
               <button><ion-icon name="eye-outline"></ion-icon></button>
-              <button><ion-icon name="create-outline"></ion-icon></button>
+              <button onclick=abirModalCriar('modalEditar')>
+              <ion-icon name="create-outline"></ion-icon></button>
+
               <button onclick=abirModalExcluir('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
@@ -194,10 +196,9 @@
           </div>
         </div>
       </div>
-
-
-
-      <!-- pop ups excluir post -->      
+     </div>
+ 
+      <!-- pop up excluir post -->      
       <div class="background-popup" id = "modalExcluir">
         <div class="caixa-popup">
           <div class="parte-superior">
@@ -211,6 +212,45 @@
           </div>
         </div>
       </div>
+
+
+    <!-- pop ups editar post -->
+
+    <div class="background-popup" id = "modalEditar">
+      <div class="caixa-popup">
+
+        <div class="parte-superior">
+
+          <div class="titulo-popup">
+            <h1>Edite a Publicação de: Fulano da Silva</h1>
+          </div>
+
+          <input class=input-titulo-popup placeholder="Titulo Novo* " />
+
+            <input class=input-paragrafo-popup placeholder="Conteudo Novo*" />
+
+          <div class=imagem-popup>
+
+                <button class="botao-adiciona-foto">
+                    <label for="file" class="input-file-label">
+                    <p>Adicione A Foto Nova Aqui *</p>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                    </label>
+                    <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+                </button>
+
+              <div>
+              </div>
+            </form>
+          </div>
+
+          <div class=parte-inferior>
+            <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+            <button onclick=fecharModalCriar('modalEditar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+          </div>
+        </div>
+      </div>
+     </div>
 
 
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
