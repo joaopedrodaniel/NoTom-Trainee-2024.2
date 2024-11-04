@@ -11,12 +11,14 @@ const buscaInput = barraBuscaContainer.querySelector("#busca-input");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 135) {
-    barraBuscaContainer.classList.remove(
-      "barra-busca-container-com-espaco-para-titulo"
-    );
     barraBuscaContainer.classList.add("barra-busca-container-fixa");
     titulo.classList.add("barra-busca-container-fixa-titulo");
   } else {
+    if (window.scrollY >= 90) {
+      barraBuscaContainer.classList.remove(
+        "barra-busca-container-com-espaco-para-titulo"
+      );
+    }
     if (
       window.scrollY < 90 &&
       barraBuscaContainer.classList.contains("barra-busca-container-fixa")
