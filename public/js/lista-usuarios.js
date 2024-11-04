@@ -1,4 +1,5 @@
 const accordions = document.querySelectorAll(".accordion");
+const tableContainer = document.querySelector(".table-container");
 accordions.forEach((accordion) => {
   accordion.addEventListener("click", () => {
     if (accordion.classList.contains("open-accordion")) {
@@ -22,3 +23,13 @@ accordions.forEach((accordion) => {
     panel.classList.toggle("display-content");
   });
 });
+
+const checarSeTableTransborda = () => {
+  const hasHorizontalScroll =
+    tableContainer.scrollWidth > tableContainer.clientWidth;
+  console.log(hasHorizontalScroll);
+};
+
+window.addEventListener("resize", checarSeTableTransborda);
+
+checarSeTableTransborda();
