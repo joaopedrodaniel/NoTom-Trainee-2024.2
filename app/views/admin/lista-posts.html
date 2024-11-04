@@ -18,7 +18,7 @@
 
 
     <div id="div-botao-criar-usuario">
-      <button onclick=abirModalCriar('modalCriar') class="botao-construtivo" id="botao-construtivo">
+      <button onclick=abirModal('modalCriar') class="botao-construtivo" id="botao-construtivo">
         <ion-icon name="add-outline"></ion-icon>
       </button>
     </div>
@@ -54,11 +54,12 @@
           </tr>
           <tr class="hidden-content">
             <td colspan="4">
-              <button><ion-icon name="eye-outline"></ion-icon></button>
-              <button onclick=abirModalCriar('modalEditar')>
+             
+              <button onclick=abirModal('modalVisualizar')><ion-icon name="eye-outline"></ion-icon></button>
+              <button onclick=abirModal('modalEditar')>
               <ion-icon name="create-outline"></ion-icon></button>
 
-              <button onclick=abirModalExcluir('modalExcluir') class="botao-destrutivo">
+              <button onclick=abirModal('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -76,9 +77,11 @@
           </tr>
           <tr class="hidden-content">
             <td colspan="4">
-              <button><ion-icon name="eye-outline"></ion-icon></button>
-              <button><ion-icon name="create-outline"></ion-icon></button>
-              <button class="botao-destrutivo">
+              <button onclick=abirModal('modalVisualizar')><ion-icon name="eye-outline"></ion-icon></button>
+              <button onclick=abirModal('modalEditar')>
+              <ion-icon name="create-outline"></ion-icon></button>
+
+              <button onclick=abirModal('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -96,9 +99,11 @@
           </tr>
           <tr class="hidden-content">
             <td colspan="4">
-              <button><ion-icon name="eye-outline"></ion-icon></button>
-              <button><ion-icon name="create-outline"></ion-icon></button>
-              <button class="botao-destrutivo">
+              <button onclick=abirModal('modalVisualizar')><ion-icon name="eye-outline"></ion-icon></button>
+              <button onclick=abirModal('modalEditar')>
+              <ion-icon name="create-outline"></ion-icon></button>
+
+              <button onclick=abirModal('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -116,9 +121,11 @@
           </tr>
           <tr class="hidden-content">
             <td colspan="4">
-              <button><ion-icon name="eye-outline"></ion-icon></button>
-              <button><ion-icon name="create-outline"></ion-icon></button>
-              <button class="botao-destrutivo">
+              <button onclick=abirModal('modalVisualizar')><ion-icon name="eye-outline"></ion-icon></button>
+              <button onclick=abirModal('modalEditar')>
+              <ion-icon name="create-outline"></ion-icon></button>
+
+              <button onclick=abirModal('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -136,9 +143,11 @@
           </tr>
           <tr class="hidden-content">
             <td colspan="4">
-              <button><ion-icon name="eye-outline"></ion-icon></button>
-              <button><ion-icon name="create-outline"></ion-icon></button>
-              <button class="botao-destrutivo">
+              <button onclick=abirModal('modalVisualizar')><ion-icon name="eye-outline"></ion-icon></button>
+              <button onclick=abirModal('modalEditar')>
+              <ion-icon name="create-outline"></ion-icon></button>
+
+              <button onclick=abirModal('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -161,7 +170,7 @@
 
 
 
-    <!-- pop ups criar post -->
+    <!-- pop up criar post -->
     <div class="background-popup" id = "modalCriar">
       <div class="caixa-popup">
 
@@ -192,7 +201,7 @@
 
           <div class=parte-inferior>
             <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-            <button onclick=fecharModalCriar('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+            <button onclick=fecharModal('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
           </div>
         </div>
       </div>
@@ -208,13 +217,13 @@
           </div>
             <div class=parte-inferior>
               <button class="botao-construtivo" id="botao-criar-post">Cancelar</button>
-              <button onclick=fecharModalExcluir('modalExcluir') class="botao-destrutivo" id="botao-cancelar">Excluir</button>
+              <button onclick=fecharModal('modalExcluir') class="botao-destrutivo" id="botao-cancelar">Excluir</button>
           </div>
         </div>
       </div>
 
 
-    <!-- pop ups editar post -->
+    <!-- pop up editar post -->
 
     <div class="background-popup" id = "modalEditar">
       <div class="caixa-popup">
@@ -222,7 +231,7 @@
         <div class="parte-superior">
 
           <div class="titulo-popup">
-            <h1>Edite a Publicação de: Fulano da Silva</h1>
+            <h1>Edite a Publicação ID#1</h1>
           </div>
 
           <input class=input-titulo-popup placeholder="Titulo Novo* " />
@@ -246,12 +255,38 @@
 
           <div class=parte-inferior>
             <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-            <button onclick=fecharModalCriar('modalEditar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+            <button onclick=fecharModal('modalEditar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
           </div>
         </div>
       </div>
      </div>
 
+     <!-- pop up Visualizar Post -->
+
+
+     <div class="background-popup" id = "modalVisualizar">
+      <div class="caixa-popup">
+        <div class="parte-superior">
+
+          <div class="titulo-popup">
+            <h1>Visualizar Post ID#1</h1>
+          </div>
+
+          <h2 class=input-titulo-popup> Título do post</h2>
+
+          <h2 class=input-paragrafo-popup> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nem fermentum nunc. 
+          </h2>
+            
+  
+          <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+        
+
+          <div class=parte-inferior>
+            <button onclick=fecharModal('modalVisualizar') class="botao-destrutivo" id="botao-cancelar">Sair</button>
+          </div>
+        </div>
+      </div>
+     </div>
 
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
@@ -260,5 +295,4 @@
       <script src="../../../public/js/lista-posts-admin.js"></script>
 
 </body>
-
 </html>

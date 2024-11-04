@@ -2,21 +2,12 @@
 
 //Verificar erros/bugs com Scrum em uma data futura
 
-//Muito provavelmente deve ter como fazer as 4 funções abaixo em uma so, verificar novamente no futuro com alguem
-function abirModalCriar(modalCriar){
+function abirModal(modalCriar){
   document.getElementById(modalCriar).style.display = "flex";
 }
 
-function fecharModalCriar(modalCriar){
+function fecharModal(modalCriar){
   document.getElementById(modalCriar).style.display = "none";
-}
-
-function abirModalExcluir(modalExcluir){
-  document.getElementById(modalExcluir).style.display = "flex";
-}
-
-function fecharModalExcluir(modalExcluir){
-  document.getElementById(modalExcluir).style.display = "none";
 }
 
 
