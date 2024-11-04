@@ -1,10 +1,18 @@
 // Aperta botao = Abre o Modal Separado:
-function abirModal(modalCriar){
+function abirModalCriar(modalCriar){
   document.getElementById(modalCriar).style.display = "flex";
 }
 
-function fecharModal(modalCriar){
+function fecharModalCriar(modalCriar){
   document.getElementById(modalCriar).style.display = "none";
+}
+
+function abirModalExcluir(modalExcluir){
+  document.getElementById(modalExcluir).style.display = "flex";
+}
+
+function fecharModalExcluir(modalExcluir){
+  document.getElementById(modalExcluir).style.display = "none";
 }
 
 // Acordeao tabela

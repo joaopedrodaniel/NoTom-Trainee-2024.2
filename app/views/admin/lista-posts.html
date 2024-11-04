@@ -18,7 +18,7 @@
 
 
     <div id="div-botao-criar-usuario">
-      <button onclick=abirModal('modalCriar') class="botao-construtivo" id="botao-construtivo">
+      <button onclick=abirModalCriar('modalCriar') class="botao-construtivo" id="botao-construtivo">
         <ion-icon name="add-outline"></ion-icon>
       </button>
     </div>
@@ -56,7 +56,7 @@
             <td colspan="4">
               <button><ion-icon name="eye-outline"></ion-icon></button>
               <button><ion-icon name="create-outline"></ion-icon></button>
-              <button class="botao-destrutivo">
+              <button onclick=abirModalExcluir('modalExcluir') class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -190,7 +190,24 @@
 
           <div class=parte-inferior>
             <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-            <button onclick=fecharModal('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+            <button onclick=fecharModalCriar('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- pop ups excluir post -->      
+      <div class="background-popup" id = "modalExcluir">
+        <div class="caixa-popup">
+          <div class="parte-superior">
+            <div class="titulo-popup">
+              <h1>Você Deseja Mesmo Excluir este Post? Esta ação não é reversivel.</h1>
+            </div>
+          </div>
+            <div class=parte-inferior>
+              <button class="botao-construtivo" id="botao-criar-post">Cancelar</button>
+              <button onclick=fecharModalExcluir('modalExcluir') class="botao-destrutivo" id="botao-cancelar">Excluir</button>
           </div>
         </div>
       </div>
