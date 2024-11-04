@@ -5,9 +5,9 @@
 }
 
 body{
-    background:linear-gradient(to bottom, black, #262826, #595551);
-}
-
+    background-color: rgb(22, 30, 22);
+   }
+  
 .titulo h1{
     text-align: center;
     color: #F9CB7A;
@@ -16,6 +16,9 @@ body{
     margin-top: 0.4%;
 }
 
+h1:hover{
+    color: rgb(243, 206, 22);
+}
 .titulo img{
     width: 130px;
     height: 80px;
@@ -26,20 +29,15 @@ body{
 .titulo h3{
     text-align: center;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
-.div{
-    background-color: rgb(21, 22, 22) ;
+.b{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3.9%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 7.15%;
-    height: 250px;
-    border-radius: 10px;
+    margin-top: 8%;
+
 }
 
 button{
@@ -49,6 +47,14 @@ button{
     margin: 0 15px;
     font-size: 20px;
     transition: background-color 0.3s;
+}
+
+.out{
+    background-color: rgb(199, 87, 87);
+}
+
+.out:hover{
+    background-color: red;
 }
 
 button:hover{
@@ -68,12 +74,31 @@ button img{
     margin-left: 5%
 }
 
-@media(max-width:480px){
+@media(max-width:500px){
 
     button{
-        padding: 5px;
+       padding: 20px;
        align-items: center;
        justify-content: center;
        display: flex;
+       margin: 3%;
     } 
+
+    .b{
+        flex-direction: column;
+    }
+
+    .home{
+        padding: 15px;
+    }
+
+    .home img{
+        width: 30px;
+        height: 30px;
+    }
+
+   .titulo h3{
+    display: none;
+   }
+
 }
