@@ -62,7 +62,7 @@ ion-icon {
 
 button.botao-construtivo {
   background-color: lightgreen;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 button.botao-destrutivo {
@@ -185,45 +185,101 @@ a {
 
 /* CSS de Formulario de Post */
 
-.{
+.background-popup{
   background-color: rgba(0, 0, 0, 0.5);
 width: 100%;
 height: 100%;
 position: absolute;
 top: 0;
-display: flex;
+display: none;
 justify-content: center;
 allign-items: center;
 }
 
 .caixa-popup{
+  text-align: center;
   height: 500px;
-  width: 50%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
+  width: 60%;
+  background-color: #f9cb7a;
+  padding: 1%;
+  margin-top: 10%;
+  border-radius: 2%;
   position: relative;
+  
 }
 
-.caixa-popup h1{
-  font-size: 35px;
-  margin-bottom: 20px;
-  color: black;
-  text-align: center;
+
+
+
+
+.parte-superior {
+  height: 70%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.caixa-popup h2{
-  font-size: 35px;
+.parte-inferior {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  border-radius: 5px;
+}
+
+.titulo-popup{
+  font-size: 20px;
   margin-bottom: 20px;
   color: black;
-  text-align: center;
+  text-align: left;
+  width: 100%;
+  height: 15%;
 }
+
+.input-titulo-popup {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: left;
+  width: 100%;
+  height: 15%;
+}
+
+.input-paragrafo-popup{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: black;
+  text-align: left;
+  width: 100%;
+  height: 40%;
+ }
+
+ .imagem-popup{
+  color: black;
+  height: 30%;
+  width: 100%;
+  text-align: center;
+ }
+
 
 .caixa-popup input{
-  width: 85%;
-  height: 40px;
   margin-bottom: 20px;
   padding: 0 10px;
-  border: 1px solid #black;
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.botao-adiciona-foto{
+  background-color: #8d9a94;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 20px;
+  di
 }
