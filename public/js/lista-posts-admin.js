@@ -1,5 +1,11 @@
 // Aperta botao = Abre o Modal Separado:
+function abirModal(modalCriar){
+  document.getElementById(modalCriar).style.display = "flex";
+}
 
+function fecharModal(modalCriar){
+  document.getElementById(modalCriar).style.display = "none";
+}
 
 // Acordeao tabela
 const accordions = document.querySelectorAll(".accordion");

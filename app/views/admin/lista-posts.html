@@ -18,7 +18,7 @@
 
 
     <div id="div-botao-criar-usuario">
-      <button class="botao-construtivo" id="botao-construtivo">
+      <button onclick=abirModal('modalCriar') class="botao-construtivo" id="botao-construtivo">
         <ion-icon name="add-outline"></ion-icon>
       </button>
     </div>
@@ -147,7 +147,7 @@
 
     <div class="paginacao">
       <a class="paginacao-elemento" href="#">
-        << /a>
+        
           <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
           <a class="paginacao-elemento" href="#">2</a>
           <a class="paginacao-elemento" href="#">3</a>
@@ -160,9 +160,7 @@
 
 
     <!-- pop ups criar post -->
-    <div class="background-popup">
-
-
+    <div class="background-popup" id = "modalCriar">
       <div class="caixa-popup">
 
         <div class="parte-superior">
@@ -192,7 +190,7 @@
 
           <div class=parte-inferior>
             <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-            <button class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+            <button onclick=fecharModal('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
           </div>
         </div>
       </div>
