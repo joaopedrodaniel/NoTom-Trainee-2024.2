@@ -20,11 +20,11 @@ th {
   border-collapse: collapse;
 }
 
-tr.accordion:hover {
+table.responsividade-1 tr.accordion:hover {
   cursor: pointer;
 }
 
-tr.accordion:hover ion-icon {
+tr.accordion:hover .celula-icone ion-icon {
   border-radius: 5px;
   background-color: #8d9a94;
   color: white;
@@ -38,7 +38,7 @@ th {
 
 td {
   border-top: solid 1px #8d9a94;
-  transition: all 0.5s;
+  transition: none;
 }
 th,
 td {
@@ -125,6 +125,12 @@ a {
   color: black;
 }
 
+.div-botoes {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
 .center-div {
   display: flex;
   justify-content: center;
@@ -151,9 +157,18 @@ a {
   display: inline;
 }
 
+.celula-acoes,
 .celula-icone {
   text-align: center;
   vertical-align: middle;
+}
+
+.celula-icone.hidden {
+  display: none;
+}
+
+.celula-acoes.hidden {
+  display: none;
 }
 
 .paginacao {
