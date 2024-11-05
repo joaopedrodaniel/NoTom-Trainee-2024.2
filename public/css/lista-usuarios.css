@@ -145,7 +145,7 @@ a {
   padding: 0px;
 }
 
-.hidden-content button {
+.hidden-content * {
   display: none;
 }
 
@@ -168,6 +168,10 @@ a {
 }
 
 .celula-acoes.hidden {
+  display: none;
+}
+
+table.responsividade-2 .coluna-email {
   display: none;
 }
 
