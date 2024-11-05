@@ -117,3 +117,5 @@ const checarSeTableTransborda = () => {
 window.addEventListener("resize", () => {
   checarSeTableTransborda();
 });
+
+setTimeout(checarSeTableTransborda, 100);
