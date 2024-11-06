@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lista de Posts - Admin</title>
     <link rel="stylesheet" href="../../../public/css/lista-posts-admin.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,11 +19,13 @@
   <body>
     <div class="pagina-lista-usuarios">
       <h1 class="titulo texto-branco">Posts</h1>
+
       <div id="div-botao-criar-usuario">
-        <button class="botao-construtivo">
+        <button onclick="abirModal('modalCriar')" class="botao-construtivo" id="botao-construtivo">
           <ion-icon name="add-outline"></ion-icon>
         </button>
       </div>
+      
       <div class="table-container">
         <table>
           <thead>
@@ -230,6 +232,47 @@
         <a class="paginacao-elemento" href="#">></a>
       </div>
     </div>
+
+        <!-- pop up criar post -->
+        <div class="background-popup" id="modalCriar">
+          <div class="caixa-popup">
+    
+            <div class="parte-superior">
+    
+              <div class="titulo-popup">
+                <h1>Crie sua Publicação</h1>
+              </div>
+              <div class="area-do-input-titulo">
+                <label for="input-titulo">Titulo: </label>
+                <input id="input-titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+              </div>
+              <div class="area-do-input-paragrafo">
+                <label for = "area-de-texto">Conteudo: </label>
+
+                <textarea id = "area-de-texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+              </div>
+    
+  
+              <div class=imagem-popup>
+                <button class="botao-adiciona-foto">
+                  <label for="file" class="local-de-input-foto">
+                    <p>Adicione a Foto de Seu Post Aqui * </p>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+    
+                  </label>
+                  <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+                </button>
+                </form>
+              </div>
+            </div>
+            <div class=parte-inferior>
+              <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+              <button onclick=fecharModal('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
