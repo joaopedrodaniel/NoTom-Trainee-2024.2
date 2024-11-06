@@ -223,6 +223,20 @@ allign-items: center;
   flex-direction: column;
 }
 
+.caixa-popup-visualizar{
+  text-align: center;
+  height: 500px;
+  width: 60%;
+  background-color: #f9cb7a;
+  padding: 1%;
+  margin-top: 10%;
+  border-radius: 2%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
 .parte-superior {
   height: 70%;
   width: 100%;
@@ -247,7 +261,55 @@ allign-items: center;
   font-size: 100%;
 }
 
+.parte-superior-visualizar{
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+  width: 100%;
+  height: 20%;
+}
+
+.parte-superior-visualizar h2{
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+  width: 100%;
+  height: 20%;
+}
+
+
+.parte-media-visualizar {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.parte-media-visualizar p{
+  background-color: #fab235;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 90%;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 4px;
+}
+
+.parte-media-visualizar img{
+  resize: both;
+}
+
 .parte-inferior {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.parte-inferior-editar{
   height: 30%;
   width: 100%;
   display: flex;

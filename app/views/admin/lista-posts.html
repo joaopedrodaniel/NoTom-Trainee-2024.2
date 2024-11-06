@@ -190,15 +190,12 @@
           <div class=imagem-popup>
             <button class="botao-adiciona-foto">
               <label for="file" class="local-de-input-foto">
-                <p>Adicione A Foto de Seu Post Aqui * </p>
+                <p>Adicione a Foto de Seu Post Aqui * </p>
                 <ion-icon name="cloud-upload-outline"></ion-icon>
-                
+
               </label>
               <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
             </button>
-
-            <div>
-            </div>
             </form>
           </div>
         </div>
@@ -248,9 +245,9 @@
         <div class=imagem-popup>
           <button class="botao-adiciona-foto">
             <label for="file" class="local-de-input-foto">
-              <p>Adicione A Foto Nova de Seu Post Aqui * </p>
+              <p>Adicione a Foto Nova de Seu Post Aqui * </p>
               <ion-icon name="cloud-upload-outline"></ion-icon>
-              
+
             </label>
             <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
           </button>
@@ -266,34 +263,43 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
 
   <!-- pop up Visualizar Post -->
 
 
   <div class="background-popup" id="modalVisualizar">
-    <div class="caixa-popup">
-      <div class="parte-superior">
+    <div class="caixa-popup-visualizar">
 
-        <div class="titulo-popup">
-          <h1>Visualizar Post ID#1</h1>
+      <div class="parte-superior-visualizar">
+        <div>
+          <h2>Visualizar Post ID#XXXXXXXX</h2>
+          <br>
+        </div>
+        <div>
+          <h1>Título do post</h1>
         </div>
 
-        <h2 class=input-titulo-popup> Título do post</h2>
-
-        <h2 class=input-paragrafo-popup> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nem fermentum
-          nunc.
-        </h2>
-
-
-        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
-
-
-        <div class=parte-inferior>
-          <button onclick=fecharModal('modalVisualizar') class="botao-destrutivo" id="botao-cancelar">Sair</button>
+        <div>
+          <h2>Data de Publicação: DD/MM/YYYYY</h2>
         </div>
       </div>
+      <div class="parte-media-visualizar">
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.uTPJEPTVL_wSg-CdDls00gHaFL?rs=1&pid=ImgDetMain" alt="Imagem de Teste">
+        </div>
+      <div>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum. </p>
+      </div>
     </div>
+    <div class=parte-inferior-visualizar>
+      <button onclick=fecharModal('modalVisualizar') class="botao-destrutivo" id="botao-cancelar">Sair</button>
+    </div>
+  </div>
   </div>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
