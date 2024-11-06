@@ -190,8 +190,9 @@
           <div class=imagem-popup>
             <button class="botao-adiciona-foto">
               <label for="file" class="local-de-input-foto">
-                <p>Adicione A Foto de Seu Post Aqui *</p>
+                <p>Adicione A Foto de Seu Post Aqui * </p>
                 <ion-icon name="cloud-upload-outline"></ion-icon>
+                
               </label>
               <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
             </button>
@@ -199,103 +200,107 @@
             <div>
             </div>
             </form>
-          </div>
-
-          <div class=parte-inferior>
-            <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-            <button onclick=fecharModal('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- pop up excluir post -->
-    <div class="background-popup" id="modalExcluir">
-      <div class="caixa-popup">
-        <div class="parte-superior">
-          <div class="titulo-popup">
-            <h1>Você Deseja Mesmo Excluir este Post? Esta ação não é reversivel.</h1>
           </div>
         </div>
         <div class=parte-inferior>
-          <button class="botao-construtivo" id="botao-criar-post">Cancelar</button>
-          <button onclick=fecharModal('modalExcluir') class="botao-destrutivo" id="botao-cancelar">Excluir</button>
+          <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+          <button onclick=fecharModal('modalCriar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- pop up excluir post -->
+  <div class="background-popup" id="modalExcluir">
+    <div class="caixa-popup-excluir">
+      <div class="parte-superior-excluir">
+        <div class="titulo-popup-excluir">
+          <h1>Você Deseja Mesmo Excluir este Post? </h1>
+          <h2>Esta ação não é reversivel.</h2>
+        </div>
+      </div>
+      <div class=parte-inferior>
+        <button class="botao-construtivo" id="botao-criar-post">Cancelar</button>
+        <button onclick=fecharModal('modalExcluir') class="botao-destrutivo" id="botao-cancelar">Excluir</button>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- pop up editar post -->
+  <!-- pop up editar post -->
 
-    <div class="background-popup" id="modalEditar">
-      <div class="caixa-popup">
+  <div class="background-popup" id="modalEditar">
+    <div class="caixa-popup">
 
-        <div class="parte-superior">
+      <div class="parte-superior">
 
-          <div class="titulo-popup">
-            <h1>Edite a Publicação ID#1</h1>
+        <div class="titulo-popup">
+          <h1>Edite a Publicação ID#XXXXXXX</h1>
+        </div>
+        <div class="area-do-input-titulo">
+          <input class=input-titulo-popup placeholder="Titulo Novo *" />
+        </div>
+        <div class="area-do-input-paragrafo">
+          <textarea class="input-paragrafo-popup" placeholder=" Conteudo Novo *"></textarea>
+        </div>
+
+
+        <div class=imagem-popup>
+          <button class="botao-adiciona-foto">
+            <label for="file" class="local-de-input-foto">
+              <p>Adicione A Foto Nova de Seu Post Aqui * </p>
+              <ion-icon name="cloud-upload-outline"></ion-icon>
+              
+            </label>
+            <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+          </button>
+
+          <div>
           </div>
+          </form>
+        </div>
+      </div>
+      <div class=parte-inferior>
+        <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+        <button onclick=fecharModal('modalEditar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-          <input class=input-titulo-popup placeholder="Titulo Novo* " />
+  <!-- pop up Visualizar Post -->
 
-          <input class=input-paragrafo-popup placeholder="Conteudo Novo*" />
 
-          <div class=imagem-popup>
+  <div class="background-popup" id="modalVisualizar">
+    <div class="caixa-popup">
+      <div class="parte-superior">
 
-            <button class="botao-adiciona-foto">
-              <label for="file" class="input-file-label">
-                <p>Adicione A Foto Nova Aqui *</p>
-                <ion-icon name="cloud-upload-outline"></ion-icon>
-              </label>
-              <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
-            </button>
+        <div class="titulo-popup">
+          <h1>Visualizar Post ID#1</h1>
+        </div>
 
-            <div>
-            </div>
-            </form>
-          </div>
+        <h2 class=input-titulo-popup> Título do post</h2>
 
-          <div class=parte-inferior>
-            <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-            <button onclick=fecharModal('modalEditar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
-          </div>
+        <h2 class=input-paragrafo-popup> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nem fermentum
+          nunc.
+        </h2>
+
+
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+        <div class=parte-inferior>
+          <button onclick=fecharModal('modalVisualizar') class="botao-destrutivo" id="botao-cancelar">Sair</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- pop up Visualizar Post -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <div class="background-popup" id="modalVisualizar">
-      <div class="caixa-popup">
-        <div class="parte-superior">
-
-          <div class="titulo-popup">
-            <h1>Visualizar Post ID#1</h1>
-          </div>
-
-          <h2 class=input-titulo-popup> Título do post</h2>
-
-          <h2 class=input-paragrafo-popup> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nem fermentum
-            nunc.
-          </h2>
-
-
-          <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
-
-
-          <div class=parte-inferior>
-            <button onclick=fecharModal('modalVisualizar') class="botao-destrutivo" id="botao-cancelar">Sair</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <script src="../../../public/js/lista-posts-admin.js"></script>
+  <script src="../../../public/js/lista-posts-admin.js"></script>
 
 </body>
 
