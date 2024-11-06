@@ -1,23 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3, // Mostra três slides por vez
-        spaceBetween: 45,
+window.onload = function() {
+    const swiper = new Swiper('.postagem', { 
+        slidesPerView: 3,
+        spaceBetween: 30,
         loop: true,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
+
+        breakpoints:{
+            0: {
+                slidesPerView: 1
             },
-            480: { 
-                slidesPerView: 1,
-            }
+            700:{
+                slidesPerView: 2
+            },
+            1080:{
+                slidesPerView: 3
+            },
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
         }
     });
-});
+};
