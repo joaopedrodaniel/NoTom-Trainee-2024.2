@@ -200,3 +200,93 @@ table.responsividade-2 .coluna-email {
 .paginacao-elemento:hover {
   background-color: #8d9a94;
 }
+
+/*Modal*/
+
+.modal {
+  border-radius: 25px;
+  background-color: #f9cb7a;
+  padding: 20px;
+  width: 253.6px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal button {
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-botoes {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.modal .label-com-margem {
+  margin-top: 10px;
+}
+
+.modal .titulo-conteudo-modal {
+  font-weight: 700;
+}
+
+.modal .conteudo-visualizacao {
+  border-radius: 30px;
+  background-color: #f9d28e;
+  padding: 5px;
+}
+
+.modal input {
+  border-radius: 30px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.modal .botao-fechar-modal {
+  background-color: black;
+  color: white;
+}
+
+.modal .botao-fechar-modal:hover {
+  background-color: #8d9a94;
+}
+
+.botoes-com-margem {
+  margin-top: 10px;
+}
+
+.dados-usuario-excluir {
+  text-align: center;
+}
+
+.modal .p-com-margem {
+  margin-top: 5px;
+}
+
+@media (max-width: 300px) {
+  .modal {
+    width: 220px;
+  }
+}

@@ -209,6 +209,86 @@
         <a class="paginacao-elemento" href="#">></a>
       </div>
     </div>
+
+    <!--Modal criação-->
+    <div class="modal">
+      <form action="">
+        <h1>Criar usuário</h1>
+        <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
+        <input id="input-nome" type="text" placeholder="Digite seu nome..." />
+
+        <label class="label-com-margem titulo-conteudo-modal" for="email"
+          >E-mail:</label
+        >
+        <input id="email" type="email" placeholder="exemplo@email.com" />
+
+        <label class="label-com-margem titulo-conteudo-modal" for="senha"
+          >Senha:</label
+        >
+        <input id="senha" type="password" placeholder="Digite sua senha..." />
+        <div class="modal-botoes">
+          <button class="botao-destrutivo">Cancelar</button>
+          <button class="botao-construtivo">Criar</button>
+        </div>
+      </form>
+    </div>
+
+    <!--Modal visualização-->
+    <div class="modal">
+      <form action="">
+        <h1>Visualização</h1>
+        <label class="titulo-conteudo-modal" for="input-nome">ID:</label>
+        <p class="conteudo-visualizacao">12345</p>
+
+        <label class="label-com-margem titulo-conteudo-modal" for="email"
+          >Nome:</label
+        >
+        <p class="conteudo-visualizacao">Fulano da Silva</p>
+
+        <label class="label-com-margem titulo-conteudo-modal" for="senha"
+          >Email:</label
+        >
+        <p class="conteudo-visualizacao">exemplo@email.com</p>
+        <div class="modal-botoes">
+          <button class="botao-fechar-modal">Fechar</button>
+        </div>
+      </form>
+    </div>
+
+    <!--Modal edição-->
+    <div class="modal">
+      <form action="">
+        <h1>Edição</h1>
+        <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
+        <input id="input-nome" type="text" placeholder="Digite seu nome..." />
+
+        <label class="label-com-margem titulo-conteudo-modal" for="email"
+          >E-mail:</label
+        >
+        <input id="email" type="email" placeholder="exemplo@email.com" />
+
+        <label class="label-com-margem titulo-conteudo-modal" for="senha"
+          >Senha:</label
+        >
+        <input id="senha" type="password" placeholder="Digite sua senha..." />
+        <div class="modal-botoes">
+          <button class="botao-destrutivo">Cancelar</button>
+          <button class="botao-construtivo">Salvar</button>
+        </div>
+      </form>
+    </div>
+
+    <!--Modal exclusão-->
+    <div class="modal">
+      <h1>Excluir</h1>
+      <p class="dados-usuario-excluir p-com-margem">ID: 1234</p>
+      <p class="dados-usuario-excluir">Nome: Fulano da Silva</p>
+      <div class="modal-botoes botoes-com-margem">
+        <button class="botao-fechar-modal">Cancelar</button>
+        <button class="botao-destrutivo">Excluir</button>
+      </div>
+    </div>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
