@@ -1,3 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: fit-content;
+}
+
+
 .lobster-regular {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
@@ -5,16 +15,18 @@
 }
 
 .simbolo {
-    color: white;
+    color: black;
     font-family: 'Material Symbols Outlined';
+    font-size: 30px;
 }
 
 body {
     height: 100%;
     background-color: #122620;
+    color: white;
 }
 
-a{
+a {
     font-size: 20px;
 }
 
@@ -102,29 +114,50 @@ a{
     background-color: #F9CB7A;
     padding: 0.5% 6%;
     border: 1px solid #F9CB7A;
-    border-radius: 20px;
+    border-radius: 30px;
     text-decoration: none;
     align-items: center;
-    font-size: 15px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.btnav:hover{
+.btnav:hover {
     height: 50px;
     width: 150px;
     display: flex;
     background-color: #665230;
     padding: 0.5% 6%;
     border: 1px solid #F9CB7A;
-    border-radius: 20px;
+    border-radius: 30px;
     text-decoration: none;
     align-items: center;
-    font-size: 15px;
-    color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .texto-botoes {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: lobster;
+    }
+
+    .simbolo {
+        color: white;
+        font-family: 'Material Symbols Outlined';
+        font-size: 30px;
+    }
+
 }
+
+
 
 .texto-botoes {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: lobster;
 }
 
 .logo {
