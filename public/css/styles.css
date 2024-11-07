@@ -101,6 +101,7 @@ body{
   flex-direction: column;
   font-size: 15px;
   gap: 10px;
+  transition: transform 0.3s;v
 }
 
 .red {
@@ -126,8 +127,8 @@ body{
   background-color:  #F9CB7A;
 }
 
-.red:hover img{
-  transform: scale(1.4);
+.nomeartista:hover {
+  transform: scale(1.2);
 }
 
 
@@ -144,7 +145,7 @@ body{
   position: relative;
   display: block;
   overflow: hidden;
-  width: 80vw;
+  width: 78%;
 }
 
 .swiper-button-next,
