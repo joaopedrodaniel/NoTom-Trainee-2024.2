@@ -9,13 +9,20 @@ body{
     padding: 8%;
     margin-top: -3%;
    }
+
+.titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   
 .titulo h1{
     text-align: center;
     color: #F9CB7A;
     font-family: 'Lobster';
     font-size: 70px;
-    margin-top: 0.4%;
+    margin-top: 3vh;
 }
 
 h1:hover{
@@ -76,7 +83,7 @@ button img{
     margin-left: 5%
 }
 
-@media(max-width:500px){
+@media(max-width:520px){
 
     button{
        padding: 20px;
