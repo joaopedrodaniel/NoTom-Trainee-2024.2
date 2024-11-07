@@ -1,6 +1,5 @@
 body {
     background-color: #122620;
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +10,7 @@ body {
 
 h1 {
     font-family: Lobster;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 100;
     height: fit-content;
     width: fit-content;
@@ -20,6 +19,7 @@ h1 {
 
 h2 {
     font-family: Roboto;
+    font-size: 60px;
     font-weight: 100;
     height: fit-content;
     width: fit-content;
@@ -27,6 +27,7 @@ h2 {
 
 h3 {
     font-family: Lobster;
+    font-size: 30px;
     font-weight: 100;
     height: fit-content;
     width: fit-content;
@@ -57,7 +58,8 @@ h3 {
 }
 
 .btlogin {
-    line-height: 50px;
+    height: 70px;
+    width: 200px;
     background-color: #F9CB7A;
     padding: 0.% 2%;
     border: 1px solid #F9CB7A;
@@ -65,13 +67,12 @@ h3 {
     text-align: center;
     text-decoration: none;
     align-items: center;
-    font-size: larger;
-    margin: 20px;
+    margin: 40px;
 }
 
 .btlogin:hover{
-    line-height: 20px;
-    background-color: #F9CB7A;
+    line-height: 30px;
+    background-color: #665230;
     padding: 0.% 2%;
     border: 1px solid #F9CB7A;
     border-radius: 20px;
@@ -79,20 +80,206 @@ h3 {
     text-decoration: none;
     align-items: center;
     font-size: larger;
-    margin: 20px;
+    color: white;
 }
 
+.texto-botao{
+    font-size: 40px;
+    margin: 0;
+    font-family: lobster;
+}
+
+
 .text-input {
-    line-height: 20px;
+    line-height: 40px;
+    width: 100%;
     background-color: #F9CB7A;
     padding: 0.% 2%;
     border: 1px solid #F9CB7A;
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 35px;
+    text-align: left;
     text-decoration: none;
     align-items: center;
     font-size: larger;
     padding: 10px;
     margin: 5px;
+}
 
+.no-tom{
+    color: #F9CB7A;
+}
+
+img{
+    height: fit-content;
+    width: fit-content;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+  
+
+.area-da-foto {
+  /* (A1) DESIRED DIMENSIONS */
+  width: 300px; height: 240px;
+ 
+  /* (A2) REQUIRED FOR (B2) */
+  position: relative;
+}
+ 
+/* (B) IMAGE */
+.area-da-foto img {
+  /* (B1) CLIP IMAGE */
+  /* RECT(TOP, RIGHT, BOTTOM, LEFT) */
+  clip: rect(0, 300px, 300px, 0);
+ 
+  /* (B2) POSITION IMAGE */
+  position: absolute;
+  top: 100px; left: 250px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    body {
+        background-color: #122620;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+    }
+    
+    h1 {
+        font-family: Lobster;
+        font-size: 30px;
+        font-weight: 100;
+        height: fit-content;
+        width: fit-content;
+        margin: 0;
+    }
+    
+    h2 {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 100;
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    h3 {
+        font-family: Lobster;
+        font-size: 15px;
+        font-weight: 100;
+        height: fit-content;
+        width: fit-content;
+        margin: 0;
+    }
+    
+    .parte-superior {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    
+    }
+    
+    .parte-inferior {
+        gap: 10px;
+    }
+    
+    .coluna-central {
+        width: 100%;
+        height: 15%;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .btlogin {
+        height: 70px;
+        width: 200px;
+        background-color: #F9CB7A;
+        padding: 0.% 2%;
+        border: 1px solid #F9CB7A;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+        margin: 40px;
+    }
+    
+    .btlogin:hover{
+        line-height: 30px;
+        background-color: #665230;
+        padding: 0.% 2%;
+        border: 1px solid #F9CB7A;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+        font-size: larger;
+        color: white;
+    }
+    
+    .texto-botao{
+        font-size: 40px;
+        margin: 0;
+        font-family: lobster;
+    }
+    
+    
+    .text-input {
+        line-height: 40px;
+        width: 100%;
+        background-color: #F9CB7A;
+        padding: 0.% 2%;
+        border: 1px solid #F9CB7A;
+        border-radius: 35px;
+        text-align: left;
+        text-decoration: none;
+        align-items: center;
+        font-size: larger;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .no-tom{
+        color: #F9CB7A;
+    }
+    
+    img{
+        height: fit-content;
+        width: fit-content;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    
+      
+    
+    .area-da-foto {
+      /* (A1) DESIRED DIMENSIONS */
+      width: 120px; height: 140px;
+     
+      /* (A2) REQUIRED FOR (B2) */
+      position: relative;
+    }
+     
+    /* (B) IMAGE */
+    .area-da-foto img {
+      /* (B1) CLIP IMAGE */
+      /* RECT(TOP, RIGHT, BOTTOM, LEFT) */
+      clip: rect(0, 300px, 300px, 0);
+     
+      /* (B2) POSITION IMAGE */
+      position: absolute;
+      top: 70px; left: 85px;
+    }
+    
 }
