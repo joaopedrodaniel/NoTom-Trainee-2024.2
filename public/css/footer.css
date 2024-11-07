@@ -1,0 +1,56 @@
+.lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.simbolo {
+    color: white;
+    font-family: 'Material Symbols Outlined';
+}
+
+body {
+    height: 100%;
+    background-color: #122620;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+}
+
+.coluna-mae {
+
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.subcoluna-esquerda {
+    padding-left: 2%;
+    font-size: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+
+
+.lobster {
+    margin: 0;
+    font-weight: bold;
+    font-family: "Lobster", sans-serif;
+}
