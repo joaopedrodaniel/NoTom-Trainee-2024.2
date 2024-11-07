@@ -101,7 +101,7 @@ body{
   flex-direction: column;
   font-size: 15px;
   gap: 10px;
-  transition: transform 0.3s;v
+  transition: transform 0.3s;
 }
 
 .red {
@@ -120,7 +120,7 @@ body{
   max-width: 100%; 
   height: auto;
   display: block;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 
 .red:hover {
