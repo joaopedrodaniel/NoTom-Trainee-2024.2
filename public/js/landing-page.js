@@ -15,11 +15,11 @@ window.onload = function() {
             510: {
                 slidesPerView: 2
             },
-            700:{
+            900:{
                 slidesPerView: 3
             },
-            1080:{
-                slidesPerView: 3
+            1500:{
+                slidesPerView: 4
             },
         },
 
