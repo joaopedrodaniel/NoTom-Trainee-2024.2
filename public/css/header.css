@@ -241,9 +241,7 @@ no futuro se tivermos tempo*/
         align-items: center;
         justify-content: space-around;
         margin-right: 20px;
-
-
-
+        font-family: lobster;
     }
 
     .metade-direita-alternativa {
@@ -252,10 +250,11 @@ no futuro se tivermos tempo*/
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
-        font-family: lobster;
         margin-left: 45px;
+        align-content: center;
+        flex-direction: row;
     }
 
     .header-alternativo {
@@ -272,7 +271,7 @@ no futuro se tivermos tempo*/
     .area-cinza {
         display: flex;
         flex: column;
-        background-color: gray;
+        background-color: black;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -287,6 +286,9 @@ no futuro se tivermos tempo*/
         justify-content: center;
         align-content: stretch;
         flex-wrap: wrap;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-radius: 1px;
     }
 
     .btnav {
@@ -310,20 +312,20 @@ no futuro se tivermos tempo*/
 
 
     .btnav:hover {
-        height: 50px;
-        width: 150px;
-        display: flex;
-        background-color: black;
-        text-decoration: none;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-evenly;
-        font-size: 100px;
+        .btnav {
+            height: 50px;
+            width: 150px;
+            display: flex;
+            background-color: black;
+            text-decoration: none;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size: 100px;
+        }
 
         .simbolo {
-            color: white;
-            font-family: 'Material Symbols Outlined';
-            font-size: 30px;
+            color: gray;
         }
 
     }
@@ -331,6 +333,4 @@ no futuro se tivermos tempo*/
     .texto-botoes {
         color: white;
     }
-
-
 }
