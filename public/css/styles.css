@@ -24,7 +24,7 @@ body{
   overflow: hidden;
   background-size: cover;
   mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 50%);
-  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 50%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 55%);
 }
 
 .imagemsecundaria{
@@ -56,7 +56,7 @@ body{
    font-size: 25px;
 }
 
-.containerimagem {
+.marquee-container {
   text-align: center;
   position: relative; 
   margin-top: -1%;
@@ -65,26 +65,27 @@ body{
 }
 
 
-.containerimagem h2{
+.marquee-container h2{
   font-size: 30px;
 }
 
-.containerimagem h3 {
+.marquee-container h3 {
   text-align: center;
   color: #F9CB7A;
   margin-top: 50px;
 }
 
-.centro {
+.marquee {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; 
   margin-top: 10%;
   position: relative;
+  animation: scroll 20s linear infinite;
 }
 
-.centro::after{
+.marquee::after{
   content: '';
   position: absolute;
   top: 0;
@@ -279,15 +280,15 @@ button:hover{
     width: 400px;
   }
 
- .containerimagem h2{
+ .marquee-container h2{
   margin-top: -15%;
  }
 
- .containerimagem h3{
+ .marquee-container h3{
   margin-top: 5%;
  }
 
- .containerimagem{
+ .marquee-container{
   margin-top: 25%;
  }
 
@@ -317,4 +318,12 @@ button:hover{
   display: none;
  }
 
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Ponto inicial */
+  }
+  100% {
+    transform: translateX(-100%); /* Ponto final que faz com que reinicie */
+  }
 }
