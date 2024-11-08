@@ -82,7 +82,7 @@ body{
   flex-wrap: wrap; 
   margin-top: 10%;
   position: relative;
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .marquee::after{
