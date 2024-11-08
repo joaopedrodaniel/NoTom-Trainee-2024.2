@@ -23,8 +23,8 @@ body{
   margin-right: 0;
   overflow: hidden;
   background-size: cover;
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 55%);
-  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 55%);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 50%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 50%);
 }
 
 .imagemsecundaria{
@@ -179,7 +179,7 @@ body{
 .swiper-slide {
   background-color: rgb(255, 253, 223);
   border-radius: 20px;
-  max-width: 350px;
+  max-width: 400px;
   text-align: center;
   display: flex;
   padding: 1%;
@@ -280,7 +280,7 @@ button:hover{
   }
 
  .containerimagem h2{
-  margin-top: 14%;
+  margin-top: -15%;
  }
 
  .containerimagem h3{
@@ -301,6 +301,17 @@ button:hover{
  width: 100%;
  height: auto;
  }
+
+ .imagemsecundaria{
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  background-size: cover;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0) 50%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0) 50%);
+}
 
  .imagemprincipal{
   display: none;
