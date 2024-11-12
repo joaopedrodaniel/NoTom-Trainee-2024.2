@@ -71,9 +71,16 @@
             </tr>
             <tr class="hidden-content">
               <td colspan="4">
-                <button><ion-icon name="eye-outline"></ion-icon></button>
-                <button><ion-icon name="create-outline"></ion-icon></button>
-                <button class="botao-destrutivo">
+                <button onclick="abrirModal('visualizacao')">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+                <button onclick="abrirModal('edicao')">
+                  <ion-icon name="create-outline"></ion-icon>
+                </button>
+                <button
+                  class="botao-destrutivo"
+                  onclick="abrirModal('excluir')"
+                >
                   <ion-icon name="trash-outline"></ion-icon>
                 </button>
               </td>
