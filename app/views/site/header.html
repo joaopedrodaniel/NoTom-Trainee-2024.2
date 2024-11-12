@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- BEAUTIFY = SHIFT ALT F-->
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/header.css">
     <title>Header</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,79 +14,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
-<header class="header">
-    <div class="metade-direita">
-        <div class="coluna-mae">
-            <button class="btnav" href="">
-                <div><span class="simbolo">Home</span></div>
-                <div><a class="texto-botoes"> Pagina Inicial</a></div>
-            </button>
-        </div>
-
-        <div class="coluna-mae">
-            <button class="btnav" href=>
-                <div><span class="simbolo">list</span></div>
-                <div><a class="texto-botoes"> Publicações</a></div>
-            </button>
-        </div>
-
-        <div class="coluna-mae">
-            <button class="btnav" href=>
-                <div><span class="simbolo">login</span></div>
-                <div><a class="texto-botoes"> Log In</a></div>
-            </button>
-        </div>
-    </div>
-    <div class="metade-esquerda">
-        <div class="area-da-foto">
-            <img class="logo" src="/public/assets/logo-sem-nome.png" alt="logo-no-tom">
-        </div>
-    </div>
-
-    <div class="header-alternativo">
-        <div class="metade-esquerda-alternativa">
-            <h1>NoTom</h1>
-        </div>
-        <div class = "metade-direita-alternativa">
-            <button onclick="abrirModal('area-cinza')" id="area-cinza" class="btnav">
-            <div class="metade-esquerda-alternativa"><span class="simbolo">menu</span></div>
-            </button>
-    </div>
-    </div>
-</header>
-
-
-
-
 <body>
-    <main>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-lista">
+                <ul>
+                    <li class="nav-item">
+                        <div><span class="simbolo">home</span></div><a href="#" class="nav-link">Pagina Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <div><span class="simbolo">list</span></div><a href="#" class="nav-link">Publicações</a>
+                    </li>
+                    <li class="nav-item">
+                        <div><span class="simbolo">login</span></div><a href="#" class="nav-link"> Login</a>
+                    </li>
+                </ul>
+                <div class="area-da-foto">
+                <img class="logo" src="/public/assets/logo-sem-nome.png" alt="logo-no-tom">
+            </div>
+            </div>
+            
+            <div class="menu-mobile-logo">
+                <P>NoTom</p>
+            </div>
+            <div class="menu-mobile-icone">
+                <button onclick="menuShow()">menu</button>
+            </div>
+        </nav>
 
-        <div class="area-cinza" id="area-cinza">
-            <div class="area-de-selecionar-cinza" >
-                <div><span class="simbolo">Home</span></div>
-                <div><a class="texto-botoes"> Pagina Inicial</a></div>
-            </div>
-            <div class="area-de-selecionar-cinza">
-                <div><span class="simbolo">list</span></div>
-                <div><a class="texto-botoes"> Publicações</a></div>
-            </div>
+        <div class="menu-mobile">
+            <ul>
+                <li class="nav-item">
+                    <div class="alinhador-li">
+                        <span class="simbolo">Home</span><a href="#" class="nav-link">Pagina Inicial</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="alinhador-li">
+                        <span class="simbolo">list</span><a href="#" class="nav-link">Publicações</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="alinhador-li">
+                        <span class="simbolo">login</span><a href="#" class="nav-link"> Login</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-            <div class="area-de-selecionar-cinza">
-                <div><span class="simbolo">login</span></div>
-                <div><a class="texto-botoes"> Log In</a></div>
-            </div>
-        </div>
-        <div>
-            <h1>
-                <p style="font-size: 100px;">
-                    Lorem ipsum dolor sittetur adipiscing elit.
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliq amet, consecua.
-                </p>
-            </h1>
-        </div>
-    </main>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="../../../public/js/header.js"></script>
 </body>
 
