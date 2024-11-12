@@ -71,13 +71,13 @@
           </tr>
           <tr class="hidden-content">
             <td colspan="5">
-              <button><ion-icon name="eye-outline"></ion-icon></button>
+              <button onclick="abirModal('modalVisualizar')"><ion-icon name="eye-outline"></ion-icon></button>
 
               <button onclick="abirModal('modalEditar')">
                 <ion-icon name="create-outline"></ion-icon>
               </button>
 
-              <button class="botao-destrutivo">
+              <button onclick="abirModal('modalExcluir')" class="botao-destrutivo">
                 <ion-icon name="trash-outline"></ion-icon>
               </button>
             </td>
@@ -288,8 +288,8 @@
         </div>
       </div>
       <div class=parte-inferior>
-        <button onclick=fecharModal('modalExcluir') class="botao-construtivo" id="botao-cancelar">Cancelar</button>
-        <button onclick=fecharModal('modalExcluir') class="botao-destrutivo" id="botao-cancelar">Excluir</button>
+        <button onclick="fecharModal('modalExcluir')" class="botao-construtivo" id="botao-cancelar">Cancelar</button>
+        <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" id="botao-cancelar">Excluir</button>
       </div>
     </div>
   </div>
@@ -341,7 +341,7 @@
         </div>
         <div class=parte-inferior>
           <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-          <button onclick=fecharModal('modalEditar') class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+          <button onclick="fecharModal('modalEditar')" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
         </div>
       </div>
     </div>

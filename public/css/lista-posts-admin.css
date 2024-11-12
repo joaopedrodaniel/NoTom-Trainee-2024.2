@@ -333,6 +333,10 @@ font-family: lobster;
   height: 20%;
 }
 
+button.botao-construtivo {
+  background-color: lightgreen;
+  font-size: 40px;
+}
 
 .parte-media-visualizar {
   height: 65%;
@@ -538,7 +542,7 @@ font-family: lobster;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: %;
+    gap: 10px;
   }
 
   .parte-superior-excluir {
@@ -547,8 +551,22 @@ font-family: lobster;
   }
 
   .caixa-popup-excluir {
-    width: 90%;
-    height: 70%;
+    text-align: center;
+    height: fit-content;
+    width: 500px;
+    background-color: #f9cb7a;
+    padding: 1%;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 1);
+    gap: 20px;
   }
 
   .parte-media-visualizar {
@@ -586,6 +604,12 @@ font-family: lobster;
     text-align: center;
   }
 
+  .parte-inferior button {
+    height: 50%;
+    width: 50%;
+    font-size: 30px;
+  }
+  
   .area-do-input-paragrafo {
     width: 100%;
     height:200px;
