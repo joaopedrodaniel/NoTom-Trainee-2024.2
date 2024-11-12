@@ -3,28 +3,22 @@
     margin: 0;
 }
 
-html {
-    width: fit-content;
-}
 
-body {
-    height: 100%;
-    background-color: #122620;
-    color: white;
-}
 
 .footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 100%;
-    height: 130px;
+    height: fit-content;
     background-color: black;
     color: white;
     position: fixed;
     left: 0;
     bottom: 0;
     flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .coluna-mae-centro {
@@ -45,7 +39,7 @@ body {
 
 .coluna-mae-centro h2 {
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .coluna-mae-direita {
@@ -66,14 +60,13 @@ body {
 }
 
 .coluna-mae-esquerda {
-
     width: 33%;
     height: 100%;
     padding: 5px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .coluna-mae-esquerda li{
@@ -131,23 +124,18 @@ body {
 
 
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 990px) {
 
     .coluna-mae-esquerda {
         display: none;
     }
 
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: nowrap;
+    .html{
         width: 100%;
-        height: 100px;
-        background-color: black;
-        color: white;
-        position: relative;
-        flex-direction: row;
+    }
+
+    .footer {
+
 
     }
 
@@ -171,7 +159,7 @@ body {
     .coluna-mae-centro h2 {
         margin-top: 0px;
         margin-bottom: 32px;
-        font-size: 13px
+        font-size: 19px
     }
 
     .coluna-mae-centro h3 {
@@ -192,6 +180,18 @@ body {
         font-size: 15px;
         margin-right: 0;
     }
+}
+
+@media only screen and (max-width: 389px) {
+
+    h1{
+        font-size: 20px;
+    }
 
 
+    
+    .coluna-mae-centro h3 {
+        margin-top: 0px;
+        font-size: 10px
+    }
 }
