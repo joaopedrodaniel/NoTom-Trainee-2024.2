@@ -5,7 +5,6 @@
 
 body {
     height: 100%;
-    background-color: #122620;
     color: white;
 }
 
@@ -35,7 +34,7 @@ header {
 
 .nav-item {
     height: 30px;
-    width: 40px;
+    width: 55px;
     display: flex;
     background-color: #F9CB7A;
     padding: 0.5% 6%;
@@ -70,7 +69,7 @@ header {
 
 .nav-link {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     color: #000000;
     font-weight: 100;
     font-family: lobster;
@@ -89,40 +88,44 @@ header {
     display: none;
 }
 
-img {
-    height: 140px;
-    width: 140px;
-}
 
 
 .area-da-foto {
-    width: 140px;
-    height: 140px;
-    position: relative;
+    height: 70px;
     margin-right: 0px;
+    padding-right: 8%;
 }
 
 
 .area-da-foto img {
-    position: absolute;
-    top: 18px;
-    left: 400px;
+    height: 70px;
 }
 
-@media screen and (max-width: 730px) {
-    .nav-bar {    
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    height: 50px;
-    align-items: center;
+
+@media screen and (max-width: 1010px) {
+
+    .nav-item {
+        height: 40px;
+        width: 58px;
     }
 
-    .area-da-foto{
+}
+
+
+@media screen and (max-width: 700px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        height: 50px;
+        align-items: center;
+    }
+
+    .area-da-foto {
         display: none;
     }
 
-    .nav-lista{
+    .nav-lista {
         display: none;
     }
 
@@ -148,7 +151,7 @@ img {
 
     .nav-link {
         text-decoration: none;
-        font-size: 8px;
+        font-size: 15px;
         color: #fff;
         font-weight: 100;
         font-family: lobster;
@@ -172,7 +175,7 @@ img {
         color: white;
         font-family: lobster;
         padding: 40px;
-        font-size:40px;
+        font-size: 40px;
     }
 
     .menu-mobile-icone button {
@@ -190,6 +193,10 @@ img {
         text-align: center;
         padding-bottom: 2px;
         align-items: center;
+    }
+
+    .menu-mobile li {
+        width: 100%;
     }
 
     .menu-mobile .nav-item {
