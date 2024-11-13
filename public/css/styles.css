@@ -59,9 +59,6 @@ body{
 .slide-container {
   text-align: center;
   position: relative; 
-  margin-top: -1%;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 
@@ -72,17 +69,19 @@ body{
 .slide-container h3 {
   text-align: center;
   color: #F9CB7A;
-  margin-top: 50px;
+  margin-top: 45px;
+  margin-bottom: -8%;
 }
 
 .slide {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center; 
   margin-top: 10%;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
+  height: 320px;
 }
 
 
@@ -96,6 +95,7 @@ body{
   animation: scroll 5s linear infinite;
   
 }
+
 
 .carrossel-infinito::after{
   content: '';
@@ -331,13 +331,6 @@ button:hover{
   display: none;
  }
 
- .slide {
-  animation: none; 
-  overflow-x: auto; 
-  max-width: 100vw;
-  white-space: nowrap;
-  display: flex;
-}
 
 .slide-container {
   margin-left: 0;
