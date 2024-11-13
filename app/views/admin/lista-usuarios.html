@@ -17,10 +17,11 @@
     />
   </head>
   <body>
+    <div class="tela"></div>
     <div class="pagina-lista-usuarios">
       <h1 class="titulo texto-branco">Usuários</h1>
       <div id="div-botao-criar-usuario">
-        <button class="botao-construtivo">
+        <button class="botao-construtivo" onclick="abrirModal('criacao')">
           <ion-icon name="add-outline"></ion-icon>
         </button>
       </div>
@@ -50,9 +51,16 @@
               </td>
               <td class="celula-acoes">
                 <div class="div-botoes">
-                  <button><ion-icon name="eye-outline"></ion-icon></button>
-                  <button><ion-icon name="create-outline"></ion-icon></button>
-                  <button class="botao-destrutivo">
+                  <button onclick="abrirModal('visualizacao')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+                  <button onclick="abrirModal('edicao')">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button
+                    class="botao-destrutivo"
+                    onclick="abrirModal('excluir')"
+                  >
                     <ion-icon name="trash-outline"></ion-icon>
                   </button>
                 </div>
@@ -63,9 +71,16 @@
             </tr>
             <tr class="hidden-content">
               <td colspan="4">
-                <button><ion-icon name="eye-outline"></ion-icon></button>
-                <button><ion-icon name="create-outline"></ion-icon></button>
-                <button class="botao-destrutivo">
+                <button onclick="abrirModal('visualizacao')">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+                <button onclick="abrirModal('edicao')">
+                  <ion-icon name="create-outline"></ion-icon>
+                </button>
+                <button
+                  class="botao-destrutivo"
+                  onclick="abrirModal('excluir')"
+                >
                   <ion-icon name="trash-outline"></ion-icon>
                 </button>
               </td>
@@ -74,18 +89,25 @@
               <td>2</td>
               <td>Fulano da Silva</td>
               <td class="coluna-email">email@email.com</td>
-              <td class="celula-acoes">
-                <div class="div-botoes">
-                  <button><ion-icon name="eye-outline"></ion-icon></button>
-                  <button><ion-icon name="create-outline"></ion-icon></button>
-                  <button class="botao-destrutivo">
-                    <ion-icon name="trash-outline"></ion-icon>
-                  </button>
-                </div>
-              </td>
               <td class="celula-icone hidden">
                 <div class="center-div">
                   <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </td>
+              <td class="celula-acoes">
+                <div class="div-botoes">
+                  <button onclick="abrirModal('visualizacao')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+                  <button onclick="abrirModal('edicao')">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button
+                    class="botao-destrutivo"
+                    onclick="abrirModal('excluir')"
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </button>
                 </div>
               </td>
             </tr>
@@ -105,18 +127,25 @@
               <td>3</td>
               <td>Fulano da Silva</td>
               <td class="coluna-email">email@email.com</td>
-              <td class="celula-acoes">
-                <div class="div-botoes">
-                  <button><ion-icon name="eye-outline"></ion-icon></button>
-                  <button><ion-icon name="create-outline"></ion-icon></button>
-                  <button class="botao-destrutivo">
-                    <ion-icon name="trash-outline"></ion-icon>
-                  </button>
-                </div>
-              </td>
               <td class="celula-icone hidden">
                 <div class="center-div">
                   <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </td>
+              <td class="celula-acoes">
+                <div class="div-botoes">
+                  <button onclick="abrirModal('visualizacao')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+                  <button onclick="abrirModal('edicao')">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button
+                    class="botao-destrutivo"
+                    onclick="abrirModal('excluir')"
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </button>
                 </div>
               </td>
             </tr>
@@ -136,18 +165,25 @@
               <td>4</td>
               <td>Fulano da Silva</td>
               <td class="coluna-email">email@email.com</td>
-              <td class="celula-acoes">
-                <div class="div-botoes">
-                  <button><ion-icon name="eye-outline"></ion-icon></button>
-                  <button><ion-icon name="create-outline"></ion-icon></button>
-                  <button class="botao-destrutivo">
-                    <ion-icon name="trash-outline"></ion-icon>
-                  </button>
-                </div>
-              </td>
               <td class="celula-icone hidden">
                 <div class="center-div">
                   <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </td>
+              <td class="celula-acoes">
+                <div class="div-botoes">
+                  <button onclick="abrirModal('visualizacao')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+                  <button onclick="abrirModal('edicao')">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button
+                    class="botao-destrutivo"
+                    onclick="abrirModal('excluir')"
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </button>
                 </div>
               </td>
             </tr>
@@ -164,21 +200,28 @@
               </td>
             </tr>
             <tr class="accordion">
-              <td>5</td>
+              <td>1</td>
               <td>Fulano da Silva</td>
               <td class="coluna-email">email@email.com</td>
-              <td class="celula-acoes">
-                <div class="div-botoes">
-                  <button><ion-icon name="eye-outline"></ion-icon></button>
-                  <button><ion-icon name="create-outline"></ion-icon></button>
-                  <button class="botao-destrutivo">
-                    <ion-icon name="trash-outline"></ion-icon>
-                  </button>
-                </div>
-              </td>
               <td class="celula-icone hidden">
                 <div class="center-div">
                   <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+              </td>
+              <td class="celula-acoes">
+                <div class="div-botoes">
+                  <button onclick="abrirModal('visualizacao')">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+                  <button onclick="abrirModal('edicao')">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </button>
+                  <button
+                    class="botao-destrutivo"
+                    onclick="abrirModal('excluir')"
+                  >
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </button>
                 </div>
               </td>
             </tr>
@@ -211,7 +254,7 @@
     </div>
 
     <!--Modal criação-->
-    <div class="modal">
+    <div class="modal" id="criacao">
       <form action="">
         <h1>Criar usuário</h1>
         <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
@@ -227,14 +270,16 @@
         >
         <input id="senha" type="password" placeholder="Digite sua senha..." />
         <div class="modal-botoes">
-          <button class="botao-destrutivo">Cancelar</button>
+          <button class="botao-destrutivo" onclick="fecharModal('criacao')">
+            Cancelar
+          </button>
           <button class="botao-construtivo">Criar</button>
         </div>
       </form>
     </div>
 
     <!--Modal visualização-->
-    <div class="modal">
+    <div class="modal" id="visualizacao">
       <h1>Visualização</h1>
       <label class="titulo-conteudo-modal" for="input-nome">ID:</label>
       <p class="conteudo-visualizacao">12345</p>
@@ -249,12 +294,17 @@
       >
       <p class="conteudo-visualizacao">exemplo@email.com</p>
       <div class="modal-botoes">
-        <button class="botao-fechar-modal">Fechar</button>
+        <button
+          class="botao-fechar-modal"
+          onclick="fecharModal('visualizacao')"
+        >
+          Fechar
+        </button>
       </div>
     </div>
 
     <!--Modal edição-->
-    <div class="modal">
+    <div class="modal" id="edicao">
       <form action="">
         <h1>Edição</h1>
         <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
@@ -270,20 +320,24 @@
         >
         <input id="senha" type="password" placeholder="Digite sua senha..." />
         <div class="modal-botoes">
-          <button class="botao-destrutivo">Cancelar</button>
+          <button class="botao-destrutivo" onclick="fecharModal('edicao')">
+            Cancelar
+          </button>
           <button class="botao-construtivo">Salvar</button>
         </div>
       </form>
     </div>
 
     <!--Modal exclusão-->
-    <div class="modal">
+    <div class="modal" id="excluir">
       <form action="">
         <h1>Excluir</h1>
         <p class="dados-usuario-excluir p-com-margem">ID: 1234</p>
         <p class="dados-usuario-excluir">Nome: Fulano da Silva</p>
         <div class="modal-botoes botoes-com-margem">
-          <button class="botao-fechar-modal">Cancelar</button>
+          <button class="botao-fechar-modal" onclick="fecharModal('excluir')">
+            Cancelar
+          </button>
           <button class="botao-destrutivo">Excluir</button>
         </div>
       </form>
@@ -298,5 +352,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../../../public/js/lista-usuarios.js"></script>
+    <script src="../../../public/js/modals.js"></script>
   </body>
 </html>
