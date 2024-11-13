@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Posts - Admin</title>
+  <link rel="stylesheet" href="../../../public/css/lista-posts-admin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="pagina-lista-usuarios">
+    <h1 class="titulo texto-branco">Posts</h1>
+
+    <div id="div-botao-criar-usuario">
+      <button onclick="abirModal('modalCriar')" class="botao-construtivo" id="botao-construtivo">
+        <ion-icon name="add-outline"></ion-icon>
+      </button>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th class="coluna-responsiva">Autor</th>
+            <th class="coluna-responsiva">Data</th>
+            <th>
+              <div class="center-div">
+                <ion-icon name="settings-outline"></ion-icon>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="accordion">
+            <td>1</td>
+            <td>Título do post</td>
+            <td class="coluna-responsiva">Fulano da Silva</td>
+            <td class="coluna-responsiva">27/10/2024</td>
+            <td class="celula-icone hidden">
+              <div class="center-div">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </td>
+            <td class="celula-acoes">
+              <div class="div-botoes">
+                <button onclick="abirModal('modalVisualizar')"><ion-icon name="eye-outline"></ion-icon></button>
+
+                <button onclick="abirModal('modalEditar')">
+                  <ion-icon name="create-outline"></ion-icon>
+                </button>
+
+                <button onclick="abirModal('modalExcluir')" class="botao-destrutivo">
+                  <ion-icon name="trash-outline"></ion-icon>
+                </button>
+
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Autor: Fulano da Silva</td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Data: 27/10/2024</td>
+          </tr>
+          <tr class="hidden-content">
+            <td colspan="5">
+              <button onclick="abirModal('modalVisualizar')"><ion-icon name="eye-outline"></ion-icon></button>
+
+              <button onclick="abirModal('modalEditar')">
+                <ion-icon name="create-outline"></ion-icon>
+              </button>
+
+              <button onclick="abirModal('modalExcluir')" class="botao-destrutivo">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </td>
+          </tr>
+          <tr class="accordion">
+            <td>2</td>
+            <td>Título do post</td>
+            <td class="coluna-responsiva">Fulano da Silva</td>
+            <td class="coluna-responsiva">28/10/2024</td>
+            <td class="celula-icone hidden">
+              <div class="center-div">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </td>
+            <td class="celula-acoes">
+              <div class="div-botoes">
+                <button><ion-icon name="eye-outline"></ion-icon></button>
+                <button><ion-icon name="create-outline"></ion-icon></button>
+                <button class="botao-destrutivo">
+                  <ion-icon name="trash-outline"></ion-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Autor: Fulano da Silva</td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Data: 28/10/2024</td>
+          </tr>
+          <tr class="hidden-content">
+            <td colspan="5">
+              <button><ion-icon name="eye-outline"></ion-icon></button>
+              <button><ion-icon name="create-outline"></ion-icon></button>
+              <button class="botao-destrutivo">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </td>
+          </tr>
+          <tr class="accordion">
+            <td>3</td>
+            <td>Título do post</td>
+            <td class="coluna-responsiva">Fulano da Silva</td>
+            <td class="coluna-responsiva">28/10/2024</td>
+            <td class="celula-icone hidden">
+              <div class="center-div">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </td>
+            <td class="celula-acoes">
+              <div class="div-botoes">
+                <button><ion-icon name="eye-outline"></ion-icon></button>
+                <button><ion-icon name="create-outline"></ion-icon></button>
+                <button class="botao-destrutivo">
+                  <ion-icon name="trash-outline"></ion-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Autor: Fulano da Silva</td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Data: 28/10/2024</td>
+          </tr>
+          <tr class="hidden-content">
+            <td colspan="5">
+              <button><ion-icon name="eye-outline"></ion-icon></button>
+              <button><ion-icon name="create-outline"></ion-icon></button>
+              <button class="botao-destrutivo">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </td>
+          </tr>
+          <tr class="accordion">
+            <td>4</td>
+            <td>Título do post</td>
+            <td class="coluna-responsiva">Fulano da Silva</td>
+            <td class="coluna-responsiva">29/10/2024</td>
+            <td class="celula-icone hidden">
+              <div class="center-div">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </td>
+            <td class="celula-acoes">
+              <div class="div-botoes">
+                <button><ion-icon name="eye-outline"></ion-icon></button>
+                <button><ion-icon name="create-outline"></ion-icon></button>
+                <button class="botao-destrutivo">
+                  <ion-icon name="trash-outline"></ion-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Autor: Fulano da Silva</td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Data: 29/10/2024</td>
+          </tr>
+          <tr class="hidden-content">
+            <td colspan="5">
+              <button><ion-icon name="eye-outline"></ion-icon></button>
+              <button><ion-icon name="create-outline"></ion-icon></button>
+              <button class="botao-destrutivo">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </td>
+          </tr>
+          <tr class="accordion">
+            <td>5</td>
+            <td>Título do post</td>
+            <td class="coluna-responsiva">Fulano da Silva</td>
+            <td class="coluna-responsiva">30/10/2024</td>
+            <td class="celula-icone hidden">
+              <div class="center-div">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </td>
+            <td class="celula-acoes">
+              <div class="div-botoes">
+                <button><ion-icon name="eye-outline"></ion-icon></button>
+                <button><ion-icon name="create-outline"></ion-icon></button>
+                <button class="botao-destrutivo">
+                  <ion-icon name="trash-outline"></ion-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Autor: Fulano da Silva</td>
+          </tr>
+          <tr class="hidden-content linha-responsiva">
+            <td colspan="3">Data: 30/10/2024</td>
+          </tr>
+          <tr class="hidden-content">
+            <td colspan="5">
+              <button><ion-icon name="eye-outline"></ion-icon></button>
+              <button><ion-icon name="create-outline"></ion-icon></button>
+              <button class="botao-destrutivo">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="paginacao">
+      <a class="paginacao-elemento" href="#"></a>
+      <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
+      <a class="paginacao-elemento" href="#">2</a>
+      <a class="paginacao-elemento" href="#">3</a>
+      <div>...</div>
+      <a class="paginacao-elemento" href="#">9</a>
+      <a class="paginacao-elemento" href="#">10</a>
+      <a class="paginacao-elemento" href="#">></a>
+    </div>
+  </div>
+
+  <!-- pop up criar post -->
+  <div class="background-popup" id="modalCriar">
+    <div class="caixa-popup">
+
+      <div class="parte-superior">
+
+        <div class="titulo-popup">
+          <h1>Criar Publicação</h1>
+        </div>
+        <div class="area-do-input-titulo">
+          <label for="input-titulo">Titulo: </label>
+          <input id="input-titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+        </div>
+        <div class="area-do-input-paragrafo">
+          <label for="area-de-texto">Conteudo: </label>
+
+          <textarea id="area-de-texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+        </div>
+
+
+        <div class=imagem-popup>
+          <button class="botao-adiciona-foto">
+            <label for="file" class="local-de-input-foto">
+              <p>Adicionar Foto * </p>
+              <ion-icon name="cloud-upload-outline"></ion-icon>
+
+            </label>
+            <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+          </button>
+          </form>
+        </div>
+      </div>
+      <div class=parte-inferior>
+        <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+        <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- pop up excluir post -->
+  <div class="background-popup" id="modalExcluir">
+    <div class="caixa-popup-excluir">
+      <div class="parte-superior-excluir">
+        <div class="titulo-popup-excluir">
+          <h1>Você Deseja Mesmo Excluir este Post? </h1>
+          <h2>Esta ação não é reversivel.</h2>
+        </div>
+      </div>
+      <div class=parte-inferior>
+        <button onclick="fecharModal('modalExcluir')" class="botao-construtivo" id="botao-cancelar">Cancelar</button>
+        <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" id="botao-cancelar">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- pop up editar post -->
+
+  <div class="background-popup" id="modalEditar">
+    <div class="caixa-popup">
+
+      <div class="parte-superior">
+
+        <div class="titulo-popup">
+          <h1>Edite a Publicação</h1>
+        </div>
+        <div class="area-do-input-titulo">
+          <label for="input-titulo">Titulo: </label>
+          <input id="input-titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+        </div>
+        <div class="area-do-input-paragrafo">
+          <label for="input-titulo">Digite o Texto Novo: </label>
+          <textarea class="input-paragrafo-popup" placeholder=" Conteudo Novo *"></textarea>
+        </div>
+
+        <div class="autor-e-data">
+          <div>
+            <h3>Autor:</h3>
+            <h2>Fulano de Tal</h2>
+          </div>
+          <div>
+            <h3>Data do Post:</h3>
+            <h2>DD/MM/YYYY</h2>
+          </div>
+        </div>
+        
+          <div class=imagem-popup>
+            <button class="botao-adiciona-foto">
+              <label for="file" class="local-de-input-foto">
+                <p>Adicionar Foto Nova * </p>
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+
+              </label>
+              <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+            </button>
+
+            <div>
+            </div>
+            </form>
+          </div>
+        </div>
+        <div class=parte-inferior>
+          <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+          <button onclick="fecharModal('modalEditar')" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop up Visualizar Post -->
+
+
+    <div class="background-popup" id="modalVisualizar">
+      <div class="caixa-popup-visualizar">
+
+        <div class="parte-superior-visualizar">
+          <div>
+            <h2>Visualizar Post ID#XXXXXXXX</h2>
+            <br>
+          </div>
+          <div>
+            <h1>Título do post</h1>
+          </div>
+        </div>
+        <div class="parte-media-visualizar">
+          <div class = "teste2">
+          <div class="area-da-foto-visualizar">
+            <img src="https://th.bing.com/th/id/OIP.uTPJEPTVL_wSg-CdDls00gHaFL?rs=1&pid=ImgDetMain"
+              alt="Imagem de Teste">
+          </div>
+          <div class=teste>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim
+              id est laborum. </p>
+              </div>
+          </div>
+                  <div class="autor-e-data-visualizar ">
+          <div>
+            <h3>Autor:</h3>
+            <h2>Fulano de Tal</h2>
+          </div>
+          <div>
+            <h3>Data do Post:</h3>
+            <h2>DD/MM/YYYY</h2>
+          </div>
+        </div>
+        </div>
+
+        <div class=parte-inferior-visualizar>
+          <button onclick=fecharModal('modalVisualizar') class="botao-destrutivo" id="botao-cancelar">Sair</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../../../public/js/lista-posts-admin.js"></script>
+</body>
+
+</html>
