@@ -92,7 +92,7 @@ body{
   margin-top: 1vh;
   position: relative;  
   white-space: nowrap;
-  animation: scroll 5s linear infinite;
+  animation: scroll 15s linear infinite;
   
 }
 
