@@ -126,3 +126,13 @@ window.addEventListener("resize", () => {
 });
 
 setTimeout(checarSeTableTransborda, 100);
+
+//Java Script Lucas
+
+function abirModal(idModal){
+  document.getElementById(idModal).style.display = "flex";
+}
+
+function fecharModal(idModal){
+  document.getElementById(idModal).style.display = "none";
+}
