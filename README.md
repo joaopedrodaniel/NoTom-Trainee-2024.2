@@ -1,8 +1,8 @@
 # **Trainee 2024.2**
 
-# **Nome do seu blog**
+# **No Tom**
 
-## **Projeto Trainee, Code Jr, Grupo 000, 2024.2**
+## **Projeto Trainee, Code Jr, Grupo 3, 2024.2**
 
 | **Sumário** |
 |-------------|
@@ -13,22 +13,19 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
-* Trainee 5
+* Davi Grossi
+* Fernanda Gomes
+* Lucas Oliveira
+* Guilherme Roldão
 
 
 #### Scrum Master:
 
-* [Nome do Scrum](coloque o link do github, se quiser).
+* [João Pedro Daniel](https://github.com/joaopedrodaniel).
 
 #### Links Úteis:
 
-* [Trello]()
-
-* [Drive com ID Visual]()
+* [Trello](https://trello.com/b/BrkoSAls/notom-trainee-20242)
 
 
 
