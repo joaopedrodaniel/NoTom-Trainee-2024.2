@@ -156,8 +156,8 @@
         </div>
       </div>
       <div class=parte-inferior>
-        <button onclick="fecharModal('modalExcluir')" class="botao-construtivo" id="botao-cancelar">Cancelar</button>
-        <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" id="botao-cancelar">Excluir</button>
+        <button onclick="fecharModal('modalExcluir')" class="botao-construtivo" type="button" id="botao-cancelar">Cancelar</button>
+        <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" type="submit" id="botao-cancelar">Excluir</button>
       </div>
     </div>
   </form>
