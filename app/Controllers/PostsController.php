@@ -28,6 +28,21 @@ class PostsController
         App::get('database')->insert('posts', $parameters);
         header('Location: /admin/posts');
     }
+
+    public function edit()
+    {
+        $parameters = [
+            'titulo' =>$_POST['titulo'],
+            'descricao' => $_POST['descricao'],
+            'texto' => $_POST['texto'],
+            'imagem' => 'https://ihasabucket.com',
+            'id_autor' => 1
+        ];
+
+        App::get('database')->update('posts', $id,$parameters);
+        header('Location: /admin/posts');
+    }
+}
 }
 
 ?>

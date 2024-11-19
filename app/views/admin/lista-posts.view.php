@@ -143,8 +143,6 @@
         </div>
       </div>
     </form>
-    
-  </div>
   </div>
 
   <!-- pop up excluir post -->
@@ -164,8 +162,9 @@
   </div>
 
   <!-- pop up editar post -->
-
+  
   <div class="background-popup" id="modalEditar">
+  <form method="POST" action="/admin/posts/edit">
     <div class="caixa-popup">
 
       <div class="parte-superior">
@@ -191,6 +190,7 @@
             <h3>Data do Post:</h3>
             <h2>DD/MM/YYYY</h2>
           </div>
+          </form>
         </div>
         
           <div class=imagem-popup>
