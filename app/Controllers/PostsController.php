@@ -36,13 +36,23 @@ class PostsController
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => 'https://ihasabucket.com',
-            'id_autor' => 1
         ];
 
-        App::get('database')->update('posts', $id,$parameters);
+        $id = $_POST['id'];
+
+        App::get('database')->update('posts', $id, $parameters);
+
         header('Location: /admin/posts');
     }
-}
+
+    public function delete()
+    {
+        $id $_POST['id'];
+
+        App::get('database')->delete('posts', $id);
+
+        header('Location: /admin/posts');
+    }
 }
 
 ?>

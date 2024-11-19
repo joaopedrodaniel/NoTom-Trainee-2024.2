@@ -147,6 +147,7 @@
 
   <!-- pop up excluir post -->
   <div class="background-popup" id="modalExcluir">
+  <form method="POST" action="/admin/posts/delete">
     <div class="caixa-popup-excluir">
       <div class="parte-superior-excluir">
         <div class="titulo-popup-excluir">
@@ -159,6 +160,7 @@
         <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" id="botao-cancelar">Excluir</button>
       </div>
     </div>
+  </form>
   </div>
 
   <!-- pop up editar post -->
@@ -190,7 +192,6 @@
             <h3>Data do Post:</h3>
             <h2>DD/MM/YYYY</h2>
           </div>
-          </form>
         </div>
         
           <div class=imagem-popup>
@@ -213,6 +214,7 @@
           <button onclick="fecharModal('modalEditar')" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
         </div>
       </div>
+      </form>
     </div>
 
     <!-- pop up Visualizar Post -->

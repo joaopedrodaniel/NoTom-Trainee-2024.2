@@ -62,4 +62,18 @@ $id
     }
 }
 
+public function delete($table, $id)
+{
+    $sql = sprintf('DELETE FROM %s WHERE %s',
+    $table,
+    'id = :id'
+);
+try {
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute($parameters );
+    } catch(Exception $e) {
+    die($e->getMessage());
+    }
+}
+
 }
