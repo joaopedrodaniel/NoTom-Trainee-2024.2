@@ -18,7 +18,7 @@ class PostsController
     public function create()
     {
         $parameters = [
-            'titulo' =>$_POST['titulo'],
+            'titulo' => $_POST['titulo'],
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => 'https://ihasabucket.com',
@@ -32,16 +32,16 @@ class PostsController
     public function edit()
     {
         $parameters = [
-            'titulo' =>$_POST['titulo'],
+            'titulo' => $_POST['titulo'],
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => 'https://ihasabucket.com',
+            'id_autor' => 1
         ];
 
         $id = $_POST['id'];
 
         App::get('database')->update('posts', $id, $parameters);
-
         header('Location: /admin/posts');
     }
 
@@ -54,5 +54,3 @@ class PostsController
         header('Location: /admin/posts');
     }
 }
-
-?>
