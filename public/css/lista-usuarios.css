@@ -286,7 +286,7 @@ table.responsividade-2 .coluna-email {
   margin-top: 5px;
 }
 
-#criacao {
+.criacao {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -294,21 +294,21 @@ table.responsividade-2 .coluna-email {
   display: none;
 }
 
-#visualizacao {
+.visualizacao {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
 }
-#edicao {
+.edicao {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
 }
-#excluir {
+.excluir {
   position: fixed;
   top: 50%;
   left: 50%;
