@@ -38,7 +38,7 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach($_posts as $post): ?>
+          <?php foreach ($_posts as $post): ?>
             <tr class="accordion">
               <td><?= $post->id ?></td>
               <td><?= $post->titulo ?></td>
@@ -51,15 +51,15 @@
               </td>
               <td class="celula-acoes">
                 <div class="div-botoes">
-                    <button onclick="abirModal('modalVisualizar<?= $post->id ?>')"><ion-icon name="eye-outline"></ion-icon></button>
+                  <button onclick="abirModal('modalVisualizar<?= $post->id ?>')"><ion-icon name="eye-outline"></ion-icon></button>
 
-                    <button onclick="abirModal('modalEditar<?= $post->id ?>')">
+                  <button onclick="abirModal('modalEditar<?= $post->id ?>')">
                     <ion-icon name="create-outline"></ion-icon>
-                    </button>
+                  </button>
 
-                    <button onclick="abirModal('modalExcluir<?= $post->id ?>')" class="botao-destrutivo">
+                  <button onclick="abirModal('modalExcluir<?= $post->id ?>')" class="botao-destrutivo">
                     <ion-icon name="trash-outline"></ion-icon>
-                    </button>
+                  </button>
 
                 </div>
               </td>
@@ -78,16 +78,197 @@
                   <ion-icon name="create-outline"></ion-icon>
                 </button>
 
-                <button onclick="abirModal('modalExcluir')" class="botao-destrutivo">
+                <button onclick="abirModal('modalExcluir<?= $post->id ?>')" class="botao-destrutivo">
                   <ion-icon name="trash-outline"></ion-icon>
                 </button>
               </td>
             </tr>
+
+            <!-- pop up excluir post -->
+            <div class="background-popup" id="modalExcluir<?= $post->id ?>">
+              <form method="POST" action="/admin/posts/delete">
+
+                <!-- pop up excluir post -->
+                <input type="hidden" name="id" value="<?= $post->id ?>">
+
+                <div class="caixa-popup-excluir">
+                  <div class="parte-superior-excluir">
+                    <div class="titulo-popup-excluir">
+                      <h1>Você Deseja Mesmo Excluir este Post? </h1>
+                      <h2>Esta ação não é reversivel.</h2>
+                    </div>
+                  </div>
+                  <div class="parte-inferior">
+                    <button onclick="fecharModal('modalExcluir<?= $post->id ?>')" class="botao-construtivo" type="button">Cancelar</button>
+                    <button class="botao-destrutivo" type="submit" id="botao-cancelar">Excluir</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- pop up editar post -->
+            <div class="background-popup" id="modalEditar<?= $post->id ?>">
+            <form method="POST" action="/admin/posts/edit">
+              <div class="caixa-popup">
+                <div class="parte-superior">
+                <input required="true" type="hidden" name="id" id="<?= $post->id ?>" value="<?= $post->id ?>">
+
+                  <div class="titulo-popup">
+                    <h1>Edite a Publicação</h1>
+                  </div>
+                  <div class="area-do-input-titulo">
+                    <label for="input-titulo">Titulo: </label>
+
+                    <input id="input-titulo" name="titulo" required="true" class=input-titulo-popup placeholder="Digite seu Título *" />
+                  </div>
+                  <div class="area-do-input-descricao">
+                      <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
+                      <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+                    </div>
+                  <div class="area-do-input-paragrafo">
+                    <label for="input-titulo">Digite o Texto Novo: </label>
+
+                    <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup" placeholder=" Conteudo Novo *"></textarea>
+
+                  </div>
+
+                  <div class="autor-e-data">
+                    <div>
+                      <h3>Autor:</h3>
+                      <h2>Fulano de Tal</h2>
+                    </div>
+                    <div>
+                      <h3>Data do Post:</h3>
+                      <h2>DD/MM/YYYY</h2>
+                    </div>
+                  </div>
+
+                  <div class=imagem-popup>
+                    <button class="botao-adiciona-foto">
+                      <label for="file" class="local-de-input-foto">
+                        <p>Adicionar Foto Nova * </p>
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+
+                      </label>
+                      <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+                    </button>
+
+                    <div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class=parte-inferior>
+                  <button class="botao-construtivo" id="botao-criar-post">Criar</button>
+                  <button onclick="fecharModal('modalEditar')" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
+                </div>
+              </div>
+              </form>
+            </div>
+
+            
+
+
+            <!-- pop up Visualizar Post -->
+
+
+            <div class="background-popup" id="modalVisualizar">
+              <div class="caixa-popup-visualizar">
+
+                <div class="parte-superior-visualizar">
+                  <div>
+                    <h2>Visualizar Post ID#XXXXXXXX</h2>
+                    <br>
+                  </div>
+                  <div>
+                    <h1>Título do post</h1>
+                  </div>
+                </div>
+                <div class="parte-media-visualizar">
+                  <div class="teste2">
+                    <div class="area-da-foto-visualizar">
+                      <img src="https://th.bing.com/th/id/OIP.uTPJEPTVL_wSg-CdDls00gHaFL?rs=1&pid=ImgDetMain"
+                        alt="Imagem de Teste">
+                    </div>
+                    <div class=teste>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim
+                        id est laborum. </p>
+                    </div>
+                  </div>
+                  <div class="autor-e-data-visualizar ">
+                    <div>
+                      <h3>Autor:</h3>
+                      <h2>Fulano de Tal</h2>
+                    </div>
+                    <div>
+                      <h3>Data do Post:</h3>
+                      <h2>DD/MM/YYYY</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class=parte-inferior-visualizar>
+                  <button onclick="fecharModal('modalVisualizar')" class="botao-destrutivo" id="botao-cancelar">Sair</button>
+                </div>
+              </div>
+            </div>
+
+
           <?php endforeach; ?>
-          
+
         </tbody>
       </table>
     </div>
+
+            <!-- pop up criar post -->
+            <div class="background-popup" id="modalCriar">
+              <form method="POST" action="/admin/posts/create">
+                <div class="caixa-popup">
+
+                  <div class="parte-superior">
+
+                    <div class="titulo-popup">
+                      <h1>Criar Publicação</h1>
+                    </div>
+                    <div class="area-do-input-titulo">
+                      <label for="input-titulo">Titulo: </label>
+                      <input id="input-titulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+                    </div>
+                    <div class="area-do-input-descricao">
+                      <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
+                      <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+                    </div>
+                    <div class="area-do-input-paragrafo">
+                      <label for="area-de-texto">Conteudo: </label>
+
+                      <textarea id="area-de-texto" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+                    </div>
+
+
+                    <div class=imagem-popup>
+                      <button class="botao-adiciona-foto">
+                        <label for="file" class="local-de-input-foto">
+                          <p>Adicionar Foto * </p>
+                          <ion-icon name="cloud-upload-outline"></ion-icon>
+
+                        </label>
+                        <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="parte-inferior">
+                    <button class="botao-construtivo" id="botao-criar-post" type="submit">Criar</button>
+                    <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button" id="botao-cancelar">Cancelar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
 
     <div class="paginacao">
       <a class="paginacao-elemento" href="#"></a>
@@ -101,178 +282,11 @@
     </div>
   </div>
 
-  <!-- pop up criar post -->
-  <div class="background-popup" id="modalCriar">
-    <form method="POST" action="/admin/posts/create">
-      <div class="caixa-popup">
-
-        <div class="parte-superior">
-  
-          <div class="titulo-popup">
-            <h1>Criar Publicação</h1>
-          </div>
-          <div class="area-do-input-titulo">
-            <label for="input-titulo">Titulo: </label>
-            <input id="input-titulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
-          </div>
-          <div class="area-do-input-descricao">
-            <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
-            <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
-          </div>
-          <div class="area-do-input-paragrafo">
-            <label for="area-de-texto">Conteudo: </label>
-  
-            <textarea id="area-de-texto" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
-          </div>
-  
-  
-          <div class=imagem-popup>
-            <button class="botao-adiciona-foto">
-              <label for="file" class="local-de-input-foto">
-                <p>Adicionar Foto * </p>
-                <ion-icon name="cloud-upload-outline"></ion-icon>
-  
-              </label>
-              <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
-            </button>
-          </div>
-        </div>
-        <div class="parte-inferior">
-          <button class="botao-construtivo" id="botao-criar-post" type="submit">Criar</button>
-          <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button"  id="botao-cancelar">Cancelar</button>
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <!-- pop up excluir post -->
-  <div class="background-popup" id="modalExcluir<?= $post->id ?>">
-  <form method="POST" action="/admin/posts/delete">
-
-    <!-- pop up excluir post -->
-    <input type = "hidden" name="id" value="<?= $post->id ?>">
-
-    <div class="caixa-popup-excluir">
-      <div class="parte-superior-excluir">
-        <div class="titulo-popup-excluir">
-          <h1>Você Deseja Mesmo Excluir este Post? </h1>
-          <h2>Esta ação não é reversivel.</h2>
-        </div>
-      </div>
-      <div class="parte-inferior">
-        <button onclick="fecharModal('modalExcluir')" class="botao-construtivo" type="button" id="botao-cancelar">Cancelar</button>
-        <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" type="submit" id="botao-cancelar">Excluir</button>
-      </div>
-    </div>
-  </form>
-  </div>
-
-  <!-- pop up editar post -->
-  
-  <div class="background-popup" id="modalEditar">
-  <form method="POST" action="/admin/posts/edit">
-    <div class="caixa-popup">
-
-      <div class="parte-superior">
-
-        <div class="titulo-popup">
-          <h1>Edite a Publicação</h1>
-        </div>
-        <div class="area-do-input-titulo">
-          <label for="input-titulo">Titulo: </label>
-          <input id="input-titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
-        </div>
-        <div class="area-do-input-paragrafo">
-          <label for="input-titulo">Digite o Texto Novo: </label>
-          <textarea class="input-paragrafo-popup" placeholder=" Conteudo Novo *"></textarea>
-        </div>
-
-        <div class="autor-e-data">
-          <div>
-            <h3>Autor:</h3>
-            <h2>Fulano de Tal</h2>
-          </div>
-          <div>
-            <h3>Data do Post:</h3>
-            <h2>DD/MM/YYYY</h2>
-          </div>
-        </div>
-        
-          <div class=imagem-popup>
-            <button class="botao-adiciona-foto">
-              <label for="file" class="local-de-input-foto">
-                <p>Adicionar Foto Nova * </p>
-                <ion-icon name="cloud-upload-outline"></ion-icon>
-
-              </label>
-              <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
-            </button>
-
-            <div>
-            </div>
-            
-          </div>
-        </div>
-        <div class=parte-inferior>
-          <button class="botao-construtivo" id="botao-criar-post">Criar</button>
-          <button onclick="fecharModal('modalEditar')" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>
-        </div>
-      </div>
-      </form>
-    </div>
-
-    <!-- pop up Visualizar Post -->
 
 
-    <div class="background-popup" id="modalVisualizar">
-      <div class="caixa-popup-visualizar">
-
-        <div class="parte-superior-visualizar">
-          <div>
-            <h2>Visualizar Post ID#XXXXXXXX</h2>
-            <br>
-          </div>
-          <div>
-            <h1>Título do post</h1>
-          </div>
-        </div>
-        <div class="parte-media-visualizar">
-          <div class = "teste2">
-          <div class="area-da-foto-visualizar">
-            <img src="https://th.bing.com/th/id/OIP.uTPJEPTVL_wSg-CdDls00gHaFL?rs=1&pid=ImgDetMain"
-              alt="Imagem de Teste">
-          </div>
-          <div class=teste>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim
-              id est laborum. </p>
-              </div>
-          </div>
-                  <div class="autor-e-data-visualizar ">
-          <div>
-            <h3>Autor:</h3>
-            <h2>Fulano de Tal</h2>
-          </div>
-          <div>
-            <h3>Data do Post:</h3>
-            <h2>DD/MM/YYYY</h2>
-          </div>
-        </div>
-        </div>
-
-        <div class=parte-inferior-visualizar>
-          <button onclick= "fecharModal('modalVisualizar')" class="botao-destrutivo" id="botao-cancelar">Sair</button>
-        </div>
-      </div>
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../../../public/js/lista-posts-admin.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../../../public/js/lista-posts-admin.js"></script>
 </body>
 
 </html>
