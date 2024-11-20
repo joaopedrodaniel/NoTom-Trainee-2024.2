@@ -43,7 +43,7 @@
               <td><?= $post->id ?></td>
               <td><?= $post->titulo ?></td>
               <td class="coluna-responsiva">Fulano da Silva</td>
-              <td class="coluna-responsiva"><?= $post->criado_em ?></td>
+              <td class="coluna-responsiva" ><?= date_format(new DateTime($post->criado_em),'d/m/Y'); ?></td>
               <td class="celula-icone hidden">
                 <div class="center-div">
                   <ion-icon name="chevron-down-outline"></ion-icon>
