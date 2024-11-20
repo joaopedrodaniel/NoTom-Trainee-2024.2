@@ -57,7 +57,7 @@
                     <ion-icon name="create-outline"></ion-icon>
                   </button>
 
-                  <button onclick="abirModal('modalExcluir')" class="botao-destrutivo">
+                  <button onclick="abirModal('modalExcluir<?= $usuario->id ?>')" class="botao-destrutivo">
                     <ion-icon name="trash-outline"></ion-icon>
                   </button>
 
@@ -146,7 +146,7 @@
   </div>
 
   <!-- pop up excluir post -->
-  <div class="background-popup" id="modalExcluir">
+  <div class="background-popup" id="modalExcluir<?= $usuario->id ?>">
   <form method="POST" action="/admin/posts/delete">
     <div class="caixa-popup-excluir">
       <div class="parte-superior-excluir">
