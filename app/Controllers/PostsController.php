@@ -47,7 +47,7 @@ class PostsController
 
     public function delete()
     {
-        $id_posts = $_POST['id_posts'];
+        $id = $_POST['id'];
 
         App::get('database')->delete('posts', $id);
 

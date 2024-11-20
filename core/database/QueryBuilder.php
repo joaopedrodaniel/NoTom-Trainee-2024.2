@@ -50,7 +50,7 @@ class QueryBuilder
         $sql = sprintf(
             'INSERT INTO %s SET %s WHERE id = %s',
             $table,
-            implode(', ', array_map(function ($parame) {
+            implode(', ', array_map(function ($param) {
                 return $param . ' = :' . $param;
             }, array_keys($parameters))),
             $id
@@ -70,9 +70,11 @@ class QueryBuilder
             $table,
             'id = :id'
         );
+        
         try {
             $stmt = $this->pdo->prepare($sql);
-            $stmt->execute($parameters);
+            $stmt->execute(compact('id'));
+
         } catch (Exception $e) {
             die($e->getMessage());
         }

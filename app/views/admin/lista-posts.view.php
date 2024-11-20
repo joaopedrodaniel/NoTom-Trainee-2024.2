@@ -51,15 +51,15 @@
               </td>
               <td class="celula-acoes">
                 <div class="div-botoes">
-                  <button onclick="abirModal('modalVisualizar')"><ion-icon name="eye-outline"></ion-icon></button>
+                    <button onclick="abirModal('modalVisualizar<?= $post->id ?>')"><ion-icon name="eye-outline"></ion-icon></button>
 
-                  <button onclick="abirModal('modalEditar')">
+                    <button onclick="abirModal('modalEditar<?= $post->id ?>')">
                     <ion-icon name="create-outline"></ion-icon>
-                  </button>
+                    </button>
 
-                  <button onclick="abirModal('modalExcluir<?= $usuario->id ?>')" class="botao-destrutivo">
+                    <button onclick="abirModal('modalExcluir<?= $post->id ?>')" class="botao-destrutivo">
                     <ion-icon name="trash-outline"></ion-icon>
-                  </button>
+                    </button>
 
                 </div>
               </td>
@@ -137,7 +137,7 @@
             </button>
           </div>
         </div>
-        <div class=parte-inferior>
+        <div class="parte-inferior">
           <button class="botao-construtivo" id="botao-criar-post" type="submit">Criar</button>
           <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button"  id="botao-cancelar">Cancelar</button>
         </div>
@@ -146,8 +146,12 @@
   </div>
 
   <!-- pop up excluir post -->
-  <div class="background-popup" id="modalExcluir<?= $usuario->id ?>">
+  <div class="background-popup" id="modalExcluir<?= $post->id ?>">
   <form method="POST" action="/admin/posts/delete">
+
+    <!-- pop up excluir post -->
+    <input type = "hidden" name="id" value="<?= $post->id ?>">
+
     <div class="caixa-popup-excluir">
       <div class="parte-superior-excluir">
         <div class="titulo-popup-excluir">
@@ -155,7 +159,7 @@
           <h2>Esta ação não é reversivel.</h2>
         </div>
       </div>
-      <div class=parte-inferior>
+      <div class="parte-inferior">
         <button onclick="fecharModal('modalExcluir')" class="botao-construtivo" type="button" id="botao-cancelar">Cancelar</button>
         <button onclick="fecharModal('modalExcluir')" class="botao-destrutivo" type="submit" id="botao-cancelar">Excluir</button>
       </div>
