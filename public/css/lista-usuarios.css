@@ -325,6 +325,10 @@ table.responsividade-2 .coluna-email {
   display: none;
   z-index: 2;
 }
+.modal.edicao input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 @media (max-width: 300px) {
   .modal {
