@@ -1,7 +1,7 @@
 
 <nav aria-label="Page navigation example">
   <ul class="paginacao">
-
+ 
     <li class="paginacao-elemento <?= $page <= 1 ? "disabled" : "" ?>">
       <a class="paginacao-elemento" href="?paginacaoNumero=<? $page - 1 ?>"> < </a></li>
 

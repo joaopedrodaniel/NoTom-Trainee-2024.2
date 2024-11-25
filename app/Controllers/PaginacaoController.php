@@ -22,15 +22,19 @@ class ExampleController
         $itensPage = 5;
         $inicio = $itensPage * $page - $itensPage;
         $rows_count = App::get('database')->countAll('posts');
-        
+
         if ($inicio > $rows_count) {
             return redirect('admin/index');
         }
 
         $posts = App::get('database')->selectAll('posts');
 
-        $total_pages = ceil($rows_count/$itensPage)
+        $total_pages = ceil($rows_count / $itensPage);
 
-        return view('admin/posts?paginacaoNumero=1', compact('posts', 'page', 'total_pages'));
+        return view('admin/posts', [
+            'posts' => $posts,
+            'page' => $page,
+            'total_pages' => $total_pages
+        ]);
     }
 }
