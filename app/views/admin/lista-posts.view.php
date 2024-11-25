@@ -68,10 +68,10 @@
               </td>
             </tr>
             <tr class="hidden-content linha-responsiva">
-              <td colspan="3">Autor: Fulano da Silva</td>
+              <td colspan="3" ><span style="font-weight: bold">Autor: </span>Fulano da Silva</td>
             </tr>
             <tr class="hidden-content linha-responsiva">
-              <td colspan="3">Criado em: <?= $post->criado_em ?></td>
+              <td colspan="3"><span style="font-weight: bold">Criado Em: </span> <?= $post->criado_em ?></td>
             </tr>
             <tr class="hidden-content">
               <td colspan="5">
@@ -91,11 +91,12 @@
               </td>
             </tr>
     </div>
+    <?php endforeach; ?>
+     <!-- Modais -->
+    <?php foreach ($_posts as $post): ?>
     <!-- pop up excluir post -->
     <div class="background-popup" id="modalExcluir<?= $post->id ?>">
       <form method="POST" action="/admin/posts/delete">
-
-        <!-- pop up excluir post -->
         <input type="hidden" name="id" value="<?= $post->id ?>">
 
         <div class="caixa-popup-excluir">
@@ -112,7 +113,8 @@
         </div>
       </form>
     </div>
-
+    <?php endforeach; ?>
+    <?php foreach ($_posts as $post): ?>
     <!-- pop up editar post -->
     <div class="background-popup" id="modalEditar<?= $post->id ?>">
       <form method="POST" action="/admin/posts/edit">
@@ -169,7 +171,8 @@
         </div>
       </form>
     </div>
-
+    <?php endforeach; ?>
+    <?php foreach ($_posts as $post): ?>
     <!-- pop up Visualizar Post -->
     <div class="background-popup" id="modalVisualizar<?= $post->id ?>">
       <div class=" caixa-popup-visualizar">
@@ -215,7 +218,7 @@
   </table>
 
 
-
+  <?php foreach ($_posts as $post): ?>
   <!-- pop up criar post -->
   <div class="background-popup" id="modalCriar">
     <form method="POST" action="/admin/posts/create">
@@ -259,7 +262,7 @@
       </div>
     </form>
   </div>
-
+  <?php endforeach; ?>
 
   <div class="paginacao">
     <a class="paginacao-elemento" href="#"></a>

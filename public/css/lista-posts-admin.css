@@ -141,6 +141,11 @@ a {
   border-bottom: none;
 }
 
+/*
+.accordion td {
+  
+}
+*/
 .hidden-content td {
   border: none;
   padding: 0px;
@@ -174,6 +179,10 @@ a {
 
 table.responsividade-2 .coluna-responsiva {
   display: none;
+}
+
+table.responsividade-2 td {
+  word-break: break-word;
 }
 
 .paginacao {
@@ -215,6 +224,9 @@ table.responsividade-2 .coluna-responsiva {
   display: none;
   justify-content: center;
   align-items: center;
+  transform: translateX(
+    -35px
+    );
 }
 
 .caixa-popup {
