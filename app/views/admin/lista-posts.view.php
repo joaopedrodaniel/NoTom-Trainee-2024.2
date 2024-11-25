@@ -264,8 +264,11 @@
   </div>
   <?php endforeach; ?>
 
+
+  </div>
   <div class="paginacao">
     <a class="paginacao-elemento" href="#"></a>
+    <a class="paginacao-elemento" href="#"><</a>
     <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
     <a class="paginacao-elemento" href="#">2</a>
     <a class="paginacao-elemento" href="#">3</a>
@@ -274,8 +277,6 @@
     <a class="paginacao-elemento" href="#">10</a>
     <a class="paginacao-elemento" href="#">></a>
   </div>
-  </div>
-
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="../../../public/js/lista-posts-admin.js"></script>
