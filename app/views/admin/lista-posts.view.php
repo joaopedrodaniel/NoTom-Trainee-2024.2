@@ -68,7 +68,7 @@
               </td>
             </tr>
             <tr class="hidden-content linha-responsiva">
-              <td colspan="3" ><span style="font-weight: bold">Autor: </span>Fulano da Silva</td>
+              <td colspan="3"><span style="font-weight: bold">Autor: </span>Fulano da Silva</td>
             </tr>
             <tr class="hidden-content linha-responsiva">
               <td colspan="3"><span style="font-weight: bold">Criado Em: </span> <?= $post->criado_em ?></td>
@@ -91,9 +91,9 @@
               </td>
             </tr>
     </div>
-    <?php endforeach; ?>
-     <!-- Modais -->
-    <?php foreach ($_posts as $post): ?>
+  <?php endforeach; ?>
+  <!-- Modais -->
+  <?php foreach ($_posts as $post): ?>
     <!-- pop up excluir post -->
     <div class="background-popup" id="modalExcluir<?= $post->id ?>">
       <form method="POST" action="/admin/posts/delete">
@@ -113,8 +113,8 @@
         </div>
       </form>
     </div>
-    <?php endforeach; ?>
-    <?php foreach ($_posts as $post): ?>
+  <?php endforeach; ?>
+  <?php foreach ($_posts as $post): ?>
     <!-- pop up editar post -->
     <div class="background-popup" id="modalEditar<?= $post->id ?>">
       <form method="POST" action="/admin/posts/edit">
@@ -150,7 +150,9 @@
               </div>
               <div>
                 <h3>Data do Post:</h3>
-                <h2><h2><?= date_format(new DateTime($post->criado_em), 'd/m/Y'); ?></h2></h2>
+                <h2>
+                  <h2><?= date_format(new DateTime($post->criado_em), 'd/m/Y'); ?></h2>
+                </h2>
               </div>
             </div>
 
@@ -171,8 +173,8 @@
         </div>
       </form>
     </div>
-    <?php endforeach; ?>
-    <?php foreach ($_posts as $post): ?>
+  <?php endforeach; ?>
+  <?php foreach ($_posts as $post): ?>
     <!-- pop up Visualizar Post -->
     <div class="background-popup" id="modalVisualizar<?= $post->id ?>">
       <div class=" caixa-popup-visualizar">
@@ -219,64 +221,59 @@
 
 
   <?php foreach ($_posts as $post): ?>
-  <!-- pop up criar post -->
-  <div class="background-popup" id="modalCriar">
-    <form method="POST" action="/admin/posts/create">
-      <div class="caixa-popup">
+    <!-- pop up criar post -->
+    <div class="background-popup" id="modalCriar">
+      <form method="POST" action="/admin/posts/create">
+        <div class="caixa-popup">
 
-        <div class="parte-superior">
+          <div class="parte-superior">
 
-          <div class="titulo-popup">
-            <h1>Criar Publicação</h1>
+            <div class="titulo-popup">
+              <h1>Criar Publicação</h1>
+            </div>
+            <div class="area-do-input-titulo">
+              <label for="input-titulo">Titulo: </label>
+              <input id="input-titulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+            </div>
+            <div class="area-do-input-descricao">
+              <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
+              <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+            </div>
+            <div class="area-do-input-paragrafo">
+              <label for="area-de-texto">Conteudo: </label>
+
+              <textarea id="area-de-texto" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+            </div>
+
+
+            <div class=imagem-popup>
+              <button class="botao-adiciona-foto">
+                <label for="file" class="local-de-input-foto">
+                  <p>Adicionar Foto * </p>
+                  <ion-icon name="cloud-upload-outline"></ion-icon>
+
+                </label>
+                <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+              </button>
+            </div>
           </div>
-          <div class="area-do-input-titulo">
-            <label for="input-titulo">Titulo: </label>
-            <input id="input-titulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
-          </div>
-          <div class="area-do-input-descricao">
-            <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
-            <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
-          </div>
-          <div class="area-do-input-paragrafo">
-            <label for="area-de-texto">Conteudo: </label>
-
-            <textarea id="area-de-texto" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
-          </div>
-
-
-          <div class=imagem-popup>
-            <button class="botao-adiciona-foto">
-              <label for="file" class="local-de-input-foto">
-                <p>Adicionar Foto * </p>
-                <ion-icon name="cloud-upload-outline"></ion-icon>
-
-              </label>
-              <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
-            </button>
+          <div class="parte-inferior">
+            <button class="botao-construtivo" id="botao-criar-post" type="submit">Criar</button>
+            <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button" id="botao-cancelar">Cancelar</button>
           </div>
         </div>
-        <div class="parte-inferior">
-          <button class="botao-construtivo" id="botao-criar-post" type="submit">Criar</button>
-          <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button" id="botao-cancelar">Cancelar</button>
-        </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   <?php endforeach; ?>
 
 
   </div>
-  <div class="paginacao">
-    <a class="paginacao-elemento" href="#"></a>
-    <a class="paginacao-elemento" href="#"><</a>
-    <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
-    <a class="paginacao-elemento" href="#">2</a>
-    <a class="paginacao-elemento" href="#">3</a>
-    <div>...</div>
-    <a class="paginacao-elemento" href="#">9</a>
-    <a class="paginacao-elemento" href="#">10</a>
-    <a class="paginacao-elemento" href="#">></a>
   </div>
+  <!----Paginacao--->
+  <?php require(__DIR__ . './../admin/componentes/paginacao.php') ?>
+  </div>
+
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="../../../public/js/lista-posts-admin.js"></script>
