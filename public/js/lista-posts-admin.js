@@ -129,32 +129,107 @@ setTimeout(checarSeTableTransborda, 100);
 
 //Java Script Lucas -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 //Java Script logica dos Modais
-function abirModal(idModal){
+function abirModal(idModal) {
   document.getElementById(idModal).style.display = "flex";
 }
 
-function fecharModal(idModal){
+function fecharModal(idModal) {
   document.getElementById(idModal).style.display = "none";
 }
 
 
 //Java Script Contador
-var meuTexto = document.getElementById("inputTitulo")
-var resultado = document.getElementById("contador")
-var limite = 75;
 
-resultado.textContent = 0 + "/" + limite;
-resultado.style.color = "#ff0000"
+//Titulo
+var meuTextoTitulo = document.getElementById("inputTitulo")
+var resultadoTitulo = document.getElementById("contadorTitulo")
+var limiteTitulo = 75;
 
-meuTexto.addEventListener( "input", function(){
-var tamanhoDoTexto = meuTexto.value.length;
-resultado.textContent = tamanhoDoTexto + "/" + limite;
+resultadoTitulo.textContent = 0 + "/" + limiteTitulo;
+resultadoTitulo.style.color = "#ff0000"
 
-if(tamanhoDoTexto > limite || tamanhoDoTexto === 0){
-  resultado.style.color = "#ff0000"
-}
+meuTextoTitulo.addEventListener("input", function () {
+  var tamanhoDoTextoTitulo = meuTextoTitulo.value.length;
+  resultadoTitulo.textContent = tamanhoDoTextoTitulo + "/" + limiteTitulo;
 
-else{
-  resultado.style.color = "#737373"
-}
+  if (tamanhoDoTextoTitulo > limiteTitulo || tamanhoDoTextoTitulo === 0) {
+    resultadoTitulo.style.color = "#ff0000"
+    if (tamanhoDoTextoTitulo === 0) {
+      avisoContadorTitulo.textContent = "O Título não pode ficar vazio*"
+      avisoContadorTitulo.style.color = "#ff0000"
+    }
+    if (tamanhoDoTextoTitulo > limiteTitulo) {
+      avisoContadorTitulo.textContent = "O Tamanho Máximo do Título é de 75 Caracteres*"
+      avisoContadorTitulo.style.color = "#ff0000"
+    }
+  }
+
+  else {
+    resultadoTitulo.style.color = "#737373"
+    avisoContadorTitulo.textContent = ""
+  }
 });
+//-----------
+
+//Quase certeza que existe uma maneira mais inteligente de fazer a parte da descrição com o JavaScript sem apenas copiar, 
+//colar e mudar os nomes das variavei, revisitar mais para frente, por enqunato o código funciona.
+
+//Descricao
+var meuTextoDescricao = document.getElementById("inputDaDescricao")
+var resultadoDescricao = document.getElementById("contadorDescricao")
+var limiteDescricao = 130;
+
+resultadoDescricao.textContent = 0 + "/" + limiteDescricao;
+resultadoDescricao.style.color = "#ff0000"
+
+meuTextoDescricao.addEventListener("input", function () {
+  var tamanhoDoTextoDescricao = meuTextoDescricao.value.length;
+  resultadoDescricao.textContent = tamanhoDoTextoDescricao + "/" + limiteDescricao;
+
+  if (tamanhoDoTextoDescricao > limiteDescricao || tamanhoDoTextoDescricao === 0) {
+    resultadoDescricao.style.color = "#ff0000"
+    if (tamanhoDoTextoDescricao === 0) {
+      avisoContadorDescricao.textContent = "A Descrição não pode ficar vazia*"
+      avisoContadorDescricao.style.color = "#ff0000"
+    }
+    if (tamanhoDoTextoDescricao > limiteDescricao) {
+      avisoContadorDescricao.textContent = "O Tamanho Máximo da Descrição é de 130 Caracteres*"
+      avisoContadorDescricao.style.color = "#ff0000"
+    }
+  }
+  else {
+    resultadoDescricao.style.color = "#737373"
+    avisoContadorDescricao.textContent = ""
+  }
+});
+//-----------
+
+//Paragrafo
+var meuTextoParagrafo = document.getElementById("inputDoParagrafo")
+var resultadoParagrafo = document.getElementById("contadorParagrafo")
+var limiteParagrafo = 1300;
+
+resultadoParagrafo.textContent = 0 + "/" + limiteParagrafo;
+resultadoParagrafo.style.color = "#ff0000"
+
+meuTextoParagrafo.addEventListener("input", function () {
+  var tamanhoDoTextoParagrafo = meuTextoParagrafo.value.length;
+  resultadoParagrafo.textContent = tamanhoDoTextoParagrafo + "/" + limiteParagrafo;
+
+  if (tamanhoDoTextoParagrafo > limiteParagrafo || tamanhoDoTextoParagrafo === 0) {
+    resultadoParagrafo.style.color = "#ff0000"
+    if (tamanhoDoTextoParagrafo === 0) {
+      avisoContadorParagrafo.textContent = "O Parágrafo não pode ficar vazio*"
+      avisoContadorParagrafo.style.color = "#ff0000"
+    }
+    if (tamanhoDoTextoParagrafo > limiteParagrafo) {
+      avisoContadorParagrafo.textContent = "O Tamanho Máximo do Parágrafo é de 1300 Caracteres*"
+      avisoContadorParagrafo.style.color = "#ff0000"
+    }
+  }
+  else {
+    resultadoParagrafo.style.color = "#737373"
+    avisoContadorParagrafo.textContent = ""
+  }
+});
+//-----------

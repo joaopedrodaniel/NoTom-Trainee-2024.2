@@ -225,9 +225,7 @@ table.responsividade-2 td {
   display: none;
   justify-content: center;
   align-items: center;
-  transform: translateX(
-    -35px
-    );
+  transform: translateX(-35px);
 }
 
 .caixa-popup {
@@ -324,6 +322,7 @@ button.botao-construtivo {
   width: 100%;
   justify-content: center;
 }
+
 /* ----- */
 
 /* CSS Excluir*/
@@ -404,6 +403,8 @@ button.botao-construtivo {
 .parte-superior-visualizar h1 {
   font-weight: bold;
   font-family: lobster;
+  width: 100%;
+  word-break: break-all;
 }
 
 .parte-superior-visualizar h2 {
@@ -441,7 +442,7 @@ button.botao-construtivo {
 }
 
 
-.teste p{
+.teste p {
   background-color: #fab235;
   border-radius: 5%;
   display: flex;
@@ -477,6 +478,7 @@ button.botao-construtivo {
   align-items: center;
   gap: 10%;
 }
+
 /* ----- */
 
 /* CSS Criar*/
@@ -522,7 +524,6 @@ button.botao-construtivo {
 }
 
 .input-paragrafo-popup {
-  margin-bottom: 20px;
   color: black;
   text-align: left;
   border: 1px solid black;
@@ -575,11 +576,21 @@ button.botao-construtivo {
   align-items: center;
 }
 
-.contador{
+.avisos-do-texto {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 15px
+}
+
+.contador {
   display: flex;
   justify-content: flex-end;
   color: #737373;
 }
+
+
 /* ----- */
 
 
@@ -663,6 +674,7 @@ button.botao-construtivo {
     justify-content: left;
     align-items: left;
     gap: 4px;
+
   }
 
   .teste {
@@ -713,6 +725,8 @@ Area do input descricao
   justify-content: left;
   align-items: left;
   gap: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .area-do-input-descricao textarea {
