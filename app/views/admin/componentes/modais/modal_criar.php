@@ -26,29 +26,30 @@
                             <p class="contador" id="contadorDescricao"></p>
                         </div>
                     </div>
-
-                    <div class="area-do-input-paragrafo">
-                        <label for="area-de-texto">Conteudo: </label>
-                        <textarea id="inputDoParagrafo" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
-                        <div class="avisos-do-texto">
-                            <p id="avisoContadorParagrafo"></p>
-                            <p class="contador" id="contadorParagrafo"></p>
-                        </div>
-
-                    </div>
-
-
-                    <div class=imagem-popup>
-                        <button class="botao-adiciona-foto">
-                            <label for="file" class="local-de-input-foto">
-                                <p>Adicionar Foto * </p>
-                                <ion-icon name="cloud-upload-outline"></ion-icon>
-
-                            </label>
-                            <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
-                        </button>
-                    </div>
                 </div>
+                <div class="area-do-input-paragrafo">
+                    <label for="area-de-texto">Conteudo: </label>
+                    <textarea id="inputDoParagrafo" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+                    <div class="avisos-do-texto">
+                        <p id="avisoContadorParagrafo"></p>
+                        <p class="contador" id="contadorParagrafo"></p>
+                    </div>
+
+                </div>
+
+
+                <div class=imagem-popup>
+                    <button class="botao-adiciona-foto" type="button">
+                        <label for="file" class="local-de-input-foto">
+                            <p>Adicionar Foto * </p>
+                            <ion-icon name="cloud-upload-outline"></ion-icon>
+
+                        </label>
+                        <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+                    </button>
+                </div>
+
+                
                 <div class="parte-inferior">
                     <button class="botao-construtivo" id="botaoCriarPost" type="submit">Criar</button>
                     <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button" id="botao-cancelar">Cancelar</button>
