@@ -21,8 +21,8 @@
             </div>
 
             <div class="area-do-input-paragrafo">
-              <label for="input-titulo">Digite o Texto Novo: </label>
-              <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup" placeholder=" Conteudo Novo *"></textarea>
+              <label for="input-titulo">Edite o Texto: </label>
+              <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup" placeholder = "Conteudo Novo *"></textarea>
             </div>
 
             <div class="autor-e-data">

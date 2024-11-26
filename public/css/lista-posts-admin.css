@@ -420,13 +420,7 @@ button.botao-construtivo {
   gap: 4px;
 }
 
-.input-titulo-popup {
-  margin-bottom: 10;
-  color: black;
-  text-align: left;
-  width: 100%;
-  height: 35px;
-}
+
 
 .area-do-input-titulo label {
   font-weight: bold;
@@ -464,6 +458,7 @@ button.botao-construtivo {
   border: 1px solid black;
   resize: none;
   border-radius: 10px;
+  padding: 5px;
 }
 
 .imagem-popup {
@@ -478,6 +473,15 @@ button.botao-construtivo {
   padding: 0 10px;
   border: 1px solid black;
   border-radius: 15px;
+  width: 490px;
+}
+
+.input-titulo-popup {
+  margin-bottom: 10;
+  color: black;
+  text-align: left;
+width: 100px;
+  height: 35px;
 }
 
 .autor-e-data h2 {
