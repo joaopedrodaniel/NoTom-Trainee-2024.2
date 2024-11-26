@@ -10,19 +10,17 @@
 
             <div class="area-do-input-titulo">
               <label for="input-titulo">Novo Titulo: </label>
-              <input id="input-titulo" name="titulo" required="true" class=input-titulo-popup placeholder="Digite seu Título *" />
+              <input id="input-titulo" name="titulo" required="true" class=input-titulo-popup value="<?=$post->titulo?>" />
             </div>
-
-
 
             <div class="area-do-input-descricao">
               <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
-              <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+              <textarea id="area-de-texto" name="descricao" class="input-paragrafo-popup" ><?=$post->descricao?></textarea>
             </div>
 
             <div class="area-do-input-paragrafo">
               <label for="input-titulo">Edite o Texto: </label>
-              <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup" placeholder = "Conteudo Novo *"></textarea>
+              <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup"><?=$post->texto?></textarea>
             </div>
 
             <div class="autor-e-data">

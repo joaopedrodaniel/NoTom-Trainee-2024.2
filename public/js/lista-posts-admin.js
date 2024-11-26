@@ -140,10 +140,18 @@ function fecharModal(idModal) {
 
 //Java Script Contador
 
+
+
 //Titulo
+
 var meuTextoTitulo = document.getElementById("inputTitulo")
 var resultadoTitulo = document.getElementById("contadorTitulo")
 var limiteTitulo = 75;
+var verdadeTitulo = false;
+var verdadeDescricao = false;
+var verdadeParagrafo = false;
+
+botaoCriarPost.style.display = "none";
 
 resultadoTitulo.textContent = 0 + "/" + limiteTitulo;
 resultadoTitulo.style.color = "#ff0000"
@@ -157,22 +165,25 @@ meuTextoTitulo.addEventListener("input", function () {
     if (tamanhoDoTextoTitulo === 0) {
       avisoContadorTitulo.textContent = "O Título não pode ficar vazio*"
       avisoContadorTitulo.style.color = "#ff0000"
+      botaoCriarPost.style.display="none"
+      verdadeTitulo = false;
     }
     if (tamanhoDoTextoTitulo > limiteTitulo) {
       avisoContadorTitulo.textContent = "O Tamanho Máximo do Título é de 75 Caracteres*"
       avisoContadorTitulo.style.color = "#ff0000"
+      botaoCriarPost.style.display="none"
+      verdadeTitulo = false;
     }
   }
 
   else {
     resultadoTitulo.style.color = "#737373"
     avisoContadorTitulo.textContent = ""
+    verdadeTitulo = true;
   }
+  verificarBotaoCriarPost();
 });
 //-----------
-
-//Quase certeza que existe uma maneira mais inteligente de fazer a parte da descrição com o JavaScript sem apenas copiar, 
-//colar e mudar os nomes das variavei, revisitar mais para frente, por enqunato o código funciona.
 
 //Descricao
 var meuTextoDescricao = document.getElementById("inputDaDescricao")
@@ -191,16 +202,20 @@ meuTextoDescricao.addEventListener("input", function () {
     if (tamanhoDoTextoDescricao === 0) {
       avisoContadorDescricao.textContent = "A Descrição não pode ficar vazia*"
       avisoContadorDescricao.style.color = "#ff0000"
+      verdadeDescricao = false;
     }
     if (tamanhoDoTextoDescricao > limiteDescricao) {
       avisoContadorDescricao.textContent = "O Tamanho Máximo da Descrição é de 130 Caracteres*"
       avisoContadorDescricao.style.color = "#ff0000"
+      verdadeDescricao = false;
     }
   }
   else {
     resultadoDescricao.style.color = "#737373"
     avisoContadorDescricao.textContent = ""
+    verdadeDescricao = true;
   }
+  verificarBotaoCriarPost();
 });
 //-----------
 
@@ -219,17 +234,30 @@ meuTextoParagrafo.addEventListener("input", function () {
   if (tamanhoDoTextoParagrafo > limiteParagrafo || tamanhoDoTextoParagrafo === 0) {
     resultadoParagrafo.style.color = "#ff0000"
     if (tamanhoDoTextoParagrafo === 0) {
-      avisoContadorParagrafo.textContent = "O Parágrafo não pode ficar vazio*"
+      avisoContadorParagrafo.textContent = "O Conteudo não pode ficar vazio*"
       avisoContadorParagrafo.style.color = "#ff0000"
+      verdadeParagrafo = false;
     }
     if (tamanhoDoTextoParagrafo > limiteParagrafo) {
-      avisoContadorParagrafo.textContent = "O Tamanho Máximo do Parágrafo é de 1300 Caracteres*"
+      avisoContadorParagrafo.textContent = "O Tamanho Máximo do Texto é de 1300 Caracteres*"
       avisoContadorParagrafo.style.color = "#ff0000"
+      verdadeParagrafo = false;
     }
   }
   else {
     resultadoParagrafo.style.color = "#737373"
     avisoContadorParagrafo.textContent = ""
+    verdadeParagrafo = true;
   }
+  verificarBotaoCriarPost();
 });
+
+function verificarBotaoCriarPost() {
+  if (verdadeTitulo && verdadeDescricao && verdadeParagrafo) {
+    botaoCriarPost.style.display = "flex";
+    botaoCriarPost.style.justifyContent = "space-around";
+  } else {
+    botaoCriarPost.style.display = "none";
+  }
+}
 //-----------

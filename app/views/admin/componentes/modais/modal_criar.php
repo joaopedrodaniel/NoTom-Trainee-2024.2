@@ -19,7 +19,7 @@
 
                     <div class="area-do-input-descricao">
                         <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
-                        <textarea id="inputDaDescricao" name="descricao" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+                        <textarea id="inputDaDescricao" name="descricao" class="input-paragrafo-popup" placeholder=" Digite sua descrição *"></textarea>
 
                         <div class="avisos-do-texto">
                             <p id="avisoContadorDescricao"></p>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="parte-inferior">
-                    <button class="botao-construtivo" id="botao-criar-post" type="submit">Criar</button>
+                    <button class="botao-construtivo" id="botaoCriarPost" type="submit">Criar</button>
                     <button onclick="fecharModal('modalCriar')" class="botao-destrutivo" type="button" id="botao-cancelar">Cancelar</button>
                 </div>
             </div>
