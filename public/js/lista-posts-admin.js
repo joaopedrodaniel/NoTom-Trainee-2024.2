@@ -127,8 +127,8 @@ window.addEventListener("resize", () => {
 
 setTimeout(checarSeTableTransborda, 100);
 
-//Java Script Lucas
-
+//Java Script Lucas -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//Java Script logica dos Modais
 function abirModal(idModal){
   document.getElementById(idModal).style.display = "flex";
 }
@@ -136,3 +136,25 @@ function abirModal(idModal){
 function fecharModal(idModal){
   document.getElementById(idModal).style.display = "none";
 }
+
+
+//Java Script Contador
+var meuTexto = document.getElementById("inputTitulo")
+var resultado = document.getElementById("contador")
+var limite = 75;
+
+resultado.textContent = 0 + "/" + limite;
+resultado.style.color = "#ff0000"
+
+meuTexto.addEventListener( "input", function(){
+var tamanhoDoTexto = meuTexto.value.length;
+resultado.textContent = tamanhoDoTexto + "/" + limite;
+
+if(tamanhoDoTexto > limite || tamanhoDoTexto === 0){
+  resultado.style.color = "#ff0000"
+}
+
+else{
+  resultado.style.color = "#737373"
+}
+});

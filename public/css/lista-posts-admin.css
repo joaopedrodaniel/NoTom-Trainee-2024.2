@@ -539,7 +539,6 @@ button.botao-construtivo {
 }
 
 .caixa-popup input {
-  margin-bottom: 20px;
   padding: 0 10px;
   border: 1px solid black;
   border-radius: 15px;
@@ -547,10 +546,9 @@ button.botao-construtivo {
 }
 
 .input-titulo-popup {
-  margin-bottom: 10;
   color: black;
   text-align: left;
-width: 100px;
+  width: 100px;
   height: 35px;
 }
 
@@ -575,6 +573,12 @@ width: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contador{
+  display: flex;
+  justify-content: flex-end;
+  color: #737373;
 }
 /* ----- */
 

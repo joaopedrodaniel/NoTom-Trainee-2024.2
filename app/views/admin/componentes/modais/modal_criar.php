@@ -9,8 +9,8 @@
                 </div>
                 <div class="area-do-input-titulo">
                     <label for="input-titulo">Titulo: </label>
-                    <input id="input-titulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
-                <p class = "contador">0/60</p>                
+                    <input id="inputTitulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+                <p class = "contador" id = "contador"></p>                
                 </div>
 
                 <div class="area-do-input-descricao">
