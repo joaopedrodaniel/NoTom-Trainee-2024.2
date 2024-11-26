@@ -213,6 +213,7 @@ table.responsividade-2 td {
 
 /* CSS Modais Lucas */
 
+/* Compartilhados*/
 .background-popup {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
@@ -254,6 +255,78 @@ table.responsividade-2 td {
   text-align: center;
 }
 
+.parte-superior {
+  height: 70%;
+  width: 100%;
+  padding: 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.botao-construtivo {
+  background-color: lightgreen;
+  font-size: 40px;
+}
+
+.parte-inferior {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.parte-inferior button {
+  height: 50%;
+  width: 50%;
+  font-size: 40px;
+}
+
+.titulo-popup {
+  font-size: 60%;
+  margin-bottom: 20px;
+  color: black;
+  text-align: left;
+  width: 100%;
+  height: 15%;
+}
+
+.autor-e-data h2 {
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+}
+
+.autor-e-data {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  gap: 40%;
+  padding: 30px;
+  padding-top: 1px;
+  width: 100%;
+  justify-content: center;
+}
+
+.autor-e-data-visualizar {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  gap: 40%;
+  padding: 10px;
+  padding-top: 10px;
+  width: 100%;
+  justify-content: center;
+}
+/* ----- */
+
+/* CSS Excluir*/
 .caixa-popup-excluir {
   text-align: center;
   height: fit-content;
@@ -273,6 +346,33 @@ table.responsividade-2 td {
   gap: 20px;
 }
 
+.parte-superior-excluir {
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 100%;
+}
+
+.titulo-popup-excluir {
+  font-size: 100%;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 15%;
+  font-family: roboto;
+}
+
+/* ----- */
+
+/* CSS Visualizar*/
 .caixa-popup-visualizar {
   text-align: center;
   height: fit-content;
@@ -291,38 +391,6 @@ table.responsividade-2 td {
   font-size: 16px;
   box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 1);
   gap: 20px;
-}
-
-.teste2 {
-  display: flex;
-  flex: row;
-  padding: 5px;
-  gap: 20px;
-}
-
-.parte-superior {
-  height: 70%;
-  width: 100%;
-  padding: 0;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.parte-superior-excluir {
-  height: 100%;
-  width: 100%;
-  padding: 0%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 90%;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 100%;
 }
 
 .parte-superior-visualizar {
@@ -346,9 +414,11 @@ table.responsividade-2 td {
   height: 20%;
 }
 
-button.botao-construtivo {
-  background-color: lightgreen;
-  font-size: 40px;
+.teste2 {
+  display: flex;
+  flex: row;
+  padding: 5px;
+  gap: 20px;
 }
 
 .parte-media-visualizar {
@@ -366,23 +436,39 @@ button.botao-construtivo {
   max-height: 70%;
 }
 
+.teste {
+  width: 70%;
+}
 
 
-.parte-inferior {
-  height: 30%;
-  width: 100%;
+.teste p{
+  background-color: #fab235;
+  border-radius: 5%;
   display: flex;
+  flex-direction: column;
+  font-size: 90%;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 4px;
+  word-break: break-word;
+}
+
+.parte-media-visualizar img {
+  max-width: 50%;
+  max-height: 70%;
+}
+
+.area-da-foto-visualizar {
+  height: 100%;
+  width: 30%;
   justify-content: center;
-  align-items: center;
-  gap: 10%;
 }
 
-.parte-inferior button {
-  height: 50%;
-  width: 50%;
-  font-size: 40px;
-}
+/* ----- */
 
+
+/* CSS Editar*/
 .parte-inferior-editar {
   height: 30%;
   width: 100%;
@@ -391,26 +477,9 @@ button.botao-construtivo {
   align-items: center;
   gap: 10%;
 }
+/* ----- */
 
-.titulo-popup {
-  font-size: 60%;
-  margin-bottom: 20px;
-  color: black;
-  text-align: left;
-  width: 100%;
-  height: 15%;
-}
-
-.titulo-popup-excluir {
-  font-size: 100%;
-  margin-bottom: 20px;
-  color: black;
-  text-align: center;
-  width: 100%;
-  height: 15%;
-  font-family: roboto;
-}
-
+/* CSS Criar*/
 .area-do-input-titulo {
   width: 100%;
   height: 50%;
@@ -428,6 +497,7 @@ button.botao-construtivo {
   font-size: 20px;
   color: black;
 }
+
 
 .area-do-input-paragrafo {
   width: 100%;
@@ -484,36 +554,6 @@ width: 100px;
   height: 35px;
 }
 
-.autor-e-data h2 {
-  text-align: left;
-  width: 100%;
-  font-weight: bold;
-}
-
-.autor-e-data {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  font-size: 12px;
-  gap: 40%;
-  padding: 30px;
-  padding-top: 1px;
-  width: 100%;
-  justify-content: center;
-}
-
-.autor-e-data-visualizar {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  font-size: 12px;
-  gap: 40%;
-  padding: 10px;
-  padding-top: 10px;
-  width: 100%;
-  justify-content: center;
-}
-
 .botao-adiciona-foto {
   flex-wrap: wrap;
   background-color: #8d9a94;
@@ -536,36 +576,8 @@ width: 100px;
   justify-content: center;
   align-items: center;
 }
+/* ----- */
 
-
-.teste {
-  width: 70%;
-}
-
-
-.teste p{
-  background-color: #fab235;
-  border-radius: 5%;
-  display: flex;
-  flex-direction: column;
-  font-size: 90%;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  padding: 4px;
-  word-break: break-word;
-}
-
-.parte-media-visualizar img {
-  max-width: 50%;
-  max-height: 70%;
-}
-
-.area-da-foto-visualizar {
-  height: 100%;
-  width: 30%;
-  justify-content: center;
-}
 
 @media only screen and (max-width: 600px) {
   .parte-inferior {
