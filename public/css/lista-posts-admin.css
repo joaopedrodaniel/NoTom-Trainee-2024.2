@@ -192,6 +192,7 @@ table.responsividade-2 td {
   gap: 10px;
   font-style: normal;
   color: white;
+  list-style: none;
 }
 
 .paginacao-elemento {
