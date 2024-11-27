@@ -95,6 +95,24 @@ header {
   height: 70px;
 }
 
+.background-popup {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modalEsqueciMinhaSenha{
+
+}
+
 @media screen and (max-width: 1010px) {
   .nav-item {
     height: 40px;
