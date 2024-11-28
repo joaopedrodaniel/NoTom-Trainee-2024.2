@@ -1,5 +1,5 @@
 <div class="background-popup" id="modalEditar<?= $post->id ?>">
-  <form method="POST" action="/admin/posts/edit">
+<form method="POST" action="/admin/posts/create" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?= $post->id ?>">
     <div class="caixa-popup">
       <div class="parte-superior">
@@ -22,9 +22,6 @@
           <label for="input-titulo">Edite o Texto: </label>
           <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup"><?= $post->texto ?></textarea>
         </div>
-
-        <!-- Quando editamos, por algum motivo o usuario está sempre com o ID 1, 
-         possivelmente algum problema de recursividade, olhar isso novamente mais tarde -->
         
          <div class="autor-e-data">
           <div>
@@ -41,14 +38,15 @@
         </div>
 
         <div class=imagem-popup>
-          <button class="botao-adiciona-foto">
-            <label for="file" class="local-de-input-foto">
-              <p>Adicionar Foto Nova * </p>
-              <ion-icon name="cloud-upload-outline"></ion-icon>
-            </label>
-
-          </button>
-        </div>
+                    <button class="botao-adiciona-foto" type="button">
+                        <label for="file" class="local-de-input-foto">
+                            <p>Adicionar Foto * </p>
+                            <ion-icon name="cloud-upload-outline"></ion-icon>
+                        </label>
+                        <input type="file" id="file" name="imagem" multiple class="input-file" style="display: none;" />
+                    </button>
+                </div>
+                
       </div>
       <div class=parte-inferior>
         <button onclick="fecharModal('modalEditar<?= $post->id ?>')" type="button" class="botao-destrutivo" id="botao-cancelar">Cancelar</button>

@@ -1,5 +1,5 @@
 <div class="background-popup" id="modalCriar">
-    <form method="POST" action="/admin/posts/create">
+    <form method="POST" action="/admin/posts/create" enctype="multipart/form-data">
         <div class="caixa-popup">
 
             <div class="parte-superior">
@@ -34,7 +34,6 @@
                         <p id="avisoContadorParagrafo"></p>
                         <p class="contador" id="contadorParagrafo"></p>
                     </div>
-
                 </div>
 
 
@@ -43,9 +42,8 @@
                         <label for="file" class="local-de-input-foto">
                             <p>Adicionar Foto * </p>
                             <ion-icon name="cloud-upload-outline"></ion-icon>
-
                         </label>
-                        <input type="file" id="file" name="file" multiple class="input-file" style="display: none;" />
+                        <input type="file" id="file" name="imagem" multiple class="input-file" style="display: none;" />
                     </button>
                 </div>
 

@@ -8,6 +8,7 @@ use Exception;
 class PostsController
 {
 
+
     public function index()
     {
         $_posts = App::get('database')->selectAll('posts');
@@ -17,12 +18,28 @@ class PostsController
 
     public function create()
     {
+
+        //variavel temporario = 
+        $temporario = $_FILES['imagem']['tmp_name'];
+
+        //adapta a imagem para a linguagem do php 
+        $nomeimagem =  sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+
+        //caminho onde vai ser armazenada
+        $destinoimagem = "public/assets/fotos-posts/";
+
+        //armazena a imagem no caminho definido acima
+        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+
+        //concatena o caminho com o nome da imagem
+        $caminhodaimagem = "public/assets/fotos-posts/" . $nomeimagem;
+
         $parameters = [
             'titulo' => $_POST['titulo'],
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
-            'imagem' => 'https://ihasabucket.com',
-            'id_autor' => 2
+            'imagem' => $caminhodaimagem,
+            'id_autor' => 3
         ];
 
         App::get('database')->insert('posts', $parameters);
@@ -31,12 +48,29 @@ class PostsController
 
     public function edit()
     {
+
+        //variavel temporario = 
+        $temporario = $_FILES['imagem']['tmp_name'];
+
+        //adapta a imagem para a linguagem do php 
+        $nomeimagem =  sha1(uniqid($_FILES['imagem']['name'], true)) . '.' . pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
+
+        //caminho onde vai ser armazenada
+        $destinoimagem = "public/assets/fotos-posts/";
+
+        //armazena a imagem no caminho definido acima
+        move_uploaded_file($temporario, $destinoimagem . $nomeimagem);
+
+        //concatena o caminho com o nome da imagem
+        $caminhodaimagem = "public/assets/fotos-posts/" . $nomeimagem;
+
+
         $parameters = [
             'titulo' => $_POST['titulo'],
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
-            'imagem' => 'https://ihasabucket.com',
-            'id_autor' => 1
+            'imagem' => $caminhodaimagem,
+            'id_autor' => 3
         ];
 
         $id = $_POST['id'];

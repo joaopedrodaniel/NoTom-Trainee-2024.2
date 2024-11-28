@@ -15,7 +15,7 @@
 
       <div class="teste2">
         <div class="area-da-foto-visualizar">
-          <img src="https://th.bing.com/th/id/OIP.uTPJEPTVL_wSg-CdDls00gHaFL?rs=1&pid=ImgDetMain"
+          <img src="<?= '/' . $post->imagem ?>"
             alt="Imagem de Teste">
         </div>
         <div class=teste>
