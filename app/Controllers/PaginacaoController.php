@@ -11,29 +11,30 @@ class ExampleController
     {
 
         $page = 1;
-
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
             $page = intval($_GET['paginacaoNumero']);
 
             if ($page <= 0) {
-                return redirect('admin/lista-posts');
+                return redirect('admin/posts?paginacaoNumero=1');
             }
         }
 
         $itensPage = 5;
         $inicio = $itensPage * $page - $itensPage;
-        $colunasConta = App::get('database')->countAll('posts');
+        $rows_count = App::get('database')->countAll('posts');
 
-
-        if ($inicio > $colunasConta) {
-            return redirect('admin/lista-posts');
+        if ($inicio > $rows_count) {
+            return redirect('admin/index');
         }
 
-        $posts = App::get('database')->selectAll('posts', $inicio, $itensPage);
+        $posts = App::get('database')->selectAll('posts');
 
-        $total_pages = ceil($colunasConta/$itensPage);
-       
-        return view('admin/posts', ['posts' => $posts, 'page' => $page, 'total_pages' => $total_pages]);
+        $total_pages = ceil($rows_count / $itensPage);
 
+        return view('admin/posts', [
+            'posts' => $posts,
+            'page' => $page,
+            'total_pages' => $total_pages
+        ]);
     }
 }
