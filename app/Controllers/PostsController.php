@@ -22,7 +22,7 @@ class PostsController
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => 'https://ihasabucket.com',
-            'id_autor' => 1
+            'id_autor' => 3
         ];
 
         App::get('database')->insert('posts', $parameters);

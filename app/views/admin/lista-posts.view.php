@@ -38,11 +38,12 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($posts as $post): ?>
+          <?php foreach ($posts as $post):
+            $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
             <tr class="accordion">
               <td><?= $post->id ?></td>
               <td><?= $post->titulo ?></td>
-              <td class="coluna-responsiva">Fulano da Silva</td>
+              <td class="coluna-responsiva"><?= $user->nome ?></td>
               <td class="coluna-responsiva"><?= date_format(new DateTime($post->criado_em), 'd/m/Y'); ?></td>
               <td class="celula-icone hidden">
                 <div class="center-div">
@@ -68,7 +69,7 @@
               </td>
             </tr>
             <tr class="hidden-content linha-responsiva">
-              <td colspan="3"><span style="font-weight: bold">Autor: </span>Fulano da Silva</td>
+              <td colspan="3"><span style="font-weight: bold">Autor: </span><?= $post->id_autor->nome?></td>
             </tr>
             <tr class="hidden-content linha-responsiva">
               <td colspan="3"><span style="font-weight: bold">Criado Em: </span> <?= $post->criado_em ?></td>
