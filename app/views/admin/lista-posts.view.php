@@ -68,11 +68,13 @@
                 </div>
               </td>
             </tr>
+
+            <!-- Parte Responsiva da Tabela, O que mudar na parte não responsiva, mudar na parte responsiva -->
             <tr class="hidden-content linha-responsiva">
-              <td colspan="3"><span style="font-weight: bold">Autor: </span><?= $post->id_autor->nome?></td>
+              <td colspan="3"><span style="font-weight: bold">Autor: </span><?= $user->nome ?></td>
             </tr>
             <tr class="hidden-content linha-responsiva">
-              <td colspan="3"><span style="font-weight: bold">Criado Em: </span> <?= $post->criado_em ?></td>
+              <td colspan="3"><span style="font-weight: bold">Criado Em: </span> <?= date_format(new DateTime($post->criado_em), 'd/m/Y');?></td>
             </tr>
             <tr class="hidden-content">
               <td colspan="5">
@@ -91,27 +93,28 @@
                 </button>
               </td>
             </tr>
+            <!-------------->
     </div>
-  
-  <!-- Modais -->
-    
+
+    <!-- Modais -->
+
     <!-- pop up excluir post -->
     <?php require(__DIR__ . './../admin/componentes/modais/modal_excluir.php') ?>
     <!---->
-  
+
     <!-- pop up editar post -->
     <?php require(__DIR__ . './../admin/componentes/modais/modal_editar.php') ?>
-     <!---->
+    <!---->
 
     <!-- pop up Visualizar Post -->
     <?php require(__DIR__ . './../admin/componentes/modais/modal_visualizar.php') ?>
     <!---->
-    <?php endforeach; ?>
+  <?php endforeach; ?>
   </table>
 
-    <!-- pop up criar post -->
-    <?php require(__DIR__ . './../admin/componentes/modais/modal_criar.php') ?>
-    <!---->
+  <!-- pop up criar post -->
+  <?php require(__DIR__ . './../admin/componentes/modais/modal_criar.php') ?>
+  <!---->
 
   </div>
   </div>
