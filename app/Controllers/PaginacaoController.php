@@ -14,7 +14,7 @@ class PaginacaoController
         if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
             $page = intval($_GET['paginacaoNumero']);
 
-            if ($page <= 0) {
+            if ($page <= 1) {
                 return redirect('admin/posts');
             }
         }
@@ -25,7 +25,7 @@ class PaginacaoController
 
 
 
-        if ($inicio > $rows_count) {
+        if ($inicio >= $rows_count) {
             return redirect('admin/posts');
         }
 

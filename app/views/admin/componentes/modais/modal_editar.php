@@ -23,7 +23,10 @@
           <textarea id="input-paragrafo" name="texto" class="input-paragrafo-popup"><?= $post->texto ?></textarea>
         </div>
 
-        <div class="autor-e-data">
+        <!-- Quando editamos, por algum motivo o usuario está sempre com o ID 1, 
+         possivelmente algum problema de recursividade, olhar isso novamente mais tarde -->
+        
+         <div class="autor-e-data">
           <div>
             <?php $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
             <h3>Autor:</h3>
