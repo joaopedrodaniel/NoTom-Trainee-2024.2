@@ -201,6 +201,7 @@ table.responsividade-2 td {
   padding: 0 4px;
   text-align: center;
   transition: background 0.2s;
+  list-style-type:none
 }
 
 .paginacao-elemento-atual {

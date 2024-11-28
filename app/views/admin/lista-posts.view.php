@@ -38,7 +38,7 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($_posts as $post): ?>
+          <?php foreach ($posts as $post): ?>
             <tr class="accordion">
               <td><?= $post->id ?></td>
               <td><?= $post->titulo ?></td>

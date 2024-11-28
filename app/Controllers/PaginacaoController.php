@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class ExampleController
+class PaginacaoController
 {
     public function index()
     {
@@ -15,7 +15,7 @@ class ExampleController
             $page = intval($_GET['paginacaoNumero']);
 
             if ($page <= 0) {
-                return redirect('admin/posts?paginacaoNumero=1');
+                return redirect('admin/posts');
             }
         }
 
@@ -23,18 +23,16 @@ class ExampleController
         $inicio = $itensPage * $page - $itensPage;
         $rows_count = App::get('database')->countAll('posts');
 
+
+
         if ($inicio > $rows_count) {
-            return redirect('admin/index');
+            return redirect('admin/posts');
         }
 
-        $posts = App::get('database')->selectAll('posts');
+        $posts = App::get('database')->selectAll('posts',$inicio, $itensPage);
 
         $total_pages = ceil($rows_count / $itensPage);
 
-        return view('admin/posts', [
-            'posts' => $posts,
-            'page' => $page,
-            'total_pages' => $total_pages
-        ]);
+        return view('admin/lista-posts', compact('posts', 'page','total_pages'));
     }
 }
