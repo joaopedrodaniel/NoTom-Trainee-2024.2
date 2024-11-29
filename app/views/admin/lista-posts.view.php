@@ -99,27 +99,27 @@
     <!-- Modais -->
 
     <!-- pop up excluir post -->
-    <?php require(__DIR__ . './../admin/componentes/modais/modal_excluir.php') ?>
+    <?php require 'componentes/modais/modal_excluir.php' ?>
     <!---->
 
     <!-- pop up editar post -->
-    <?php require(__DIR__ . './../admin/componentes/modais/modal_editar.php') ?>
+    <?php require 'componentes/modais/modal_editar.php' ?>
     <!---->
 
     <!-- pop up Visualizar Post -->
-    <?php require(__DIR__ . './../admin/componentes/modais/modal_visualizar.php') ?>
+    <?php require 'componentes/modais/modal_visualizar.php' ?>
     <!---->
   <?php endforeach; ?>
   </table>
 
   <!-- pop up criar post -->
-  <?php require(__DIR__ . './../admin/componentes/modais/modal_criar.php') ?>
+  <?php require 'componentes/modais/modal_criar.php' ?>
   <!---->
 
   </div>
   </div>
   <!----Paginacao--->
-  <?php require(__DIR__ . './../admin/componentes/paginacao.php') ?>
+  <?php require 'componentes/paginacao.php' ?>
   </div>
 
 

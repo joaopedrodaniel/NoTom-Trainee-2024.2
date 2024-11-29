@@ -43,7 +43,7 @@
                             <p>Adicionar Foto * </p>
                             <ion-icon name="cloud-upload-outline"></ion-icon>
                         </label>
-                        <input type="file" id="file" name="imagem" multiple class="input-file" style="display: none;" />
+                        <input type="file" id="file" name="imagem" class="input-file" />
                     </button>
                 </div>
 

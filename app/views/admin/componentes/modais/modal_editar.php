@@ -1,5 +1,5 @@
 <div class="background-popup" id="modalEditar<?= $post->id ?>">
-<form method="POST" action="/admin/posts/create" enctype="multipart/form-data">
+<form method="POST" action="/admin/posts/edit" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?= $post->id ?>">
     <div class="caixa-popup">
       <div class="parte-superior">
