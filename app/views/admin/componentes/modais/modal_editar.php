@@ -39,11 +39,11 @@
 
         <div class=imagem-popup>
                     <button class="botao-adiciona-foto" type="button">
-                        <label for="file" class="local-de-input-foto">
+                    <label class="local-de-input-foto">
                             <p>Adicionar Foto * </p>
                             <ion-icon name="cloud-upload-outline"></ion-icon>
+                            <input type="file" id="file" name="imagem" multiple class="input-file" style="display: none;" />
                         </label>
-                        <input type="file" id="file" name="imagem" multiple class="input-file" style="display: none;" />
                     </button>
                 </div>
                 
