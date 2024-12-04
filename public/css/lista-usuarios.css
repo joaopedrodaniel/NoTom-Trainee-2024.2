@@ -201,19 +201,34 @@ table.responsividade-2 .coluna-email {
   background-color: #8d9a94;
 }
 
+.paginacao-elemento-disabled {
+  pointer-events: none;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
 /*Modal*/
 
 .modal {
+  box-sizing: border-box;
   border-radius: 25px;
   background-color: #f9cb7a;
   padding: 20px;
-  width: 253.6px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.2);
   z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 270px;
+  height: 290px;
 }
 
 .modal h1 {
@@ -266,6 +281,7 @@ table.responsividade-2 .coluna-email {
 }
 
 .modal .botao-fechar-modal {
+  margin-top: 10px;
   background-color: black;
   color: white;
 }
@@ -287,32 +303,16 @@ table.responsividade-2 .coluna-email {
 }
 
 .criacao {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
 }
 
 .visualizacao {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
 }
 .edicao {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
 }
 .excluir {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -326,8 +326,13 @@ table.responsividade-2 .coluna-email {
   z-index: 2;
 }
 .modal.edicao input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.botao-excluir-modal {
   margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: red;
+  font-size: 32px;
 }
 
 @media (max-width: 300px) {

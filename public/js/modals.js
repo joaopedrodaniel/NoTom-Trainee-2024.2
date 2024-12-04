@@ -1,8 +1,8 @@
 const tela = document.querySelector(".tela");
 
 function abrirModal(idModal) {
-  document.getElementById(idModal).style.display = "block";
-  tela.style.display = "block";
+  document.getElementById(idModal).style.display = "flex";
+  tela.style.display = "flex";
 }
 
 function fecharModal(idModal) {

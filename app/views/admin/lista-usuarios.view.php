@@ -154,7 +154,7 @@
           <button type="button" class="botao-fechar-modal" onclick="fecharModal('excluir<?= $usuario->id ?>')">
             Cancelar
           </button>
-          <button class="botao-destrutivo">Excluir</button>
+          <button class="botao-excluir-modal">Excluir</button>
         </div>
       </form>
     </div>
@@ -167,14 +167,12 @@
       </div>
 
       <div class="paginacao">
-        <a class="paginacao-elemento" href="#"><</a>
-        <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
-        <a class="paginacao-elemento" href="#">2</a>
-        <a class="paginacao-elemento" href="#">3</a>
-        <div>...</div>
-        <a class="paginacao-elemento" href="#">9</a>
-        <a class="paginacao-elemento" href="#">10</a>
-        <a class="paginacao-elemento" href="#">></a>
+        <a class="paginacao-elemento <?= $page <= 1 ? "paginacao-elemento-disabled" : "" ?>" href="?paginacaoUsuario=<?= $page - 1 ?>"><</a>
+
+        <?php for($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
+          <a class="paginacao-elemento  <?= $page_number == $page ? "paginacao-elemento-atual" : "paginacao-elemento" ?>" href="?paginacaoUsuario=<?= $page_number ?>"><?= $page_number ?></a>
+        <?php endfor ?>
+        <a class="paginacao-elemento <?= $page >= $total_pages ? "paginacao-elemento-disabled" : "" ?>"" href="?paginacaoUsuario=<?= $page + 1 ?>">></a>
       </div>
     </div>
 

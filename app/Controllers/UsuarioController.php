@@ -10,9 +10,28 @@ class UsuarioController
 
     public function index()
     {
-        $usuarios = App::get('database')->selectAll('usuarios');
+        $page = 1;
+        if(isset($_GET['paginacaoUsuario']) && !empty($_GET['paginacaoUsuario'])){
+            $page = intval($_GET['paginacaoUsuario']);
 
-        return view('admin/lista-usuarios', compact('usuarios'));
+            if($page <= 0){
+                return redirect('admin/lista-usuarios');
+            }
+        }
+
+        $itensPage = 9;
+        $inicio = $itensPage * $page - $itensPage;
+        $rows_count = App::get('database')->countAll('usuarios');
+
+        if($inicio > $rows_count){
+            return redirect('admin/lista-usuarios');
+        }
+        
+        $usuarios = App::get('database')->selectAll('usuarios', $inicio, $itensPage);
+
+        $total_pages = ceil($rows_count/$itensPage);
+
+        return view('admin/lista-usuarios', compact('usuarios', 'page', 'total_pages'));
     }
 
     public function criacao()
