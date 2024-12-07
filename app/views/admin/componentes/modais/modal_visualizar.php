@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class=parte-inferior-visualizar>
+    <div class=parte-inferior>
       <button onclick="fecharModal('modalVisualizar<?= $post->id ?>')" class="botao-destrutivo" type="button">Sair</button>
     </div>
   </div>

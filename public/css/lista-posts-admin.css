@@ -280,9 +280,8 @@ table.responsividade-2 td {
 }
 
 .parte-inferior button {
-  height: 50%;
-  width: 50%;
-  font-size: 40px;
+  font-size: 26px;
+  width: 150px;
 }
 
 .titulo-popup {
@@ -306,7 +305,7 @@ table.responsividade-2 td {
   flex-direction: row;
   font-size: 12px;
   gap: 40%;
-  padding: 30px;
+  padding: 4px 30px 4px 30px;
   padding-top: 1px;
   width: 100%;
   justify-content: center;
@@ -554,7 +553,7 @@ table.responsividade-2 td {
   border: none;
   border-radius: 15px;
   padding: 5px 10px;
-  font-size: 25px;
+  font-size: 26px;
   width: fit-content;
 }
 
