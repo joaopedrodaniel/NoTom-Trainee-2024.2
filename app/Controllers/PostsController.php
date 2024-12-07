@@ -64,14 +64,25 @@ class PostsController
         //concatena o caminho com o nome da imagem
         $caminhodaimagem = "public/assets/fotos-posts/" . $nomeimagem;
 
-
-        $parameters = [
-            'titulo' => $_POST['titulo'],
-            'descricao' => $_POST['descricao'],
-            'texto' => $_POST['texto'],
-            'imagem' => $caminhodaimagem,
-            'id_autor' => 3
-        ];
+        $atualizarImagem = $_POST['atualizarImagem'];
+        if($atualizarImagem){
+            $parameters = [
+                'titulo' => $_POST['titulo'],
+                'descricao' => $_POST['descricao'],
+                'texto' => $_POST['texto'],
+                'imagem' => $caminhodaimagem,
+                'id_autor' => 3
+            ];
+        }
+        else{
+            $parameters = [
+                'titulo' => $_POST['titulo'],
+                'descricao' => $_POST['descricao'],
+                'texto' => $_POST['texto'],
+                'id_autor' => 3
+            ];
+        }
+        
 
         $id = $_POST['id'];
 
