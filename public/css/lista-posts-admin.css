@@ -15,7 +15,6 @@ table {
 }
 
 table,
-
 th {
   border-bottom: solid 1px #8d9a94;
   border-collapse: collapse;
@@ -201,7 +200,7 @@ table.responsividade-2 td {
   padding: 0 4px;
   text-align: center;
   transition: background 0.2s;
-  list-style-type:none
+  list-style-type: none;
 }
 
 .paginacao-elemento-atual {
@@ -210,6 +209,12 @@ table.responsividade-2 td {
 
 .paginacao-elemento:hover {
   background-color: #8d9a94;
+}
+
+.paginacao-icone {
+  display: flex;
+  align-items: center;
+  height: 29px;
 }
 
 /* CSS Modais Lucas */
@@ -264,7 +269,6 @@ table.responsividade-2 td {
   justify-content: center;
   align-items: center;
 }
-
 
 .parte-inferior {
   height: 30%;
@@ -427,8 +431,6 @@ table.responsividade-2 td {
   gap: 5%;
 }
 
-
-
 .parte-media-visualizar img {
   max-width: 70%;
   max-height: 70%;
@@ -437,7 +439,6 @@ table.responsividade-2 td {
 .teste {
   width: 70%;
 }
-
 
 .teste p {
   background-color: #fab235;
@@ -465,7 +466,6 @@ table.responsividade-2 td {
 
 /* ----- */
 
-
 /* CSS Editar*/
 .parte-inferior-editar {
   height: 30%;
@@ -488,15 +488,12 @@ table.responsividade-2 td {
   gap: 4px;
 }
 
-
-
 .area-do-input-titulo label {
   font-weight: bold;
   width: fit-content;
   font-size: 20px;
   color: black;
 }
-
 
 .area-do-input-paragrafo {
   width: 100%;
@@ -578,7 +575,7 @@ table.responsividade-2 td {
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 15px
+  font-size: 15px;
 }
 
 .contador {
@@ -587,9 +584,7 @@ table.responsividade-2 td {
   color: #737373;
 }
 
-
 /* ----- */
-
 
 @media only screen and (max-width: 600px) {
   .parte-inferior {
@@ -671,11 +666,9 @@ table.responsividade-2 td {
     justify-content: left;
     align-items: left;
     gap: 4px;
-
   }
 
   .teste {
-
     min-width: 50px;
     display: flex;
     flex-wrap: wrap;
