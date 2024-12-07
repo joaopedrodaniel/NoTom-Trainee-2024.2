@@ -7,7 +7,7 @@
     </li>
 
     <?php for ($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
-      <li class="paginacao-elemento"><a <?=$page_number == $page ? "active" : "" ?>href="?paginacaoNumero=<?= $page_number ?>"><?= $page_number ?></a></li>    
+      <li class="<?=$page_number == $page ? 'paginacao-elemento paginacao-elemento-atual' : 'paginacao-elemento' ?>"><a href="?paginacaoNumero=<?= $page_number ?>"><?= $page_number ?></a></li>    
       <?php endfor; ?>
 
     <li class="paginacao-elemento "<?= $page >= $total_pages ? "disabled" : "" ?>>
