@@ -5,9 +5,6 @@ use App\Controllers\ExampleController;
 use App\Controllers\PostsController;
 use App\Core\Router;
 
-
-    //esse get acima aq pode deletar quase certeza, deletar dps de terminar os testes e testar só ele, para nn interferir em nada
-
     $router->get('admin/posts', 'PaginacaoController@index');
 
     //$router->get('admin/posts', 'PostsController@index');

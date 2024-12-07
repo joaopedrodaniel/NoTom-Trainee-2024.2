@@ -28,7 +28,6 @@ class PaginacaoController
         if ($inicio >= $rows_count) {
             return redirect('admin/posts');
         }
-
         $posts = App::get('database')->selectAll('posts',$inicio, $itensPage);
 
         $total_pages = ceil($rows_count / $itensPage);
