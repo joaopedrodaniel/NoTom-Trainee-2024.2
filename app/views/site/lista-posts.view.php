@@ -28,7 +28,7 @@
       </div>
       <div class="conteudo-central">
         <div class="lista-posts">
-          <?php foreach ($_posts as $post): $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
+          <?php foreach ($posts as $post): $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
             <div class="post">
             <img src=<?=$post->imagem ?> alt="" />
             <div class="post-texto">
@@ -47,16 +47,7 @@
           
           
         </div>
-        <div class="paginacao">
-          <a class="paginacao-elemento" href="#"><</a>
-          <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
-          <a class="paginacao-elemento" href="#">2</a>
-          <a class="paginacao-elemento" href="#">3</a>
-          <div>...</div>
-          <a class="paginacao-elemento" href="#">9</a>
-          <a class="paginacao-elemento" href="#">10</a>
-          <a class="paginacao-elemento" href="#">></a>
-        </div>
+        <?php require 'componentes/publicPostsPaginacao.php' ?>
       </div>
     </div>
     <script
