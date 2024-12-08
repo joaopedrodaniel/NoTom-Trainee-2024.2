@@ -3,7 +3,10 @@
 namespace App\Controllers;
 use App\Controllers\ExampleController;
 use App\Controllers\PostsController;
+use App\Controllers\PublicPostsController;
 use App\Core\Router;
+
+    $router->get('posts', 'PublicPostsController@index' );
 
     $router->get('admin/posts', 'PaginacaoController@index');
 
