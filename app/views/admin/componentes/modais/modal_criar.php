@@ -46,7 +46,7 @@
                         </label>
                     </button>
                 </div>
-
+                <p id="avisoContadorFoto"></p>
                 
                 <div class="parte-inferior">
                     <button class="botao-construtivo" id="botaoCriarPost" type="submit">Criar</button>

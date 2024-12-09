@@ -133,18 +133,23 @@ setTimeout(checarSeTableTransborda, 100);
 
 var temFotoNoCriar = false;
 
+avisoContadorFoto.textContent = "Você deve escolher uma foto *";
+avisoContadorFoto.style.color = "#ff0000";
+avisoContadorFoto.style.paddingBottom = "20px";
+
+
 const inputDeFileNoCriar = document.getElementById('file');
 
 inputDeFileNoCriar.addEventListener('change', () => {
     if (inputDeFileNoCriar.files.length > 0) {
       temFotoNoCriar = true;
+      avisoContadorFoto.style.display = "none";
     } else {
       temFotoNoCriar = false;
+
     }
     verificarBotaoCriarPost();
 });
-
-
 
 
 //Java Script logica dos Modais
@@ -181,14 +186,12 @@ meuTextoTitulo.addEventListener("input", function () {
     if (tamanhoDoTextoTitulo === 0) {
       avisoContadorTitulo.textContent = "O Título não pode ficar vazio*";
       avisoContadorTitulo.style.color = "#ff0000";
-      botaoCriarPost.style.display = "none";
       verdadeTitulo = false;
     }
     if (tamanhoDoTextoTitulo > limiteTitulo) {
       avisoContadorTitulo.textContent =
         "O Tamanho Máximo do Título é de 75 Caracteres*";
       avisoContadorTitulo.style.color = "#ff0000";
-      botaoCriarPost.style.display = "none";
       verdadeTitulo = false;
     }
   } else {
