@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+  }
+
+body{
+    background-color: rgb(16, 41, 36) ;
+    overflow-x: hidden;
+    margin: 10px;
+  }
+
+.area-individual{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* descobrir como fazer css funcionar no Iframe*/
