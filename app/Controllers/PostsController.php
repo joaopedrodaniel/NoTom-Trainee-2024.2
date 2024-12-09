@@ -18,7 +18,6 @@ class PostsController
 
     public function create()
     {
-
         //variavel temporario = 
         $temporario = $_FILES['imagem']['tmp_name'];
 
@@ -48,7 +47,6 @@ class PostsController
 
     public function edit()
     {
-
         //variavel temporario = 
         $temporario = $_FILES['imagem']['tmp_name'];
 
@@ -83,17 +81,22 @@ class PostsController
             ];
         }
         
-
         $id = $_POST['id'];
 
         App::get('database')->update('posts', $id, $parameters);
         header('Location: /admin/posts');
     }
-
+    
     public function delete()
     {
+        
         $id = $_POST['id'];
+        $post = App::get('database')->select('posts', $id)[0];
+        $caminhodaimagem = $post->imagem;
 
+        unlink($caminhodaimagem);
+
+        
         App::get('database')->delete('posts', $id);
 
         header('Location: /admin/posts');
