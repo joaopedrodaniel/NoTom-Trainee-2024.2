@@ -128,6 +128,25 @@ window.addEventListener("resize", () => {
 setTimeout(checarSeTableTransborda, 100);
 
 //Java Script Lucas -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+//Script verificar se escolheu uma foto no criar
+
+var temFotoNoCriar = false;
+
+const inputDeFileNoCriar = document.getElementById('file');
+
+inputDeFileNoCriar.addEventListener('change', () => {
+    if (inputDeFileNoCriar.files.length > 0) {
+      temFotoNoCriar = true;
+    } else {
+      temFotoNoCriar = false;
+    }
+    verificarBotaoCriarPost();
+});
+
+
+
+
 //Java Script logica dos Modais
 function abirModal(idModal) {
   document.getElementById(idModal).style.display = "flex";
@@ -257,7 +276,7 @@ meuTextoParagrafo.addEventListener("input", function () {
 });
 
 function verificarBotaoCriarPost() {
-  if (verdadeTitulo && verdadeDescricao && verdadeParagrafo) {
+  if (verdadeTitulo && verdadeDescricao && verdadeParagrafo && temFotoNoCriar) {
     botaoCriarPost.style.display = "flex";
     botaoCriarPost.style.justifyContent = "space-around";
   } else {
@@ -282,5 +301,6 @@ inputsImagemEdicao.forEach((input) => {
 });
 
 //-----------
+
 
 //-----------
