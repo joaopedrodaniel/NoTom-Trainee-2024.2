@@ -20,14 +20,15 @@
  <!-- o programa ira mostrar apenas a primeira, as duas anteriores, a atual,as próximas duas e a última. Nas        -->
  <!-- pontas, esta lógica se dobra, a fim de sempre terem 7 páginas da tela, a primeira de todase a ultima de todas -->
  <!------------------------------------------------------------------------------------------------------------------->
-
+ <!--verifica se tem mais de 6 páginas, usa dois ifs para saber se tá nas pontas (se tiver adiciona o três pontinhos 
+ e o numero), e mostra os dois últimos itens e os dois próximos                                                     -->
   <!-- Se tivermos mais de 6 páginas -->
     <?php if ($total_pages > 6): ?>
         <!-- Se a pagina atual for maior que a 3 -->
 
         <?php if ($page < 3): ?>
-        <li class="paginacao-elemento"><a href="?paginacaoNumero=1">AAAAAAAAAAAAAAA</a></li>
-      <?php endif; ?>
+        <li class="paginacao-elemento"><a href="?paginacaoNumero=1"></a></li>
+        <?php endif; ?>
 
       <?php if ($page > 3): ?>
         <li class="paginacao-elemento"><a href="?paginacaoNumero=1">1</a></li>
