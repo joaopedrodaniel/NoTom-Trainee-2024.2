@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <title>Login Page</title>
     </head>
 
@@ -46,8 +47,9 @@
                         <input type="text" name="email" id="email" class="texto-input" placeholder="Email ou Nome de Usuario *" autocomplete="off" />
                     </div>
 
-                    <div class="coluna-central">
+                    <div class="coluna-central senha">
                         <input type="password" name="senha" id="senha" class="texto-input" placeholder="Senha *" autocomplete="off" />
+                        <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
                     </div>
 
                     <div class="coluna-central">
@@ -58,6 +60,7 @@
                 </form>
         </div>
     </div>
+    <script src="../../../public/js/login.js"></script>
   </body>
 </html>
 
