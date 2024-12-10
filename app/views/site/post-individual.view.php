@@ -28,8 +28,8 @@
       </div>
       <div class="direita">
         <div class="mid">
-          <div class="sobre">Sobre o Tema</div>
-          <div class="descricao">
+          <div class="descricao">Sobre o Tema</div>
+          <div class="texto">
             Houston-born rapper and producer Travis Scott's psychedelic trap
             style makes him one of the more distinctive talents to have risen to
             the height of mainstream commercial popularity. His heavily
