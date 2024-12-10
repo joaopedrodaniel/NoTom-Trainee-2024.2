@@ -84,7 +84,6 @@ body{
   height: 320px;
 }
 
-
 .carrossel-infinito{
   display: flex;
   justify-content: center;
@@ -150,7 +149,7 @@ body{
   display: flex;
   color: #F9CB7A;
   padding-bottom: 50px;
-  margin-top: 12%;
+  margin-top: 6%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -161,10 +160,22 @@ body{
   width: 78%;
 }
 
+.descricao_carrossel{
+  text-align: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.descricao_carrossel h1{
+  color: #F9CB7A;
+  margin-bottom: 3%;
+  font-size: 30px;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
-  top: 50%; 
+  top: 30%; 
   transform: translateY(-50%); 
   z-index: 1;
 }
