@@ -26,7 +26,8 @@
                         <div><span class="simbolo">list</span></div><a href="#" class="nav-link">Publicações</a>
                     </li>
                     <li class="nav-item">
-                        <div><span class="simbolo">login</span></div><a href="#" class="nav-link"> Login</a>
+                        <!--ATENÇÃO, O CAMINHO DO HREF ABAIXO ESTÁ ERRADO! IREI REVISITAR NO FUTURO, TROCAR O QUANTO ANTES -->
+                        <div><span class="simbolo">login</span></div><a href="http://localhost:8000/admin/posts" class="nav-link"> Login</a>
                     </li>
                 </ul>
             </div>

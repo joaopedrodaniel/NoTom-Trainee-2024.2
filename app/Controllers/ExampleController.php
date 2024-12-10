@@ -7,10 +7,9 @@ use Exception;
 
 class ExampleController
 {
-
-    public function index()
+    public function header()
     {
-        return view('site/index');
+        return view('site/header');
     }
 }
 
