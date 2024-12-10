@@ -19,7 +19,7 @@ class PaginacaoController
             }
         }
 
-        $itensPage = 1;
+        $itensPage = 8;
         $inicio = $itensPage * $page - $itensPage;
         $rows_count = App::get('database')->countAll('posts');
 
