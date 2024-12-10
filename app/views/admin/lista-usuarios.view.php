@@ -121,17 +121,17 @@
         <input required="true" type="hidden" name="id" id="usuario-id" value="<?= $usuario->id ?>">
 
         <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
-        <input required="true" id="input-nome" type="text" name="nome" placeholder="Digite seu nome..." />
+        <input required="true" id="input-nome" type="text" name="nome" value="<?= htmlspecialchars($usuario->nome)?>"  placeholder="Digite seu nome..." />
 
         <label class="label-com-margem titulo-conteudo-modal" for="email"
           >E-mail:</label
         >
-        <input required="true" id="email" type="email" name="email" placeholder="exemplo@email.com" />
+        <input required="true" id="email" type="email" name="email" value="<?= htmlspecialchars($usuario->email)?>"  placeholder="exemplo@email.com" />
 
         <label class="label-com-margem titulo-conteudo-modal" for="senha"
           >Senha:</label
         >
-        <input required="true" id="senha" type="password" name="senha" placeholder="Digite sua senha..." />
+        <input required="true" id="senha" type="password" name="senha" value="<?= htmlspecialchars($usuario->senha)?>" placeholder="Digite sua senha..." />
         <div class="modal-botoes">
           <button type="button" class="botao-destrutivo" onclick="fecharModal('edicao<?= $usuario->id ?>')">
             Cancelar
