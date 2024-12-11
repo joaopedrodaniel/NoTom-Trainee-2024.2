@@ -14,92 +14,35 @@
 
   <body>
     <div class="container">
+      <?php foreach($posts as $post): ?>
       <div class="esquerda">
         <div class="header">
           <div class="imagem">
-            <img
-              title="Foto do artigo"
-              src="../../../public/assets/artista.png"
-              alt="imagem ado tema"
-            />
+          <?= $post->imagem ?>
           </div>
-          <div class="titulo">Nome do Artista ou Tema</div>
+          <div class="titulo"><?= $post->titulo ?></div>
         </div>
       </div>
       <div class="direita">
         <div class="mid">
-          <div class="descricao">Sobre o Tema</div>
-          <div class="texto">
-            Houston-born rapper and producer Travis Scott's psychedelic trap
-            style makes him one of the more distinctive talents to have risen to
-            the height of mainstream commercial popularity. His heavily
-            processed, half-sung/half-rapped style set him apart early on, and
-            he grew from affiliations with Kanye West's GOOD Music
-            and T.I.'s Grand Hustle in the early 2010s to chart-dominating
-            popularity before the close of the decade. After his first studio
-            album, 2015's Rodeo, debuted in the number three position, Scott
-            followed with a pair of number one full-lengths, Birds in the Trap
-            Sing McKnight (2016) and Astroworld (2018), all the while assisting
-            in platinum singles headlined by the likes of Rihanna ("Bitch Better
-            Have My Money"), SZA ("Love Galore"), and Drake ("Portland"), and
-            working extensively with Quavo as Huncho Jack. Whether leading or
-            supporting, Scott's presence was unmistakable, and he quickly
-            accumulated Grammys, endorsement deals, and appearances in more than
-            80 charting songs. By the 2020s, Scott was one of the most
-            successful living artists on the planet. This level of fame played
-            into both extreme success and profound tragedy, with Scott being at
-            the center of controversy surrounding the deaths and injuries of
-            hundreds of fans at his 2021 Astroworld festival before debuting his
-            genre-crossing, Grammy-nominated fourth album, 2023's UTOPIA.
-            Houston-born rapper and producer Travis Scott's psychedelic trap
-            style makes him one of the more distinctive talents to have risen to
-            the height of mainstream commercial popularity. His heavily
-            processed, half-sung/half-rapped style set him apart early on, and
-            he grew from affiliations with Kanye West's GOOD Music
-            and T.I.'s Grand Hustle in the early 2010s to chart-dominating
-            popularity before the close of the decade. After his first studio
-            album, 2015's Rodeo, debuted in the number three position, Scott
-            followed with a pair of number one full-lengths, Birds in the Trap
-            Sing McKnight (2016) and Astroworld (2018), all the while assisting
-            in platinum singles headlined by the likes of Rihanna ("Bitch Better
-            Have My Money"), SZA ("Love Galore"), and Drake ("Portland"), and
-            working extensively with Quavo as Huncho Jack. Whether leading or
-            supporting, Scott's presence was unmistakable, and he quickly
-            accumulated Grammys, endorsement deals, and appearances in more than
-            80 charting songs. By the 2020s, Scott was one of the most
-            successful living artists on the planet. This level of fame played
-            into both extreme success and profound tragedy, with Scott being at
-            the center of controversy surrounding the deaths and injuries of
-            hundreds of fans at his 2021 Astroworld festival before debuting his
-            genre-crossing, Grammy-nominated fourth album, 2023's
-            UTOPIA.Houston-born rapper and producer Travis Scott's psychedelic
-            trap style makes him one of the more distinctive talents to have
-            risen to the height of mainstream commercial popularity. His heavily
-            processed, half-sung/half-rapped style set him apart early on, and
-            he grew from affiliations with Kanye West's GOOD Music
-            and T.I.'s Grand Hustle in the early 2010s to chart-dominating
-            popularity before the close of the decade. After his first studio
-            album, 2015's Rodeo, debuted in the number three position, Scott
-            followed with a pair of number one full-lengths, Birds in the Trap
-            Sing McKnight (2016) and Astroworld (2018), all the while assisting
-            in platinum singles headlined by the likes of Rihanna ("Bitch Better
-            Have My Money"), SZA ("Love Galore"), and Drake ("Portland"), and
-            working extensively with Quavo as Huncho Jack. Whether leading or
-            supporting, Scott's presence was unmistakable, and he quickly
-            accumulated Grammys, endorsement deals, and appearances in more than
-            80 charting songs. By the 2020s, Scott was one of the most
-            successful living artists on the planet. This level of fame played
-            into both extreme success and profound tragedy, with Scott being at
-            the center of controversy surrounding the deaths and injuries of
-            hundreds of fans at his 2021 Astroworld festival before debuting his
-            genre-crossing, Grammy-nominated fourth album, 2023's UTOPIA.
+          <div class="descricao"><?= $post->descricao ?></div>
+          <div class="texto"><?= $post->texto ?>           
           </div>
         </div>
         <div class="footer">
-          <div class="autor">Nome do Autor:Davi Grossi</div>
-          <div class="data">Data da Postagem:23/10/2024</div>
+        <?php 
+                $autor = null;
+                foreach($usuarios as $usuario) {
+                    $id_autor = $usuario->nome;
+                    $autor = $id_autor;
+                    }
+                
+            ?>
+          <div class="autor">Nome do Autor:<?= $autor ?></div>
+          <div class="data">Data da Postagem:<?= $post->criado_em ?> </div>
         </div>
       </div>
+      <?php endforeach; ?>
     </div>
   </body>
 </html>

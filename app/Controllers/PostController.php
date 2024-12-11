@@ -8,7 +8,12 @@ class PostController
 {
     public function exibirPost()
     {
-        return view('site/post-individual');
+        
+        $posts = App::get('database')->selectAll('posts');
+        $usuarios = App::get('database')->selectAll('usuarios');
+
+        return view('site/post-individual' , compact('posts', 'usuarios'));
+
     }
 
 }

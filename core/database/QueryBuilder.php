@@ -48,5 +48,22 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+    public function selectOne($table, $id)
+    {
+        $sql = sprintf('SELECT * FROM %s WHERE id = :id LIMIT 1', $table);
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute([
+                'id' => $id
+            ]);
+
+            return $stmt->fetch(PDO::FETCH_OBJ);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+
+    }
 
 }
