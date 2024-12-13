@@ -17,6 +17,7 @@
     />
   </head>
   <body>
+  <div class="topo" ><?php require 'header.php' ?></div>
     <div class="pagina-lista-posts">
       <h1 class="titulo">Posts</h1>
       <div class="barra-busca-container">
@@ -28,84 +29,29 @@
       </div>
       <div class="conteudo-central">
         <div class="lista-posts">
-          <div class="post">
-            <img src="https://picsum.photos/200" alt="" />
+          <?php foreach ($posts as $post): $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
+            <div class="post">
+            <img src=<?=$post->imagem ?> alt="" />
             <div class="post-texto">
               <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
+                <div class="post-titulo"><?=$post->titulo ?></div>
                 <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <?=$post->descricao?>
                 </div>
               </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
+              <div class="post-conteudo-texto">Por: <?=$user->nome ?></div>
             </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/300" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
             </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/400" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/500" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/600" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
+          <?php endforeach; ?>
+          
+          
+          
+          
         </div>
-        <div class="paginacao">
-          <a class="paginacao-elemento" href="#"><</a>
-          <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
-          <a class="paginacao-elemento" href="#">2</a>
-          <a class="paginacao-elemento" href="#">3</a>
-          <div>...</div>
-          <a class="paginacao-elemento" href="#">9</a>
-          <a class="paginacao-elemento" href="#">10</a>
-          <a class="paginacao-elemento" href="#">></a>
-        </div>
+        <?php require 'componentes/publicPostsPaginacao.php' ?>
       </div>
     </div>
+    <div class="teste1234"><?php require 'footer.php' ?></div>  
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
