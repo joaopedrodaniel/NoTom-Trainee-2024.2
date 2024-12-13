@@ -16,7 +16,7 @@ class QueryBuilder
 
     public function selectAll($table, $inicio = null, $rows_count = null)
     {
-        $sql = "select * from {$table} order by criado_em desc";
+        $sql = "select * from {$table} "; //retiramos para post-individual funcionar :order by criado_em desc . Adicionar depois quando for oportuno
 
         if ($inicio >= 0 && $rows_count > 0) {
             $sql .= " LIMIT {$inicio}, {$rows_count}";
