@@ -14,11 +14,10 @@
 
   <body>
     <div class="container">
-      <?php foreach($posts as $post): ?>
       <div class="esquerda">
         <div class="header">
           <div class="imagem">
-          <?= $post->imagem ?>
+            <?= $post->imagem ?>
           </div>
           <div class="titulo"><?= $post->titulo ?></div>
         </div>
@@ -26,23 +25,22 @@
       <div class="direita">
         <div class="mid">
           <div class="descricao"><?= $post->descricao ?></div>
-          <div class="texto"><?= $post->texto ?>           
-          </div>
+          <div class="texto"><?= $post->texto ?></div>
         </div>
         <div class="footer">
-        <?php 
-                $autor = null;
-                foreach($usuarios as $usuario) {
-                    $id_autor = $usuario->nome;
-                    $autor = $id_autor;
-                    }
-                
-            ?>
-          <div class="autor">Nome do Autor:<?= $autor ?></div>
-          <div class="data">Data da Postagem:<?= $post->criado_em ?> </div>
+          <?php 
+              $autor = null;
+              foreach ($usuarios as $usuario) {
+                  if ($usuario->id == $post->id_autor) {
+                      $autor = $usuario->nome;
+                      break;
+                  }
+              }
+          ?>
+          <div class="autor">Nome do Autor: <?= $autor ?></div>
+          <div class="data">Data da Postagem: <?= $post->criado_em ?></div>
         </div>
       </div>
-      <?php endforeach; ?>
     </div>
   </body>
 </html>

@@ -6,13 +6,17 @@ use Exception;
 
 class PostController
 {
-    public function exibirPost()
+    public function exibirPost($id)
     {
         
-        $posts = App::get('database')->selectAll('posts');
+        $post = App::get('database')->selectOne('posts', $id);
         $usuarios = App::get('database')->selectAll('usuarios');
 
-        return view('site/post-individual' , compact('posts', 'usuarios'));
+        if (!$post) {
+            throw new Exception("Post não encontrado.");
+        }
+
+        return view('site/post-individual' , compact('post', 'usuarios'));
 
     }
 

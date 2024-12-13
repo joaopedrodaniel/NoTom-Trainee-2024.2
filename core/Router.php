@@ -59,16 +59,30 @@ class Router
      */
     public function direct($uri, $requestType)
     {
+
         if (array_key_exists($uri, $this->routes[$requestType])) {
             return $this->callAction(
                 ...explode('@', $this->routes[$requestType][$uri])
             );
         }
+
+
+        foreach ($this->routes[$requestType] as $route => $controller) {
+
+            $routePattern = preg_replace('/\{[a-zA-Z0-9_]+\}/', '([^\/]+)', $route);
+            $routePattern = "#^" . str_replace('/', '\/', $routePattern) . "$#";
+
+            if (preg_match($routePattern, $uri, $matches)) {
+                array_shift($matches);
+                return $this->callDynamicAction($controller, $matches);
+            }
+        }
+
         throw new Exception('No route defined for this URI.');
     }
 
     /**
-     * Load and call the relevant controller action.
+     * Load and call the relevant controller action for static routes.
      *
      * @param string $controller
      * @param string $action
@@ -78,12 +92,34 @@ class Router
         $controller = "App\\Controllers\\{$controller}";
         $controller = new $controller;
 
-        if (! method_exists($controller, $action)) {
+        if (!method_exists($controller, $action)) {
             throw new Exception(
                 "{$controller} does not respond to the {$action} action."
             );
         }
 
         return $controller->$action();
+    }
+
+    /**
+     * Load and call the relevant controller action with dynamic parameters.
+     *
+     * @param string $controller
+     * @param array $params
+     */
+    protected function callDynamicAction($controller, $params)
+    {
+        [$controllerClass, $action] = explode('@', $controller);
+
+        $controllerClass = "App\\Controllers\\{$controllerClass}";
+        $controller = new $controllerClass;
+
+        if (!method_exists($controller, $action)) {
+            throw new Exception(
+                "{$controllerClass} does not respond to the {$action} action."
+            );
+        }
+
+        return call_user_func_array([$controller, $action], $params);
     }
 }
