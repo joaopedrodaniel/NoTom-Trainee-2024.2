@@ -16,9 +16,9 @@ class QueryBuilder
 
     public function selectAll($table, $inicio = null, $rows_count = null)
     {
-        $sql = "select * from {$table}";
+        $sql = "select * from {$table} order by criado_em desc";
 
-        if($inicio >= 0 && $rows_count > 0){
+        if ($inicio >= 0 && $rows_count > 0) {
             $sql .= " LIMIT {$inicio}, {$rows_count}";
         }
 
@@ -27,10 +27,26 @@ class QueryBuilder
             $stmt->execute();
 
             return $stmt->fetchAll(PDO::FETCH_CLASS);
-
         } catch (Exception $e) {
             die($e->getMessage());
         }
+        
+    }
+
+    public function select($table, $id)
+    {
+        $sql = "select * from {$table} where id = {$id} ";
+
+        
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }  
     }
 
     public function insert($table, $parameters)
