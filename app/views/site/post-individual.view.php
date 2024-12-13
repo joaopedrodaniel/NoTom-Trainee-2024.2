@@ -38,7 +38,7 @@
               }
           ?>
           <div class="autor">Nome do Autor: <?= $autor ?></div>
-          <div class="data">Data da Postagem: <?= $post->criado_em ?></div>
+          <div class="data">Data da Postagem: <?= date_format(new DateTime($post->criado_em), 'd/m/Y'); ?></div>
         </div>
       </div>
     </div>
