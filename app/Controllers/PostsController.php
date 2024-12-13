@@ -38,7 +38,7 @@ class PostsController
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => $caminhodaimagem,
-            'id_autor' => 3
+            'id_autor' => 28,
         ];
 
         App::get('database')->insert('posts', $parameters);
