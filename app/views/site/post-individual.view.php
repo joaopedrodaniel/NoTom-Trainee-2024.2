@@ -17,7 +17,8 @@
       <div class="esquerda">
         <div class="header">
           <div class="imagem">
-            <?= $post->imagem ?>
+            <img src="<?= '/' . $post->imagem ?>"
+            alt="Imagem de Teste">
           </div>
           <div class="titulo"><?= $post->titulo ?></div>
         </div>
