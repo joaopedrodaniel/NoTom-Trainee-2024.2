@@ -1,3 +1,13 @@
+<?php
+    if(session_status() != PHP_SESSION_ACTIVE){
+        session_start();
+    }
+
+    if(!isset($_SESSION['id'])){
+        header('Location: /login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -86,7 +96,7 @@
                 </button>
               </td>
             </tr>
-
+          
     <!--Modal visualização-->
     <div class="modal visualizacao" id="visualizacao<?= $usuario->id ?>">
       <h1>Visualização</h1>

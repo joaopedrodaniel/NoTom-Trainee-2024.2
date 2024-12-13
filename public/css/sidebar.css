@@ -148,10 +148,11 @@ main {
 }
 #open_btn_icon {
   transition: transform 0.3s ease;
+  transform: translate(-50%, -70%);
 }
 
 .open-sidebar #open_btn_icon {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translate(50%, 80%);
 }
 
 .item-description {

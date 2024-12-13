@@ -21,8 +21,11 @@ $router->post('admin/posts/delete', 'PostsController@delete');
  $router->get('dashboard', 'LoginController@exibirDashboard');
  $router->post('login', 'LoginController@efetuaLogin');
  $router->post('logout', 'LoginController@logout');
+ $router->get('sidebar', 'SideController@index');
+
 
  //Rotas Lucas
  $router->get('site/header', 'ExampleController@header');
+
 
 ?>
