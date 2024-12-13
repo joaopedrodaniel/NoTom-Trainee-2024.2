@@ -36,7 +36,8 @@
             <img src=<?=$post->imagem ?> alt="" />
             <div class="post-texto">
               <div class="post-conteudo">
-                <div class="post-titulo"><?=$post->titulo ?></div>
+                <a href="/post-individual/<?=$post->id?>"><?=$post->titulo ?></a>
+                <a class = "link-escondido" href="https://www.youtube.com/" target="_blank">Desenvolvido por Code Jr</a>
                 <div class="post-conteudo-texto">
                   <?=$post->descricao?>
                 </div>
