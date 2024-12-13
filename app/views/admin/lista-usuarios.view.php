@@ -27,6 +27,7 @@
     />
   </head>
   <body>
+  <div class="lateral"><?php require 'sidebar.php' ?></div>
     <div class="tela"></div>
     <div class="pagina-lista-usuarios">
       <h1 class="titulo texto-branco">Usuários</h1>

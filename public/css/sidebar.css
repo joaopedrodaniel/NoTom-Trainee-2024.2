@@ -36,7 +36,7 @@ main {
   border-radius: 0px 18px 18px 0px;
   position: relative;
   transition: all 0.5s;
-  min-width: 82px;
+  min-width: 112px;
   z-index: 2;
 }
 
@@ -136,23 +136,29 @@ main {
 
 #open_btn {
   position: absolute;
+  display: flex;
+  font-size: 20px;
   top: 30px;
-  right: -10px;
+  right: 2px;
   background-color: var(--botao-selecionado);
   color: var(--hooder-body);
   border-radius: 100%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: none;
   cursor: pointer;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
+
 #open_btn_icon {
   transition: transform 0.3s ease;
-  transform: translate(-50%, -70%);
+
 }
 
 .open-sidebar #open_btn_icon {
-  transform: rotate(180deg) translate(50%, 80%);
+  transform: rotate(180deg)
 }
 
 .item-description {

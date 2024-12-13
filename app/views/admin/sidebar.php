@@ -33,7 +33,7 @@
             alt="Avatar"
           />
           <p id="user_infos">
-            <span class="item-description"> Fulano De Tal </span>
+            <span class="item-description"> Usuario Teste </span>
             <span class="item-description">Administrador</span>
           </p>
         </div>

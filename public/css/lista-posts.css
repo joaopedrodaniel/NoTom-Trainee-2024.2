@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  background: #122620;
 }
 a {
   color: inherit;
@@ -46,7 +47,7 @@ h1.barra-busca-container-fixa-titulo {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  background: #122620;
+
   justify-content: center;
   overflow-y: auto;
   font-family: "Roboto", sans-serif;
@@ -170,9 +171,17 @@ h1.barra-busca-container-fixa-titulo {
 .paginacao {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 10px;
   font-style: normal;
   color: white;
+}
+
+.paginacao ion-icon {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .paginacao-elemento {
@@ -182,6 +191,7 @@ h1.barra-busca-container-fixa-titulo {
   padding: 0 4px;
   text-align: center;
   transition: background 0.2s;
+  list-style-type: none;
 }
 
 .paginacao-elemento-atual {
@@ -190,7 +200,12 @@ h1.barra-busca-container-fixa-titulo {
 
 .paginacao-elemento:hover {
   background-color: #8d9a94;
-  color: #f9cb7a;
+}
+
+.paginacao-icone {
+  display: flex;
+  align-items: center;
+  height: 29px;
 }
 
 @media (max-width: 830px) {

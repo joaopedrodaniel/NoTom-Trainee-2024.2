@@ -3,7 +3,10 @@
 namespace App\Controllers;
 use App\Controllers\ExampleController;
 use App\Controllers\PostsController;
+use App\Controllers\PublicPostsPaginacaoController;
 use App\Core\Router;
+
+    $router->get('posts', 'PublicPostsPaginacaoController@index' );
 
 $router->get('', 'ExampleController@index');
 $router->get('post-individual/{id}', 'PostController@exibirPost');
@@ -22,7 +25,7 @@ $router->post('admin/posts/delete', 'PostsController@delete');
  $router->post('login', 'LoginController@efetuaLogin');
  $router->post('logout', 'LoginController@logout');
  $router->get('sidebar', 'SideController@index');
-
+ $router->get('posts', 'PublicPostsPaginacaoController@index' );
 
  //Rotas Lucas
  $router->get('site/header', 'ExampleController@header');
