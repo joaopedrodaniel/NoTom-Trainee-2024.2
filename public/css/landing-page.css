@@ -259,6 +259,28 @@ button:hover{
   color: white;
 }
 
+.post-texto {
+  max-height: 100px; 
+  overflow: hidden;
+  text-overflow: ellipsis;display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.ver-mais {
+  display: none;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.car1 .post-texto {
+  position: relative;
+}
+
+.car1 .post-texto.truncado + .ver-mais {
+  display: block;
+}
+
 .car1 img {
   max-width: 100%;
   height: auto;

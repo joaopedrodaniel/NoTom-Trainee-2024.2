@@ -17,7 +17,7 @@ class QueryBuilder
     public function selectAll($table)
     {
         $sql = "select * from {$table}";
-
+      
         try {
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
@@ -27,5 +27,11 @@ class QueryBuilder
         } catch (Exception $e) {
             die($e->getMessage());
         }
+    }
+
+    public function exibirPost($imagem, $titulo, $nome, $texto ):void
+    {
+       $sql = "SELECT * FROM posts ORDER BY data_criacao DESC LIMIT 5";
+       
     }
 }
