@@ -79,14 +79,14 @@ main {
   cursor: pointer;
 }
 
-.side-item.active {
+/* .side-item.active {
   background-color: var(--botao-selecionado);
-}
+} */
 
-.side-item:hover:not(.active),
+/* .side-item:hover:not(.active),
 #logout_btn:hover {
   background-color: var(--hooder-body);
-}
+} */
 
 .side-item:hover:not(.active),
 #logout_btn:hover .item-description {

@@ -38,7 +38,7 @@ class PostsController
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => $caminhodaimagem,
-            'id_autor' => 28, //lembrar de mudar o id autor
+            'id_autor' => 1, //lembrar de mudar o id autor
         ];
 
         App::get('database')->insert('posts', $parameters);
@@ -69,7 +69,7 @@ class PostsController
                 'descricao' => $_POST['descricao'],
                 'texto' => $_POST['texto'],
                 'imagem' => $caminhodaimagem,
-                'id_autor' => 28,          //lembrar de mudar o id autor
+                'id_autor' => 1,          //lembrar de mudar o id autor
             ];
         }
         else{
@@ -77,7 +77,7 @@ class PostsController
                 'titulo' => $_POST['titulo'],
                 'descricao' => $_POST['descricao'],
                 'texto' => $_POST['texto'],
-                'id_autor' => 28        //lembrar de mudar o id autor
+                'id_autor' => 1        //lembrar de mudar o id autor
             ];
         }
         

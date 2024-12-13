@@ -226,8 +226,7 @@ table.responsividade-2 td {
 /* Compartilhados*/
 .background-popup {
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 85%;
   height: 100%;
   position: absolute;
   border: 0;
@@ -235,7 +234,7 @@ table.responsividade-2 td {
   display: none;
   justify-content: center;
   align-items: center;
-  transform: translateX(-35px);
+  transform: translateX(-125px);
 }
 
 .caixa-popup {
@@ -540,7 +539,7 @@ table.responsividade-2 td {
   padding: 0 10px;
   border: 1px solid black;
   border-radius: 15px;
-  width: 490px;
+  width: 465px;
 }
 
 .input-titulo-popup {

@@ -16,9 +16,11 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-  <div class="topo" ><?php require 'header.php' ?></div>
+ 
     <div class="pagina-lista-posts">
+    <header><?php require 'header.php' ?></header>
       <h1 class="titulo">Posts</h1>
       <div class="barra-busca-container">
         <div class="barra-busca">
@@ -50,8 +52,9 @@
         </div>
         <?php require 'componentes/publicPostsPaginacao.php' ?>
       </div>
+      <footer class="teste1234"><?php require 'footer.php' ?></div>  
     </div>
-    <div class="teste1234"><?php require 'footer.php' ?></div>  
+    
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

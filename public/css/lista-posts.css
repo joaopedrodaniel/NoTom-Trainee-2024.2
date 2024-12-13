@@ -5,9 +5,15 @@
 
 html,
 body {
-  height: 100%;
+  min.height: 100%;
   background: #122620;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -46,8 +52,6 @@ h1.barra-busca-container-fixa-titulo {
 .pagina-lista-posts {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-
   justify-content: center;
   overflow-y: auto;
   font-family: "Roboto", sans-serif;
