@@ -3,16 +3,22 @@
   margin: 0;
 }
 
-html,
 body {
-  min.height: 100%;
+  min-height: 100vh;
   background: #122620;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
+footer {
+  background: #122620;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+}
 
 a {
   color: inherit;
@@ -58,6 +64,7 @@ h1.barra-busca-container-fixa-titulo {
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
+  flex: 1;
 }
 
 .conteudo-central {
