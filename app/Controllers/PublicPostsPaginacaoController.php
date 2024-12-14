@@ -39,10 +39,39 @@ class PublicPostsPaginacaoController
     public function search()
     {
 
-        $posts = App::get('database')->selectAllWithSearch('posts', 'titulo', 'teste');
+        $page = 1;
+        if (isset($_GET['paginacaoNumero']) && !empty($_GET['paginacaoNumero'])) {
+            $page = intval($_GET['paginacaoNumero']);
 
-        return view(name: 'site/lista-posts', data: compact(var_name: 'posts'));
+            if ($page <= 1) {
+                return redirect('posts');
+            }
+        }
+
+        $itensPage = 5;
+        $inicio = $itensPage * $page - $itensPage;
+        $rows_count = App::get('database')->countAll('posts');
+
+
+
+        if ($inicio >= $rows_count) {
+            return redirect('posts');
+        }
+        $posts = App::get('database')->selectAll('posts',$inicio, $itensPage);
+
+        $total_pages = ceil($rows_count / $itensPage);
+
+        
+        if (isset($_GET['search'])) {
+            $posts = App::get('database')->selectAllWithSearch('posts', 'titulo', $_GET['search']);
+        } else {
+            $posts = App::get('database')->selectAll('posts');
+        }
+
+        
+        return view('site/lista-posts', compact('posts', 'page','total_pages'));
     }
 
 }
+
 
