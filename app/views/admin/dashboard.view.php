@@ -26,8 +26,8 @@
     </div>    
 
     <div class="b">
-        <form action="/lista-posts" method="POST"><button><img src="../../../public/assets/publi.png"> Publicações</button></form>
-        <form action="/lista-usuarios" method="POST"><button><img src="../../../public/assets/user.png"> Usuários</button></form>
+        <a href="/admin/posts"><button><img src="../../../public/assets/publi.png"> Publicações</button></a>
+        <a href="/usuario"><button><img src="../../../public/assets/user.png"> Usuários</button></a>
         <form action="/logout" method="POST"><button type="submit" class="out"><img src="../../../public/assets/logout.png"> Log Out</button></form>
     </div>
 
