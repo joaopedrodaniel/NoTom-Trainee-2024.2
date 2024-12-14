@@ -9,10 +9,13 @@
 
  <!-- Botão de recuar uma pagina -->
 
-    <li class="paginacao-elemento paginacao-icone"<?= $page <= 1 ? "disabled" : "" ?>>
-      <a  href="?paginacaoNumero=<?= $page - 1 ?>">
-      <ion-icon name="caret-back-outline"></ion-icon> </a>
+ <a  href="?paginacaoNumero=<?= $page - 1 ?>">
+ <li class="paginacao-elemento paginacao-icone"<?= $page <= 1 ? "disabled" : "" ?>>
+      
+      <ion-icon name="caret-back-outline"></ion-icon>
     </li>
+ </a>
+    
 <!----------------------------->
 
 
@@ -26,18 +29,17 @@
     <?php if ($total_pages > 6): ?>
         <!-- Se a pagina atual for maior que a 3 -->
 
-        <?php if ($page < 3): ?>
-        <li class="paginacao-elemento"><a href="?paginacaoNumero=1"></a></li>
-        <?php endif; ?>
-
       <?php if ($page > 3): ?>
         <li class="paginacao-elemento"><a href="?paginacaoNumero=1">1</a></li>
         <li class="paginacao-elemento">...</li>
       <?php endif; ?>
 
+      
       <?php for ($page_number = max(1, $page - 2); $page_number <= min($total_pages, $page + 2); $page_number++): ?>
-        <li class="<?=$page_number == $page ? 'paginacao-elemento paginacao-elemento-atual' : 'paginacao-elemento' ?>">
-          <a href="?paginacaoNumero=<?= $page_number ?>"><?= $page_number ?></a></li>
+        <a class="<?=$page_number == $page ? 'paginacao-elemento paginacao-elemento-atual' : 'paginacao-elemento' ?>" href="?paginacaoNumero=<?= $page_number ?>">
+      <li >
+      <?= $page_number ?></li>
+      </a>
       <?php endfor; ?>
 
       <?php if ($page < $total_pages - 2): ?>
@@ -48,17 +50,23 @@
 
     <?php else: ?>
       <?php for ($page_number = 1; $page_number <= $total_pages; $page_number++): ?>
-        <li class="<?=$page_number == $page ? 'paginacao-elemento paginacao-elemento-atual' : 'paginacao-elemento' ?>">
-          <a href="?paginacaoNumero=<?= $page_number ?>"><?= $page_number ?></a></li>
+        <a class="<?=$page_number == $page ? 'paginacao-elemento paginacao-elemento-atual' : 'paginacao-elemento' ?>" href="?paginacaoNumero=<?= $page_number ?>">
+        <li >
+          <?= $page_number ?></li>
+        </a>
+        
       <?php endfor; ?>
     <?php endif; ?>
 <!----------------------------->
 
  <!-- Botão de avançar uma pagina -->
-    <li class="paginacao-elemento paginacao-icone"<?= $page >= $total_pages ? "disabled" : "" ?>>
-      <a  href="?paginacaoNumero=<?= $page + 1 ?>">
-      <ion-icon name="caret-forward-outline"></ion-icon> </a>
+ <a  href="?paginacaoNumero=<?= $page + 1 ?>">
+ <li class="paginacao-elemento paginacao-icone"<?= $page >= $total_pages ? "disabled" : "" ?>>
+      
+      <ion-icon name="caret-forward-outline"></ion-icon> 
     </li>
+ </a>
+    
 <!----------------------------->
 
 

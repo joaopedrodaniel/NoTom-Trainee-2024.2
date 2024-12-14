@@ -19,7 +19,7 @@ class PublicPostsPaginacaoController
             }
         }
 
-        $itensPage = 5;
+        $itensPage = 1;
         $inicio = $itensPage * $page - $itensPage;
         $rows_count = App::get('database')->countAll('posts');
 
