@@ -1,3 +1,4 @@
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +10,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>No Tom</title>
 </head>
+<header><?php require 'header.php' ?></header>
 <body> 
-    
     <div class="container">
         <div class="textos">
             <h1>no tom</h1>
@@ -110,4 +111,5 @@
     </div>   
     <script src="../../../public/js/landing-page.js"></script>
 </body>
+<footer><?php require 'footer.php' ?>
 </html> 

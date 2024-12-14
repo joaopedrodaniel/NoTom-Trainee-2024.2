@@ -22,7 +22,7 @@
     
 <div class="lateral"><?php require 'sidebar.php' ?></div>
 
-    <a href="/posts"><button class="home"><img src="../../../public/assets/home.png"></button></a>
+    <a href="/landing"><button class="home"><img src="../../../public/assets/home.png"></button></a>
     <div class="container">
         
         <div class="titulo">

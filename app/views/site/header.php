@@ -20,7 +20,7 @@
             <div class="nav-lista">
                 <ul>
                     <li class="nav-item">
-                        <div><span class="simbolo">home</span></div><a href="#" class="nav-link">Pagina Inicial</a>
+                        <div><span class="simbolo">home</span></div><a href="/landing" class="nav-link">Pagina Inicial</a>
                     </li>
                     <li class="nav-item">
                         <div><span class="simbolo">list</span></div><a href="/posts" class="nav-link">Publicações</a>
