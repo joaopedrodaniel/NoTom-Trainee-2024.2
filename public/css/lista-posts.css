@@ -80,7 +80,7 @@ h1.barra-busca-container-fixa-titulo {
   position: sticky;
   display: flex;
   box-sizing: border-box;
-
+  padding: 0px 15px;
   width: 100%;
   left: calc(100vw / 2);
   transition: top 0.2s;
@@ -98,7 +98,7 @@ h1.barra-busca-container-fixa-titulo {
 
 .barra-busca-container-com-espaco-para-titulo {
   top: 40px;
-  padding: 0px;
+  padding: 0px 15px;
   height: 40px;
   transition: none;
 }
