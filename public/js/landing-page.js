@@ -29,3 +29,16 @@ window.onload = function() {
         }
     });
 };
+
+function toggleText(postId) {
+    var textElement = document.getElementById("texto-" + postId);
+    var button = document.getElementById("ver-mais-" + postId);
+
+    if (textElement.style.maxHeight === "100px" || textElement.style.maxHeight === "") {
+        textElement.style.maxHeight = "none";
+        button.textContent = "Ver Menos";
+    } else {
+        textElement.style.maxHeight = "100px";
+        button.textContent = "Ver Mais";
+    }
+}

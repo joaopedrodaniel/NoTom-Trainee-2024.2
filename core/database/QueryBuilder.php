@@ -170,3 +170,11 @@ class QueryBuilder
     }
     
 }
+
+
+    public function exibirPost($imagem, $titulo, $nome, $texto ):void
+    {
+       $sql = "SELECT * FROM posts ORDER BY data_criacao DESC LIMIT 5";
+       
+    }
+}

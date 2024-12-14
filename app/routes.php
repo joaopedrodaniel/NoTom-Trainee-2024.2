@@ -8,6 +8,8 @@ use App\Core\Router;
 
     $router->get('posts', 'PublicPostsPaginacaoController@index' );
 
+    $router->get('landing' , 'landingController@index');
+
 $router->get('', 'ExampleController@index');
 $router->get('post-individual/{id}', 'PostController@exibirPost');
 $router->get('usuario', 'UsuarioController@index');
