@@ -25,11 +25,12 @@
     <div class="conteudo-central">
       <div class="lista-posts">
         <?php foreach ($posts as $post): $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
-          <div class="post">
+        <a href="/post-individual/<?= $post->id ?>">
+        <div class="post">
             <img src=<?= $post->imagem ?> alt="" />
             <div class="post-texto">
               <div class="post-conteudo">
-                <a href="/post-individual/<?= $post->id ?>" class="post-titulo"><?= $post->titulo ?></a>
+                <h2 class="post-titulo"><?= $post->titulo ?></h2>
                 <div class="post-conteudo-texto">
                   <?= $post->descricao ?>
                 </div>
@@ -37,6 +38,8 @@
               <div class="post-conteudo-texto">Por: <?= $user->nome ?></div>
             </div>
           </div>
+        </a>
+          
         <?php endforeach; ?>
 
 

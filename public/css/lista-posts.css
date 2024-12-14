@@ -152,6 +152,10 @@ h1.barra-busca-container-fixa-titulo {
   align-items: center;
 }
 
+.post:hover .post-titulo {
+  text-decoration: underline;
+}
+
 .post img {
   width: 180px;
   height: 180px;
@@ -177,6 +181,13 @@ h1.barra-busca-container-fixa-titulo {
   font-weight: 400;
   font-style: normal;
   font-size: 36px;
+}
+
+.post-conteudo-texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .paginacao {
