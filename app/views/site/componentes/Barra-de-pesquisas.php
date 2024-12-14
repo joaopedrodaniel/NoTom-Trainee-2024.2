@@ -1,6 +1,6 @@
 <div class="barra-busca-container">
         <form action="/busca" method="get">
-            <input name='search' type="text" id="busca-input" placeholder="Buscar post..." />
+            <input class='barra-busca' name='search' type="text" id="busca-input" placeholder="Buscar post..." />
         </form>
 
         <ion-icon name="close-outline"></ion-icon>
