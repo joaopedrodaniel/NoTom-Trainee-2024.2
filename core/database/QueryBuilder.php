@@ -33,6 +33,21 @@ class QueryBuilder
         
     }
 
+    public function selectAllWithSearch($table, $column, $search)
+    {
+        $sql = "select * from {$table} WHERE {$column} LIKE %{search }%";
+
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+        
+    }
     public function select($table, $id)
     {
         $sql = "select * from {$table} where id = {$id} ";

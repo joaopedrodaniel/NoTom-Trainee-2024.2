@@ -34,4 +34,15 @@ class PublicPostsPaginacaoController
 
         return view('site/lista-posts', compact('posts', 'page','total_pages'));
     }
+
+
+    public function search()
+    {
+
+        $posts = App::get('database')->selectAllWhithSearch('posts', 'titulo', 'teste');
+
+        return view(name: 'site/busca', data: compact(var_name: 'posts'));
+    }
+
 }
+

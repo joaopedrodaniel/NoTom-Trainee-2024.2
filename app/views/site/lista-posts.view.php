@@ -22,13 +22,7 @@
     <div class="pagina-lista-posts">
     <header><?php require 'header.php' ?></header>
       <h1 class="titulo">Posts</h1>
-      <div class="barra-busca-container">
-        <div class="barra-busca">
-          <input type="text" id="busca-input" placeholder="Buscar post..." />
-          <ion-icon name="close-outline"></ion-icon>
-          <ion-icon name="search-outline" class="icone-ativo"></ion-icon>
-        </div>
-      </div>
+      <?php require 'componentes/Barra-de-pesquisas.php' ?>
       <div class="conteudo-central">
         <div class="lista-posts">
           <?php foreach ($posts as $post): $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
