@@ -10,24 +10,25 @@ const iconeX = document.querySelector(
 const buscaInput = barraBuscaContainer.querySelector("#busca-input");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 135) {
+  console.log(window.scrollY);
+  if (window.scrollY >= 185) {
     barraBuscaContainer.classList.add("barra-busca-container-fixa");
     titulo.classList.add("barra-busca-container-fixa-titulo");
   } else {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 130) {
       barraBuscaContainer.classList.remove(
         "barra-busca-container-com-espaco-para-titulo"
       );
     }
     if (
-      window.scrollY < 90 &&
+      window.scrollY < 130 &&
       barraBuscaContainer.classList.contains("barra-busca-container-fixa")
     ) {
       barraBuscaContainer.classList.add(
         "barra-busca-container-com-espaco-para-titulo"
       );
     }
-    if (window.scrollY < 55) {
+    if (window.scrollY < 105) {
       barraBuscaContainer.classList.remove(
         "barra-busca-container-com-espaco-para-titulo"
       );

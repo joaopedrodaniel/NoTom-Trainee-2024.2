@@ -1,3 +1,13 @@
+<?php
+    if(session_status() != PHP_SESSION_ACTIVE){
+        session_start();
+    }
+
+    if(!isset($_SESSION['id'])){
+        header('Location: /login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,6 +23,7 @@
 </head>
 
 <body>
+<div class="lateral"><?php require 'sidebar.php' ?></div>
   <div class="pagina-lista-usuarios">
     <h1 class="titulo texto-branco">Posts</h1>
 

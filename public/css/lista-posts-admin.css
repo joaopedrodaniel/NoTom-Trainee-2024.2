@@ -89,25 +89,29 @@ a {
   text-decoration: none;
 }
 
-#div-botao-criar-usuario {
-  padding-left: 20px;
-  text-align: left;
-}
+
 
 .pagina-lista-usuarios {
+  width: 100%;
   padding: 12px 15px;
   display: flex;
   gap: 10px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
+  align-items: center
 }
 
+#div-botao-criar-usuario {
+  display: flex;
+  width: 88%;
+  align-items: left
+}
 .titulo {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
@@ -121,7 +125,7 @@ a {
   background: #f9cb7a;
   border-radius: 25px;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   color: black;
 }
 
@@ -222,8 +226,7 @@ table.responsividade-2 td {
 /* Compartilhados*/
 .background-popup {
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  width: 85%;
   height: 100%;
   position: absolute;
   border: 0;
@@ -231,7 +234,7 @@ table.responsividade-2 td {
   display: none;
   justify-content: center;
   align-items: center;
-  transform: translateX(-35px);
+  transform: translateX(-125px);
 }
 
 .caixa-popup {
@@ -505,7 +508,7 @@ table.responsividade-2 td {
 }
 
 .area-do-input-paragrafo textarea {
-  height: 270px;
+  height: 170px;
   width: 100%;
 }
 
@@ -536,7 +539,7 @@ table.responsividade-2 td {
   padding: 0 10px;
   border: 1px solid black;
   border-radius: 15px;
-  width: 490px;
+  width: 465px;
 }
 
 .input-titulo-popup {
@@ -584,6 +587,12 @@ table.responsividade-2 td {
 }
 
 /* ----- */
+
+.side {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
 
 @media only screen and (max-width: 600px) {
   .parte-inferior {

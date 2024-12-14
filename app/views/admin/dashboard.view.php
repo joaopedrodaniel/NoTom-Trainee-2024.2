@@ -19,16 +19,22 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <form action="/landing-page" method="POST"><button class="home"><img src="../../../public/assets/home.png"></button></form>
-    <div class="titulo">
-        <h1> <img src="../../../public/assets/notomsemnome.png">Dashboard</h1>
-        <h3>Seja Bem-Vindo(a)! Escolha a opção que queira seguir neste momento.</h3>
-    </div>    
+    
+<div class="lateral"><?php require 'sidebar.php' ?></div>
 
-    <div class="b">
-        <a href="/admin/posts"><button><img src="../../../public/assets/publi.png"> Publicações</button></a>
-        <a href="/usuario"><button><img src="../../../public/assets/user.png"> Usuários</button></a>
-        <form action="/logout" method="POST"><button type="submit" class="out"><img src="../../../public/assets/logout.png"> Log Out</button></form>
+    <a href="/posts"><button class="home"><img src="../../../public/assets/home.png"></button></a>
+    <div class="container">
+        
+        <div class="titulo">
+            <h1> <img src="../../../public/assets/notomsemnome.png">Dashboard</h1>
+            <h3>Seja Bem-Vindo(a)! Escolha a opção que queira seguir neste momento.</h3>
+        </div>    
+
+        <div class="b">
+            <a href="/admin/posts"><button><img src="../../../public/assets/publi.png"> Publicações</button></a>
+            <a href="/usuario"> <button><img src="../../../public/assets/user.png"> Usuários</button></a>
+            <form action="/logout" method="POST"><button type="submit" class="out"><img src="../../../public/assets/logout.png"> Log Out</button></form>
+        </div>
     </div>
 
 </body>

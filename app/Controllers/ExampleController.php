@@ -12,10 +12,6 @@ class ExampleController
         return view('site/header');
     }
     
-    public function publicacoes()
-    {
-        return view('site/lista-posts');
-    }
 }
 
 

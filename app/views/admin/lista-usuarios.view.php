@@ -1,3 +1,13 @@
+<?php
+    if(session_status() != PHP_SESSION_ACTIVE){
+        session_start();
+    }
+
+    if(!isset($_SESSION['id'])){
+        header('Location: /login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -17,6 +27,7 @@
     />
   </head>
   <body>
+  <div class="lateral"><?php require 'sidebar.php' ?></div>
     <div class="tela"></div>
     <div class="pagina-lista-usuarios">
       <h1 class="titulo texto-branco">Usuários</h1>
@@ -86,7 +97,7 @@
                 </button>
               </td>
             </tr>
-
+          
     <!--Modal visualização-->
     <div class="modal visualizacao" id="visualizacao<?= $usuario->id ?>">
       <h1>Visualização</h1>

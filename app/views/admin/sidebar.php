@@ -1,3 +1,13 @@
+<?php
+    if(session_status() != PHP_SESSION_ACTIVE){
+        session_start();
+    }
+
+    if(!isset($_SESSION['id'])){
+        header('Location: /login');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,28 +33,28 @@
             alt="Avatar"
           />
           <p id="user_infos">
-            <span class="item-description"> Fulano De Tal </span>
+            <span class="item-description"> Usuario Teste </span>
             <span class="item-description">Administrador</span>
           </p>
         </div>
 
         <ul id="side_items">
           <li class="side-item active" id="dashboard">
-            <a href="#">
+            <a href="/dashboard">
               <i class="fa-solid fa-chart-simple"></i>
               <span class="item-description"> Dashboard </span>
             </a>
           </li>
 
           <li class="side-item" id="usuarios">
-            <a href="#">
+            <a href="/usuario">
               <i class="fa-solid fa-user"></i>
               <span class="item-description"> Usuários </span>
             </a>
           </li>
 
           <li class="side-item" id="publicacoes">
-            <a href="#">
+            <a href="admin/posts">
               <i class="fa-solid fa-edit"></i>
               <span class="item-description"> Publicações </span>
             </a>
@@ -57,16 +67,15 @@
       </div>
 
       <div id="logout">
-        <button id="logout_btn">
-          <i class="fa-solid fa-right-from-bracket"></i>
-          <span class="item-description"> Logout </span>
-        </button>
+        <form action="/logout" method="POST" >
+          <button type="submit" id="logout_btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="item-description"> Logout </span>
+          </button>
+        </form>
       </div>
     </nav>
 
-    <main>
-      <h1>TITULO</h1>
-    </main>
     <script src="../../../public/js/sidebar.js"></script>
   </body>
 </html>

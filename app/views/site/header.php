@@ -23,11 +23,11 @@
                         <div><span class="simbolo">home</span></div><a href="#" class="nav-link">Pagina Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <div><span class="simbolo">list</span></div><a href="#" class="nav-link">Publicações</a>
+                        <div><span class="simbolo">list</span></div><a href="/posts" class="nav-link">Publicações</a>
                     </li>
                     <li class="nav-item">
                         <!--ATENÇÃO, O CAMINHO DO HREF ABAIXO ESTÁ ERRADO! IREI REVISITAR NO FUTURO, TROCAR O QUANTO ANTES -->
-                        <div><span class="simbolo">login</span></div><a href="http://localhost:8000/login" class="nav-link"> Login</a>
+                        <div><span class="simbolo">login</span></div><a href="/login" class="nav-link"> Login</a>
                     </li>
                 </ul>
             </div>

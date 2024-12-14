@@ -1,119 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../../../public/css/lista-posts.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="pagina-lista-posts">
-      <h1 class="titulo">Posts</h1>
-      <div class="barra-busca-container">
-        <div class="barra-busca">
-          <input type="text" id="busca-input" placeholder="Buscar post..." />
-          <ion-icon name="close-outline"></ion-icon>
-          <ion-icon name="search-outline" class="icone-ativo"></ion-icon>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../public/css/lista-posts.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  
+    <header><?php require 'header.php' ?></header>
+    <h1 class="titulo">Posts</h1>
+    <?php require 'componentes/Barra-de-pesquisas.php' ?>
+    <div class="conteudo-central">
+      <div class="lista-posts">
+        <?php foreach ($posts as $post): $user = App\Core\App::get('database')->select('usuarios', $post->id_autor)[0]; ?>
+        <a href="/post-individual/<?= $post->id ?>">
+        <div class="post">
+            <img src=<?= $post->imagem ?> alt="" />
+            <div class="post-texto">
+              <div class="post-conteudo">
+                <h2 class="post-titulo"><?= $post->titulo ?></h2>
+                <div class="post-conteudo-texto">
+                  <?= $post->descricao ?>
+                </div>
+              </div>
+              <div class="post-conteudo-texto">Por: <?= $user->nome ?></div>
+            </div>
+          </div>
+        </a>
+          
+        <?php endforeach; ?>
+
+
+
+
       </div>
-      <div class="conteudo-central">
-        <div class="lista-posts">
-          <div class="post">
-            <img src="https://picsum.photos/200" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/300" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/400" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/500" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-          <div class="post">
-            <img src="https://picsum.photos/600" alt="" />
-            <div class="post-texto">
-              <div class="post-conteudo">
-                <div class="post-titulo">Título</div>
-                <div class="post-conteudo-texto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-              </div>
-              <div class="post-conteudo-texto">Por: Nome do autor</div>
-            </div>
-          </div>
-        </div>
-        <div class="paginacao">
-          <a class="paginacao-elemento" href="#"><</a>
-          <a class="paginacao-elemento paginacao-elemento-atual" href="#">1</a>
-          <a class="paginacao-elemento" href="#">2</a>
-          <a class="paginacao-elemento" href="#">3</a>
-          <div>...</div>
-          <a class="paginacao-elemento" href="#">9</a>
-          <a class="paginacao-elemento" href="#">10</a>
-          <a class="paginacao-elemento" href="#">></a>
-        </div>
-      </div>
+      <?php require 'componentes/publicPostsPaginacao.php' ?>
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="../../../public/js/barra-busca.js"></script>
-  </body>
+    <footer class="teste1234"><?php require 'footer.php' ?>
+  </div>
+ 
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../../../public/js/barra-busca.js"></script>
+</body>
+
 </html>

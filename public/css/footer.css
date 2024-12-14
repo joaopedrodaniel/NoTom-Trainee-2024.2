@@ -48,7 +48,6 @@
     height: fit-content;
     background-color: black;
     color: white;
-    position: fixed;
     left: 0;
     bottom: 0;
     flex-direction: row;
