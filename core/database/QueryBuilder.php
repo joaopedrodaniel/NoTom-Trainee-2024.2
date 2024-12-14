@@ -35,8 +35,7 @@ class QueryBuilder
 
     public function selectAllWithSearch($table, $column, $search)
     {
-        $sql = "select * from {$table} WHERE {$column} LIKE %{search }%";
-
+        $sql = "select * from {$table} WHERE {$column} LIKE '%{$search}%'";
 
         try {
             $stmt = $this->pdo->prepare($sql);

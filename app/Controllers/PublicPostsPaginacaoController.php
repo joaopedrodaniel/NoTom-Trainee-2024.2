@@ -39,9 +39,9 @@ class PublicPostsPaginacaoController
     public function search()
     {
 
-        $posts = App::get('database')->selectAllWhithSearch('posts', 'titulo', 'teste');
+        $posts = App::get('database')->selectAllWithSearch('posts', 'titulo', 'teste');
 
-        return view(name: 'site/busca', data: compact(var_name: 'posts'));
+        return view(name: 'site/lista-posts', data: compact(var_name: 'posts'));
     }
 
 }
