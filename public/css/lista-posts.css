@@ -80,7 +80,7 @@ h1.barra-busca-container-fixa-titulo {
   position: sticky;
   display: flex;
   box-sizing: border-box;
-
+  padding: 0px 15px;
   width: 100%;
   left: calc(100vw / 2);
   transition: top 0.2s;
@@ -98,7 +98,7 @@ h1.barra-busca-container-fixa-titulo {
 
 .barra-busca-container-com-espaco-para-titulo {
   top: 40px;
-  padding: 0px;
+  padding: 0px 15px;
   height: 40px;
   transition: none;
 }
@@ -115,10 +115,11 @@ h1.barra-busca-container-fixa-titulo {
   width: 480px;
   height: 32px;
   padding: 0 10px;
-  font-size: 28px;
+  font-size: 20px;
 }
 
-.barra-busca input {
+.barra-busca form,
+input {
   padding: 0 5px;
   width: 100%;
   font-size: 20px;
@@ -152,6 +153,10 @@ h1.barra-busca-container-fixa-titulo {
   align-items: center;
 }
 
+.post:hover .post-titulo {
+  text-decoration: underline;
+}
+
 .post img {
   width: 180px;
   height: 180px;
@@ -179,7 +184,18 @@ h1.barra-busca-container-fixa-titulo {
   font-size: 36px;
 }
 
+.post-conteudo-texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
 .paginacao {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
