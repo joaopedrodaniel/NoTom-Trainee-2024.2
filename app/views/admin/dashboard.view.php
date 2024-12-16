@@ -23,7 +23,7 @@
     
 <div class="lateral"><?php require 'sidebar.php' ?></div>
 
-    <a href="/landing"><button class="home"><img src="../../../public/assets/home.png"></button></a>
+    <button class="home"><a href="/landing"><img src="../../../public/assets/home.png"></a></button>
     <div class="container">
         
         <div class="titulo">
