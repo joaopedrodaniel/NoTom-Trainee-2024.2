@@ -19,15 +19,15 @@
         <nav class="nav-bar">
             <div class="nav-lista">
                 <ul>
-                    <li class="nav-item">
-                        <div><span class="simbolo">home</span></div><a href="/landing" class="nav-link">Pagina Inicial</a>
+                    <li class="nav-item" onclick="location.href='/landing'">
+                        <div><span class="simbolo">home</span></div><a class="nav-link">Pagina Inicial</a>
                     </li>
-                    <li class="nav-item">
-                        <div><span class="simbolo">list</span></div><a href="/posts" class="nav-link">Publicações</a>
+                    <li class="nav-item" onclick="location.href='/posts'">
+                        <div><span class="simbolo">list</span></div><a class="nav-link">Publicações</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="location.href='/login'">
                         <!--ATENÇÃO, O CAMINHO DO HREF ABAIXO ESTÁ ERRADO! IREI REVISITAR NO FUTURO, TROCAR O QUANTO ANTES -->
-                        <div><span class="simbolo">login</span></div><a href="/login" class="nav-link"> Login</a>
+                        <div><span class="simbolo">login</span></div><a class="nav-link"> Login</a>
                     </li>
                 </ul>
             </div>

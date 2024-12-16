@@ -49,6 +49,10 @@ header {
 }
 
 .nav-item:hover {
+  cursor: pointer;
+}
+
+.nav-item:hover {
   background-color: #665230;
 
   .nav-link {
