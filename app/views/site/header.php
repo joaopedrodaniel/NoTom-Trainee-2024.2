@@ -31,7 +31,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="area-da-foto">
                 <img class="logo" src="/public/assets/logo-cortada.png" alt="logo-no-tom">
             </div>
@@ -46,19 +46,19 @@
 
         <div class="menu-mobile">
             <ul>
-                <li class="nav-item">
+                <li class="nav-item" onclick="location.href='/landing'">
                     <div class="alinhador-li">
-                        <span class="simbolo">Home</span><a href="#" class="nav-link">Pagina Inicial</a>
+                        <span class="simbolo">Home</span><a class="nav-link">Pagina Inicial</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" onclick="location.href='/posts'">
                     <div class="alinhador-li">
-                        <span class="simbolo">list</span><a href="#" class="nav-link">Publicações</a>
+                        <span class="simbolo">list</span><a class="nav-link">Publicações</a>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" onclick="location.href='/login'">
                     <div class="alinhador-li">
-                        <span class="simbolo">login</span><a href="#" class="nav-link"> Login</a>
+                        <span class="simbolo">login</span><a class="nav-link"> Login</a>
                     </div>
                 </li>
             </ul>
