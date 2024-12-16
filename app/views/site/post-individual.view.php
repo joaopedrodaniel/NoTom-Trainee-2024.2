@@ -8,7 +8,7 @@
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" />
-
+    <link rel="icon" href="../../../public/assets/favicon-logo-sem-nome.png" type="image/png">
   <title>Post Individual</title>
 </head>
 

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../../public/css/dashboard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="icon" href="../../../public/assets/favicon-logo-sem-nome.png" type="image/png">
     <title>Dashboard</title>
 </head>
 <body>
