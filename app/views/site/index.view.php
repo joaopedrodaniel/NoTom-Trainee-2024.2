@@ -26,7 +26,9 @@
             <h3>Saiba tudo o que seu artista favorito faz e descubra novos talentos da música</h3>
             <div class="slide">
                 <div class="carrossel-infinito">
-                    <div class="nomeartista"><div class="red"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Tim Maia</p></div>
+                    <div class="nomeartista"><div class="red">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div>
+                        <p><a href="https://open.spotify.com/artist/0jOs0wnXCu1bGGP7kh5uIu" target="_blank">Tim Maia</a></p></div>
                     <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHOQiEzQtmQ3-Y77h1OEEbYICuIDjtQV1kA&shttps://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Chico Buarque</p></div>
                     <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuW31n0o5wrEMXV_qWXXKFLLaKBcpsymWEw&s"></div><p>Nirvana</p></div>
                     <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/03/djavan-album-luz.jpg"></div><p>Djavan</p></div>

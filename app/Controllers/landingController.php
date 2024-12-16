@@ -15,4 +15,11 @@ class landingController
         return view('site/index', compact('posts', 'usuarios'));
     }
 }
-?>  
+
+/*class PostController {
+    public function show($id) {
+        echo "Mostrando o post com ID: $id";
+    }
+}*/
+
+?>
