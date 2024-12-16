@@ -39,12 +39,13 @@
         </div>
 
         <ul id="side_items">
-          <li class="side-item active" id="dashboard">
+        <li class="side-item" id="usuarios">
             <a href="/dashboard">
               <i class="fa-solid fa-chart-simple"></i>
               <span class="item-description"> Dashboard </span>
             </a>
           </li>
+
 
           <li class="side-item" id="usuarios">
             <a href="/usuario">

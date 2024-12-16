@@ -75,7 +75,7 @@ main {
 
 .side-item {
   border-radius: 8px;
-  padding: 14px;
+  padding: 8px;
   cursor: pointer;
 }
 
@@ -104,8 +104,13 @@ main {
   color: var(--texto-side);
 }
 
-.side-item.active a {
-  color: var(--hooder-body);
+
+
+.side-item:hover {
+  background-color: rgb(243, 206, 22);
+  border-radius: 20px;
+  transition: background-color 0.5s, border 0.5s;
+  
 }
 
 .side-item a i {
