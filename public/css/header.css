@@ -31,10 +31,11 @@ header {
   justify-content: space-evenly;
   list-style: none;
   width: 100%;
+  height: fit-content;
 }
 
 .nav-item {
-  height: 30px;
+  height: 40px;
   width: 55px;
   display: flex;
   background-color: #f9cb7a;
@@ -46,6 +47,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
+  box-sizing: border-box;
 }
 
 .nav-item:hover {

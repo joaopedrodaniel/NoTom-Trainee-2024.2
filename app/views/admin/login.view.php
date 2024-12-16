@@ -44,7 +44,7 @@
                     </p>
                 </div>
                     <div class="coluna-central">
-                        <input type="text" name="email" id="email" class="texto-input" placeholder="Email ou Nome de Usuario *" autocomplete="off" />
+                        <input type="text" name="email" id="email" class="texto-input" placeholder="Email *" autocomplete="off" />
                     </div>
 
                     <div class="coluna-central senha">
