@@ -38,6 +38,7 @@ main {
   transition: all 0.5s;
   min-width: 112px;
   z-index: 2;
+  box-shadow: #000000 1px 1px 4px;
 }
 
 #sidebar_content {
@@ -154,11 +155,10 @@ main {
 
 #open_btn_icon {
   transition: transform 0.3s ease;
-
 }
 
 .open-sidebar #open_btn_icon {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 .item-description {
@@ -187,7 +187,7 @@ main {
 
 @media (max-width: 768px) {
   #sidebar {
-    min-width: 30px;
+    min-width: 24px;
     overflow: visible;
     position: fixed;
     transition: all 0.3s ease;
