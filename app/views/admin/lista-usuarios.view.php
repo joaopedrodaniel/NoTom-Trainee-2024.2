@@ -99,78 +99,14 @@
               </td>
             </tr>
           
-    <!--Modal visualização-->
-    <div class="modal visualizacao" id="visualizacao<?= $usuario->id ?>">
-      <h1>Visualização</h1>
-      <label class="titulo-conteudo-modal" for="input-nome">ID:</label>
-      <p class="conteudo-visualizacao"><?= $usuario->id ?></p>
-
-      <label class="label-com-margem titulo-conteudo-modal" for="email"
-        >Nome:</label
-      >
-      <p class="conteudo-visualizacao"><?= $usuario->nome ?></p>
-
-      <label class="label-com-margem titulo-conteudo-modal" for="senha"
-        >Email:</label
-      >
-      <p class="conteudo-visualizacao"><?= $usuario->email ?></p>
-      <div class="modal-botoes">
-        <button
-        type="button"  
-          class="botao-fechar-modal"
-          onclick="fecharModal('visualizacao<?= $usuario->id ?>')"
-        >
-          Fechar
-        </button>
-      </div>
-    </div>
+        <!--Modal visualização-->
+        <?php require 'componentes/modais/modal_usuario_visu.php' ?>  
 
         <!--Modal edição-->
-    <div class="modal edicao" id="edicao<?= $usuario->id ?>" >
-      <form method="POST" action="/usuario/editar">
-        <h1>Edição</h1>
-
-        <input required="true" type="hidden" name="id" id="usuario-id" value="<?= $usuario->id ?>">
-
-        <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
-        <input required="true" id="input-nome" type="text" name="nome" value="<?= htmlspecialchars($usuario->nome)?>"  placeholder="Digite seu nome..." />
-
-        <label class="label-com-margem titulo-conteudo-modal" for="email"
-          >E-mail:</label
-        >
-        <input required="true" id="email" type="email" name="email" value="<?= htmlspecialchars($usuario->email)?>"  placeholder="exemplo@email.com" />
-
-        <label class="label-com-margem titulo-conteudo-modal" for="senha"
-          >Senha:</label
-        >
-        <input required="true" id="senha" type="password" name="senha" value="<?= htmlspecialchars($usuario->senha)?>" placeholder="Digite sua senha..." />
-        <div class="modal-botoes">
-          <button type="button" class="botao-destrutivo" onclick="fecharModal('edicao<?= $usuario->id ?>')">
-            Cancelar
-          </button>
-          <button class="botao-construtivo">Salvar</button>
-        </div>
-      </form>
-    </div>
+        <?php require 'componentes/modais/modal_usuario_editar.php' ?>
 
         <!--Modal exclusão-->
-    <div class="modal excluir" id="excluir<?= $usuario->id ?>">
-      <form method="POST" action="/usuario/excluir">
-        <h1>Excluir</h1>
-        
-        <input type="hidden" name="id" value="<?= $usuario->id ?>">
-
-        <p class="dados-usuario-excluir p-com-margem">ID: <?= $usuario->id ?></p>
-        <p class="dados-usuario-excluir">Nome: <?= $usuario->nome ?></p>
-        <div class="modal-botoes botoes-com-margem">
-          <button type="button" class="botao-fechar-modal" onclick="fecharModal('excluir<?= $usuario->id ?>')">
-            Cancelar
-          </button>
-          <button class="botao-excluir-modal">Excluir</button>
-        </div>
-      </form>
-    </div>
-
+        <?php require 'componentes/modais/modal_usuario_excluir.php' ?>
 
 
             <?php endforeach; ?>
@@ -189,30 +125,7 @@
     </div>
 
     <!--Modal criação-->
-    <div class="modal criacao" id="criacao">
-      <form method="POST" action="/usuario/criacao">
-        <h1>Criar usuário</h1>
-        <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
-        <input required="true" id="input-nome" name="nome" type="text" placeholder="Digite seu nome..." />
-
-        <label class="label-com-margem titulo-conteudo-modal" for="email"
-          >E-mail:</label
-        >
-        <input required="true" id="email" name="email" type="email" placeholder="exemplo@email.com" />
-
-        <label class="label-com-margem titulo-conteudo-modal" for="senha"
-          >Senha:</label
-        >
-        <input required="true" id="senha" name="senha" type="password" placeholder="Digite sua senha..." />
-        <div class="modal-botoes">
-          <button type="button" class="botao-destrutivo" onclick="fecharModal('criacao')">
-            Cancelar
-          </button>
-          <button class="botao-construtivo">Criar</button>
-        </div>
-      </form>
-    </div>
-
+      <?php require 'componentes/modais/modal_usuario_criar.php' ?>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

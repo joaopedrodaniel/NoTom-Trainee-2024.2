@@ -6,6 +6,8 @@
     if(!isset($_SESSION['id'])){
         header('Location: /login');
     }
+    $id_usuario = $_SESSION['id'];
+    $usuarioLogado = App\Core\App::get('database')->selectOne('usuarios', $id_usuario);
 ?>
 
 <!DOCTYPE html>

@@ -10,7 +10,7 @@
 
                 <div class="area-do-input-titulo">
                     <label for="input-titulo">Titulo: </label>
-                    <input id="inputTitulo" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
+                    <input id="inputTitulo" required="true" name="titulo" class=input-titulo-popup placeholder="Digite seu Título *" />
 
                     <div class="avisos-do-texto">
                         <p id="avisoContadorTitulo"></p>
@@ -19,7 +19,7 @@
 
                     <div class="area-do-input-descricao">
                         <label for="area-da descricao">Escreva uma breve descricao de seu post: </label>
-                        <textarea id="inputDaDescricao" name="descricao" class="input-paragrafo-popup" placeholder=" Digite sua descrição *"></textarea>
+                        <textarea id="inputDaDescricao" required="true" name="descricao" class="input-paragrafo-popup" placeholder=" Digite sua descrição *"></textarea>
 
                         <div class="avisos-do-texto">
                             <p id="avisoContadorDescricao"></p>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="area-do-input-paragrafo">
                     <label for="area-de-texto">Conteudo: </label>
-                    <textarea id="inputDoParagrafo" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
+                    <textarea required="true" id="inputDoParagrafo" name="texto" class="input-paragrafo-popup" placeholder=" Digite seu Conteudo *"></textarea>
                     <div class="avisos-do-texto">
                         <p id="avisoContadorParagrafo"></p>
                         <p class="contador" id="contadorParagrafo"></p>

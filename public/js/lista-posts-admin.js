@@ -137,20 +137,17 @@ avisoContadorFoto.textContent = "Você deve escolher uma foto *";
 avisoContadorFoto.style.color = "#ff0000";
 avisoContadorFoto.style.paddingBottom = "20px";
 
+const inputDeFileNoCriar = document.getElementById("file");
 
-const inputDeFileNoCriar = document.getElementById('file');
-
-inputDeFileNoCriar.addEventListener('change', () => {
-    if (inputDeFileNoCriar.files.length > 0) {
-      temFotoNoCriar = true;
-      avisoContadorFoto.style.display = "none";
-    } else {
-      temFotoNoCriar = false;
-
-    }
-    verificarBotaoCriarPost();
+inputDeFileNoCriar.addEventListener("change", () => {
+  if (inputDeFileNoCriar.files.length > 0) {
+    temFotoNoCriar = true;
+    avisoContadorFoto.style.display = "none";
+  } else {
+    temFotoNoCriar = false;
+  }
+  verificarBotaoCriarPost();
 });
-
 
 //Java Script logica dos Modais
 function abirModal(idModal) {
@@ -304,6 +301,5 @@ inputsImagemEdicao.forEach((input) => {
 });
 
 //-----------
-
 
 //-----------

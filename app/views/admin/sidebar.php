@@ -6,6 +6,7 @@
     if(!isset($_SESSION['id'])){
         header('Location: /login');
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,7 @@
             alt="Avatar"
           />
           <p id="user_infos">
-            <span class="item-description"> Usuario Teste </span>
+            <span class="item-description"> <?= $usuarioLogado->nome ?></span>
             <span class="item-description">Administrador</span>
           </p>
         </div>
@@ -55,7 +56,7 @@
           </li>
 
           <li class="side-item" id="publicacoes">
-            <a href="admin/posts">
+            <a href="/admin/posts">
               <i class="fa-solid fa-edit"></i>
               <span class="item-description"> Publicações </span>
             </a>

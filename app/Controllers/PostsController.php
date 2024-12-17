@@ -18,6 +18,14 @@ class PostsController
 
     public function create()
     {
+        if (session_status() != PHP_SESSION_ACTIVE) {
+            session_start();
+        }
+        if (!isset($_SESSION['id'])) {
+            header('Location: /login');
+            exit;
+        }
+        $id_autor = $_SESSION['id']; 
         //variavel temporario = 
         $temporario = $_FILES['imagem']['tmp_name'];
 
@@ -38,7 +46,7 @@ class PostsController
             'descricao' => $_POST['descricao'],
             'texto' => $_POST['texto'],
             'imagem' => $caminhodaimagem,
-            'id_autor' => 1, //lembrar de mudar o id autor
+            'id_autor' => $id_autor, //lembrar de mudar o id autor
         ];
 
         App::get('database')->insert('posts', $parameters);

@@ -1,3 +1,12 @@
+<?php
+if (session_status() != PHP_SESSION_ACTIVE) {
+    session_start();
+}
+
+$logado = isset($_SESSION['id']);
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -25,10 +34,15 @@
                     <li class="nav-item" onclick="location.href='/posts'">
                         <div><span class="simbolo">list</span></div><a class="nav-link">Publicações</a>
                     </li>
-                    <li class="nav-item" onclick="location.href='/login'">
-                        <!--ATENÇÃO, O CAMINHO DO HREF ABAIXO ESTÁ ERRADO! IREI REVISITAR NO FUTURO, TROCAR O QUANTO ANTES -->
-                        <div><span class="simbolo">login</span></div><a class="nav-link"> Login</a>
-                    </li>
+                    <?php if ($logado): ?>
+                        <li class="nav-item" onclick="location.href='/dashboard'">
+                            <div><span class="simbolo">dashboard</span></div><a class="nav-link">Dashboard</a>
+                        </li>
+                    <?php else: ?>
+                        <li class="nav-item" onclick="location.href='/login'">
+                            <div><span class="simbolo">login</span></div><a class="nav-link">Login</a>
+                        </li>
+                    <?php endif; ?>
                 </ul>
             </div>
 

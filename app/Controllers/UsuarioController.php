@@ -70,6 +70,15 @@ class UsuarioController
 
         header('Location: /usuario');
     }
+    
+    public function sidebar($id)
+    {
+        $post = App::get('database')->selectOne('posts', $id);
+        $usuarios = App::get('database')->selectAll('usuarios');
+
+        return view('admin/sidebar' , compact('post', 'usuarios'));
+    }
+
 }
 
 ?>

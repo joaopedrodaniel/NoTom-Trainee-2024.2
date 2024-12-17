@@ -84,7 +84,7 @@ button.botao-destrutivo:hover {
   background-color: #aa0000;
 }
 
-a {
+.paginacao-elemento {
   color: inherit;
   text-decoration: none;
 }
@@ -232,8 +232,8 @@ table.responsividade-2 .coluna-email {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 270px;
-  height: 320px;
+  width: 40vh;
+  height: 50vh;
 }
 
 .modal h1 {
@@ -308,7 +308,7 @@ table.responsividade-2 .coluna-email {
 }
 
 .criacao {
-  display: none;
+  display: flex;
 }
 
 .visualizacao {
@@ -340,8 +340,18 @@ table.responsividade-2 .coluna-email {
   font-size: 32px;
 }
 
-@media (max-width: 300px) {
+.avisos-do-texto {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 15px;
+  height: 3vh;
+}
+
+@media (max-width: 900px) {
   .modal {
-    width: 90%;
+    width: 70vw;
+    height: 60vh;
   }
 }

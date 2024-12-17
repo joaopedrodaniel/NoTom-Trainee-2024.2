@@ -119,3 +119,73 @@ window.addEventListener("resize", () => {
 });
 
 setTimeout(checarSeTableTransborda, 100);
+
+// Contador Java Script
+
+// Nome
+var inputNome = document.getElementById("input-nome");
+var avisoNome = document.getElementById("aviso-nome");
+var contadorNome = document.getElementById("contador-nome");
+var limiteNome = 50;
+
+contadorNome.textContent = "0/" + limiteNome;
+contadorNome.style.color = "#ff0000";
+
+inputNome.addEventListener("input", function () {
+  var tamanhoNome = inputNome.value.length;
+  contadorNome.textContent = tamanhoNome + "/" + limiteNome;
+
+  if (tamanhoNome > limiteNome || tamanhoNome === 0) {
+    contadorNome.style.color = "#ff0000";
+    if (tamanhoNome === 0) {
+      avisoNome.textContent = "O Nome não pode ficar vazio*";
+    } else {
+      avisoNome.textContent = "O Tamanho Máximo do Nome é de 50 Caracteres*";
+    }
+  } else {
+    contadorNome.style.color = "#737373";
+    avisoNome.textContent = "";
+  }
+});
+
+// Email
+var inputEmail = document.getElementById("email");
+var avisoEmail = document.getElementById("aviso-email");
+
+inputEmail.addEventListener("input", function () {
+  var email = inputEmail.value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    avisoEmail.textContent = "Formato de e-mail inválido*";
+    avisoEmail.style.color = "#ff0000";
+  } else {
+    avisoEmail.textContent = "";
+  }
+});
+
+// Senha
+var inputSenha = document.getElementById("senha");
+var avisoSenha = document.getElementById("aviso-senha");
+var contadorSenha = document.getElementById("contador-senha");
+var limiteSenha = 20;
+
+contadorSenha.textContent = "0/" + limiteSenha;
+contadorSenha.style.color = "#ff0000";
+
+inputSenha.addEventListener("input", function () {
+  var tamanhoSenha = inputSenha.value.length;
+  contadorSenha.textContent = tamanhoSenha + "/" + limiteSenha;
+
+  if (tamanhoSenha > limiteSenha || tamanhoSenha === 0) {
+    contadorSenha.style.color = "#ff0000";
+    if (tamanhoSenha === 0) {
+      avisoSenha.textContent = "A Senha não pode ficar vazia*";
+    } else {
+      avisoSenha.textContent = "O Tamanho Máximo da Senha é de 20 Caracteres*";
+    }
+  } else {
+    contadorSenha.style.color = "#737373";
+    avisoSenha.textContent = "";
+  }
+});
