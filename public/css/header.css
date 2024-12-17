@@ -34,11 +34,11 @@ header {
 }
 
 .nav-item {
-  height: 30px;
-  width: 55px;
+  height: 35px;
+  /*width: 55px;*/
   display: flex;
   background-color: #f9cb7a;
-  padding: 0.5% 6%;
+  padding: 5px 35px; 
   border-radius: 30px;
   text-decoration: none;
   align-items: center;
@@ -103,6 +103,7 @@ header {
   }
 }
 
+
 @media screen and (max-width: 700px) {
   .nav-bar {
     display: flex;
@@ -123,7 +124,7 @@ header {
   .nav-item {
     display: none;
     height: 30px;
-    width: fit-content;
+    /*width: fit-content;*/
     background-color: black;
     border-radius: 3px;
     text-decoration: none;
