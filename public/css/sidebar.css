@@ -187,7 +187,7 @@ main {
 
 @media (max-width: 768px) {
   #sidebar {
-    min-width: 30px;
+    min-width: 24px;
     overflow: visible;
     position: fixed;
     transition: all 0.3s ease;
