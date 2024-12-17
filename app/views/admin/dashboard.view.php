@@ -32,7 +32,7 @@
 
         <div class="b">
             <a href="/admin/posts"><button><img src="../../../public/assets/publi.png"> Publicações</button></a>
-            <a href="/usuario"> <button><img src="../../../public/assets/user.png"> Usuários</button></a>
+            <a href="/admin/usuarios"> <button><img src="../../../public/assets/user.png"> Usuários</button></a>
             <form action="/logout" method="POST"><button type="submit" class="out"><img src="../../../public/assets/logout.png"> Log Out</button></form>
         </div>
     </div>

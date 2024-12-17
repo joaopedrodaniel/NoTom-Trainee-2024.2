@@ -12,10 +12,10 @@ use App\Core\Router;
 
 $router->get('', 'ExampleController@index');
 $router->get('post-individual/{id}', 'PostController@exibirPost');
-$router->get('usuario', 'UsuarioController@index');
-$router->post('usuario/criacao', 'UsuarioController@criacao');
-$router->post('usuario/editar', 'UsuarioController@editar');      //olhar as rotas de usuario na revisao (Adicionar /admin)
-$router->post('usuario/excluir', 'UsuarioController@excluir');
+$router->get('admin/usuarios', 'UsuarioController@index');
+$router->post('admin/usuarios/criacao', 'UsuarioController@criacao');
+$router->post('admin/usuarios/editar', 'UsuarioController@editar');      //olhar as rotas de usuario na revisao (Adicionar /admin)
+$router->post('admin/usuarios/excluir', 'UsuarioController@excluir');
 $router->get('admin/posts', 'PaginacaoController@index');
 $router->post('admin/posts/create', 'PostsController@create');
 $router->post('admin/posts/edit', 'PostsController@edit');

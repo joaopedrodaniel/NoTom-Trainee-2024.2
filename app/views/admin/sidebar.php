@@ -47,7 +47,7 @@
           </li>
 
           <li class="side-item" id="usuarios">
-            <a href="/usuario">
+            <a href="/admin/usuarios">
               <i class="fa-solid fa-user"></i>
               <span class="item-description"> Usuários </span>
             </a>
