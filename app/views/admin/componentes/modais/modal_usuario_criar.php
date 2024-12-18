@@ -3,20 +3,20 @@
     <h1>Criar usuário</h1>
 
     <label class="titulo-conteudo-modal" for="input-nome">Nome:</label>
-    <input required="true" id="input-nome" name="nome" type="text" placeholder="Digite seu nome..." />
+    <input required="true" data-type="input-usuario" id="nome" name="nome" type="text" placeholder="Digite seu nome..." />
     <div class="avisos-do-texto">
       <p id="aviso-nome"></p>
       <p class="contador" id="contador-nome"></p>
     </div>
 
     <label class="label-com-margem titulo-conteudo-modal" for="email">E-mail:</label>
-    <input required="true" id="email" name="email" type="email" placeholder="exemplo@email.com" />
+    <input required="true" data-type="input-email" id="email" name="email" type="email" placeholder="exemplo@email.com" />
     <div class="avisos-do-texto">
       <p id="aviso-email"></p>
     </div> 
 
     <label class="label-com-margem titulo-conteudo-modal" for="senha">Senha:</label>
-    <input required="true" id="senha" name="senha" type="password" placeholder="Digite sua senha..." />
+    <input required="true" data-type="input-senha" id="senha" name="senha" type="password" placeholder="Digite sua senha..." />
     <div class="avisos-do-texto">
       <p id="aviso-senha"></p>
       <p class="contador" id="contador-senha"></p>

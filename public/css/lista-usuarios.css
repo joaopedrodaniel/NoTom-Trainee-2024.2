@@ -260,6 +260,7 @@ table.responsividade-2 .coluna-email {
   display: flex;
   gap: 5px;
   width: 100%;
+  margin-top: 2vh;
 }
 
 .modal .label-com-margem {
@@ -308,7 +309,7 @@ table.responsividade-2 .coluna-email {
 }
 
 .criacao {
-  display: flex;
+  display: none;
 }
 
 .visualizacao {
@@ -345,8 +346,11 @@ table.responsividade-2 .coluna-email {
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-start;
-  font-size: 15px;
-  height: 3vh;
+  font-size: 1.5vh;
+  height: 2vh;
+}
+.aviso-nome {
+  font-size: 2vh;
 }
 
 @media (max-width: 900px) {

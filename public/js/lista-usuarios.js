@@ -123,7 +123,7 @@ setTimeout(checarSeTableTransborda, 100);
 // Contador Java Script
 
 // Nome
-var inputNome = document.getElementById("input-nome");
+var inputNome = document.querySelector('[data-type="input-usuario"]');
 var avisoNome = document.getElementById("aviso-nome");
 var contadorNome = document.getElementById("contador-nome");
 var limiteNome = 50;
@@ -149,7 +149,7 @@ inputNome.addEventListener("input", function () {
 });
 
 // Email
-var inputEmail = document.getElementById("email");
+var inputEmail = document.querySelector('[data-type="input-email"]');
 var avisoEmail = document.getElementById("aviso-email");
 
 inputEmail.addEventListener("input", function () {
@@ -165,7 +165,7 @@ inputEmail.addEventListener("input", function () {
 });
 
 // Senha
-var inputSenha = document.getElementById("senha");
+var inputSenha = document.querySelector('[data-type="input-senha"]');
 var avisoSenha = document.getElementById("aviso-senha");
 var contadorSenha = document.getElementById("contador-senha");
 var limiteSenha = 20;
@@ -188,4 +188,7 @@ inputSenha.addEventListener("input", function () {
     contadorSenha.style.color = "#737373";
     avisoSenha.textContent = "";
   }
+  console.log("Input Nome:", document.getElementById("input-nome"));
+  console.log("Aviso Nome:", document.getElementById("aviso-nome"));
+  console.log("Contador Nome:", document.getElementById("contador-nome"));
 });

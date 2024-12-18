@@ -6,7 +6,11 @@
     if(!isset($_SESSION['id'])){
         header('Location: /login');
     }
+
+    $id_usuario = $_SESSION['id'];
+    $usuarioLogado = App\Core\App::get('database')->selectOne('usuarios', $id_usuario);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -126,6 +130,7 @@
 
     <!--Modal criação-->
       <?php require 'componentes/modais/modal_usuario_criar.php' ?>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -134,6 +139,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
     <script src="../../../public/js/lista-usuarios.js"></script>
     <script src="../../../public/js/modals.js"></script>
   </body>

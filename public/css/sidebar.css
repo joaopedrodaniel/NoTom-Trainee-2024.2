@@ -79,14 +79,14 @@ main {
   cursor: pointer;
 }
 
-/* .side-item.active {
+.side-item.active {
   background-color: var(--botao-selecionado);
-} */
+}
 
-/* .side-item:hover:not(.active),
+.side-item:hover:not(.active),
 #logout_btn:hover {
   background-color: var(--hooder-body);
-} */
+}
 
 .side-item:hover:not(.active),
 #logout_btn:hover .item-description {
@@ -104,13 +104,10 @@ main {
   color: var(--texto-side);
 }
 
-
-
 .side-item:hover {
-  background-color: rgb(243, 206, 22);
+  background-color: var(--hooder-body);
   border-radius: 20px;
   transition: background-color 0.5s, border 0.5s;
-  
 }
 
 .side-item a i {
@@ -159,11 +156,10 @@ main {
 
 #open_btn_icon {
   transition: transform 0.3s ease;
-
 }
 
 .open-sidebar #open_btn_icon {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 .item-description {
