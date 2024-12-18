@@ -44,16 +44,16 @@
             <div class="coluna-mae-centro">
                     <h1>Contate-nos!</h1>
                     <h2>contato@notom.com</h2>
-                    <h3 ><a class = "link-escondido" href="https://www.youtube.com/" target="_blank">Desenvolvido por Code Jr</a>
+                    <h3 ><a class = "link-escondido" href="/sobre" target="_blank">Desenvolvido por Code Jr</a>
                         <img src="\public\assets\easter-egg\macacode-escondido.png" alt="logo code" class="logo-escondida"></h3>
             </div>
 
             <div class="coluna-mae-direita">
                 <h1 class="lobster"> Redes Sociais</h1>
                 <ul class="ul-row">
-                    <li><img src="\public\assets\Instagram_Glyph_White.png" alt="logo instagram" class="logos-footer"></li>
-                    <li><img src="\public\assets\Facebook_Logo_Secondary.png" alt="logo facebook" class="logos-footer"></li>
-                    <li><img src="\public\assets\twiter-logo-white.png" alt="logo facebook" class="logos-footer"></li>
+                    <li><a href="https://www.instagram.com/codejr/" target="_blank"><img src="\public\assets\Instagram_Glyph_White.png" alt="logo instagram" class="logos-footer"></a></li>
+                    <li><a href="https://www.instagram.com/codejr/" target="_blank"><img src="\public\assets\Facebook_Logo_Secondary.png" alt="logo facebook" class="logos-footer"></a></li>
+                    <li><a href="https://www.instagram.com/codejr/" target="_blank"><img src="\public\assets\twiter-logo-white.png" alt="logo twitter" class="logos-footer"></a></li>
                 </ul>
                 <h3 class="lobster">@notom</h1>
             </div>

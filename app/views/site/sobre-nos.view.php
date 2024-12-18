@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="/public/css/sobre-nos.css">
     <title>Sobre Nos</title>
 </head>
+<header><?php require 'header.php' ?></header>
 <body>
     <h1>
         Sobre Nos!
     </h1>
     <h2>
-        Nós somos o Grupo NoTom, formado pelos integrantes
+        Programadores deste Site:
     </h2>
 <ul>
     <li>Lucas Fernandes</li>
@@ -20,13 +21,13 @@
     <li>Fernanda Gomes </li>
 </ul>
 
-<h3>Aqui esta um pouco de cada um de cada um!</h3>
+
 <h4> Lucas Fernandes</h4>
 <div class="area-individual">
-<div>Teste 123 Teste 123</div>
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1FoUtuEcyIS92p?utm_source=generator" 
 width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
 loading="lazy"></iframe></div>
 
 </body>
+<footer><?php require 'footer.php' ?></footer>
 </html>

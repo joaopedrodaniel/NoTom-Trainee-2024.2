@@ -139,8 +139,10 @@ inputNome.addEventListener("input", function () {
     contadorNome.style.color = "#ff0000";
     if (tamanhoNome === 0) {
       avisoNome.textContent = "O Nome não pode ficar vazio*";
+      avisoNome.style.color = "#ff0000";
     } else {
-      avisoNome.textContent = "O Tamanho Máximo do Nome é de 50 Caracteres*";
+      avisoNome.textContent = "O Tamanho Máximo é de 50 Caracteres*";
+      avisoNome.style.color = "#ff0000";
     }
   } else {
     contadorNome.style.color = "#737373";
@@ -204,8 +206,10 @@ inputSenha.addEventListener("input", function () {
     contadorSenha.style.color = "#ff0000";
     if (tamanhoSenha === 0) {
       avisoSenha.textContent = "A Senha não pode ficar vazia*";
+      avisoSenha.style.color = "#ff0000";
     } else {
-      avisoSenha.textContent = "O Tamanho Máximo da Senha é de 20 Caracteres*";
+      avisoSenha.textContent = "O Tamanho Máximo é de 20 Caracteres*";
+      avisoSenha.style.color = "#ff0000";
     }
   } else {
     contadorSenha.style.color = "#737373";

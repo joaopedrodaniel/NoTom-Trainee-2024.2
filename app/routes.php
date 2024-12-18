@@ -32,6 +32,7 @@ $router->post('admin/posts/delete', 'PostsController@delete');
 
  //Rotas Lucas
  $router->get('busca', 'PublicPostsPaginacaoController@search');
+ $router->get('sobre', 'SobreNosController@sobrenos');
 
 
 ?>

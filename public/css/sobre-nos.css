@@ -9,13 +9,22 @@
 body{
     background-color: rgb(16, 41, 36) ;
     overflow-x: hidden;
-    margin: 10px;
   }
 
 .area-individual{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
 }
 
 /* descobrir como fazer css funcionar no Iframe*/
