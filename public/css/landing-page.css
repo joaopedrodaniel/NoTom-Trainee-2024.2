@@ -144,19 +144,18 @@ body{
   transform: scale(1.2);
 }
 
-
-.postagem {
+.swiper-container {
   text-align: center;
-  display: flex;
   color: #F9CB7A;
   padding-bottom: 50px;
   margin-top: 6%;
+  margin-bottom: 7%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  position: relative;
-  display: block;
+  position: relative; 
+  display: flex;
   overflow: hidden;
   width: 78%;
   height: fit-content;
@@ -174,21 +173,33 @@ body{
   font-size: 30px;
 }
 
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   position: absolute;
-  transform: translateY(-290%); 
+  top: 50%;
+  transform: translateY(-50%); 
   z-index: 10;
   color: #ffb433;
+  font-size: 30px; 
+}
+
+
+.swiper-button-next {
+  right: 10px; 
+}
+
+.swiper-button-prev {
+  left: 10px; 
 }
 
 .swiper-pagination {
-  position: relative;
-  margin-bottom: 18%;
-  bottom: 10px;
+  position: absolute;
+  bottom: 10px; 
   left: 50%;
   transform: translateX(-50%); 
-  z-index: 1;
+  z-index: 10;
+  
 }
 
 .swiper-pagination-bullet {
@@ -215,11 +226,6 @@ body{
   object-fit: cover;
 }
 
-.perfil{
-  display: flex;
-  margin-top: 80%;
-}
-
 .car1 button{
   color: black;
   padding: 15px;
@@ -227,17 +233,19 @@ body{
 
 .car1 p{
   text-align: left;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 3%;
+  margin: 5% ;
   color: black;
 }
 
+
 .car1 h2{
   text-align: left;
-  margin-left: 5%;
-  margin-bottom: 1%;
+  margin: 5px;
   color: black;
+}
+
+.car1 .perfil{
+  margin-top: 80%;
 }
 
 .nav-item{
@@ -247,9 +255,10 @@ body{
 
 .post-texto {
   max-height: 100px; 
-  margin-bottom: 20%;
+  margin-bottom: 20px;
   overflow: hidden;
-  text-overflow: ellipsis;display: -webkit-box;
+  text-overflow: ellipsis;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -259,7 +268,7 @@ body{
   font-size: 12px;
   align-items: center;
   justify-content: center;
-  margin-bottom: -5%;
+  margin-bottom: 150px;
   color: black;
   border: none;
   background-color: #F9CB7A;
@@ -293,8 +302,9 @@ body{
   border-radius: 20px;
   max-width: 400px;
   max-height: 450px;
-  /*height: fit-content;*/
+  justify-content: space-between;
   text-align: center;
+  align-items:center ;
   display: flex;
   padding: 1%;
   flex-direction: column;
@@ -302,6 +312,7 @@ body{
   border: 2px solid transparent;
 }
 
+/*
 @media (max-width:768px){
  .textos{
   width: 100%;
@@ -317,13 +328,6 @@ body{
  }
 
  
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  transform: translateY(-500%); 
-  z-index: 1;
-}
-
 .perfil{
   margin-top: 100%;
 }
@@ -337,26 +341,18 @@ body{
   }
 
 }
+*/
 
-
-
+/*
 @media (max-width: 550px){
 
   
 .perfil{
   margin-top: 70%;
 }
-  
 
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  transform: translateY(-490%); 
-  z-index: 1;
-}
 
-  }
-
+  }*/
 
 
 @media (max-width: 480px){
@@ -440,17 +436,6 @@ body{
   z-index: -1; 
 }
 
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  transform: translateY(-390%); 
-  z-index: 1;
-}
-
-.perfil{
-  margin-top: 65%;
-}
 
 }
 @keyframes scroll {
