@@ -91,6 +91,10 @@ button img {
   border-radius: 100%;
   justify-content: center;
   margin-top: 15px;
+  padding: 10px;
+  margin-top: 1.5%;
+  margin-left: 20%;
+  height: 47px;
 }
 
 .side {

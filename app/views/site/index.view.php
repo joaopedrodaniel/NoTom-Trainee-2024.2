@@ -27,45 +27,43 @@
             <h3>Saiba tudo o que seu artista favorito faz e descubra novos talentos da música</h3>
             <div class="slide">
                 <div class="carrossel-infinito">
-                    <div class="nomeartista"><div class="red"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Tim Maia</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHOQiEzQtmQ3-Y77h1OEEbYICuIDjtQV1kA&shttps://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Chico Buarque</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuW31n0o5wrEMXV_qWXXKFLLaKBcpsymWEw&s"></div><p>Nirvana</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/03/djavan-album-luz.jpg"></div><p>Djavan</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/01/Rita-Lee-album-Entradas-e-Bandeiras.png"></div><p>Rita Lee</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/9158138e3ef72dce4d8715e82930dc03"></div><p>Guns n' Roses</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Tim Maia</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHOQiEzQtmQ3-Y77h1OEEbYICuIDjtQV1kA&shttps://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Chico Buarque</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuW31n0o5wrEMXV_qWXXKFLLaKBcpsymWEw&s"></div><p>Nirvana</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/03/djavan-album-luz.jpg"></div><p>Djavan</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/01/Rita-Lee-album-Entradas-e-Bandeiras.png"></div><p>Rita Lee</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/9158138e3ef72dce4d8715e82930dc03"></div><p>Guns n' Roses</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://www.alagoas24horas.com.br/wp-content/uploads/2011/04/bc043cdf6eb1447281771b5c26335088_luan.1.jpg"></div><p>Luan Santana</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab6761610000e5eb784daff754ecfe0464ddbeb9"></div><p>Ed Sheeran</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzhH6wzHm4w-bbMToYHNuKP8fSNafJS-yZw&s"></div><p>Ariana Grande</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://s2-g1.glbimg.com/Rvu--BdFZS8w7a0wme42DrzFoYA=/0x0:1440x1800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/K/r/rL4V5AT3Cb3G7EBtsn7g/paramore.jpg"></div><p>Paramore</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://images.mubicdn.net/images/cast_member/553878/cache-253671-1504830910/image-w856.jpg"></div><p>Kendrick Lamar</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab67616100005174a83e9f0e901c17791b83be8b"></div><p>Djonga</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab67616100005174041c044761196ae7b0805c67"></div><p>DJ Ws da Igrejinha</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://grupoonda.art.br/wp-content/uploads/2024/05/Artistas-Onda-Site-9-420x420.png"></div><p>Menos é mais</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/11/linkin-park.jpg?w=1200&h=1200&crop=1"></div><p>Linkin Park</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8432fa6aefbc087c392ae6a489"></div><p>System of a Down</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://static.tvtropes.org/pmwiki/pub/images/8a592355_24d2_4ad2_8cb3_247452bffdc8.jpeg"></div><p>Rammstein</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab6761610000e5ebd0cdb283a7384a0edb665182"></div><p>Slipknot</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHj4eejP2vIjnEcRnE44Ks87crrs8_4cc4QQ&s"></div><p>Tame Impala</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab6761610000517419c2790744c792d05570bb71"></div><p>Travis Scott</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://media.pitchfork.com/photos/65770f942ea681f1383d0597/master/pass/Childish-Gambino-Because-the-Internet.jpg"></div><p>Childish Gambino</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://images.squarespace-cdn.com/content/v1/509000c4e4b05d6afd9b7259/33e60f3b-7e69-46b3-b1cc-8ee16d5046cd/3G2A9167-2.jpg"></div><p>DJ Ramon Sucesso</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://cdn-images.dzcdn.net/images/artist/581af6d2b3412f12fae94c6a4778d585/1900x1900-000000-80-0-0.jpg"></div><p>Djavan</p></div>
                
                 </div>
                 <div class="carrossel-infinito">
-                    <div class="nomeartista"><div class="red"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Tim Maia</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHOQiEzQtmQ3-Y77h1OEEbYICuIDjtQV1kA&shttps://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Chico Buarque</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuW31n0o5wrEMXV_qWXXKFLLaKBcpsymWEw&s"></div><p>Nirvana</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/03/djavan-album-luz.jpg"></div><p>Djavan</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/01/Rita-Lee-album-Entradas-e-Bandeiras.png"></div><p>Rita Lee</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/9158138e3ef72dce4d8715e82930dc03"></div><p>Guns n' Roses</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Tim Maia</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHOQiEzQtmQ3-Y77h1OEEbYICuIDjtQV1kA&shttps://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg/640px-TIM_MAIA_SONIA_D%27ALMEIDA_1987_%28cropped%29.jpg"></div><p>Chico Buarque</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFuW31n0o5wrEMXV_qWXXKFLLaKBcpsymWEw&s"></div><p>Nirvana</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/03/djavan-album-luz.jpg"></div><p>Djavan</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://musicanobrasil.com.br/wp-content/uploads/2024/01/Rita-Lee-album-Entradas-e-Bandeiras.png"></div><p>Rita Lee</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://lastfm.freetls.fastly.net/i/u/avatar170s/9158138e3ef72dce4d8715e82930dc03"></div><p>Guns n' Roses</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
-                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDda-1fti4NpTtgheGcLE-SfgKZanGgTXpQ&s"></div><p>Charlie Brown Jr.</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://www.alagoas24horas.com.br/wp-content/uploads/2011/04/bc043cdf6eb1447281771b5c26335088_luan.1.jpg" href="https://open.spotify.com/album/6ed1a9UMAj76mV1NIj1gJ6"></div><p>Luan Santana</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab6761610000e5eb784daff754ecfe0464ddbeb9"></div><p>Ed Sheeran</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzhH6wzHm4w-bbMToYHNuKP8fSNafJS-yZw&s"></div><p>Ariana Grande</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://s2-g1.glbimg.com/Rvu--BdFZS8w7a0wme42DrzFoYA=/0x0:1440x1800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/K/r/rL4V5AT3Cb3G7EBtsn7g/paramore.jpg"></div><p>Paramore</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://images.mubicdn.net/images/cast_member/553878/cache-253671-1504830910/image-w856.jpg"></div><p>Kendrick Lamar</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab67616100005174a83e9f0e901c17791b83be8b"></div><p>Djonga</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab67616100005174041c044761196ae7b0805c67"></div><p>DJ Ws da Igrejinha</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://grupoonda.art.br/wp-content/uploads/2024/05/Artistas-Onda-Site-9-420x420.png"></div><p>Menos é mais</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/11/linkin-park.jpg?w=1200&h=1200&crop=1"></div><p>Linkin Park</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8432fa6aefbc087c392ae6a489"></div><p>System of a Down</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://static.tvtropes.org/pmwiki/pub/images/8a592355_24d2_4ad2_8cb3_247452bffdc8.jpeg"></div><p>Rammstein</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab6761610000e5ebd0cdb283a7384a0edb665182"></div><p>Slipknot</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHj4eejP2vIjnEcRnE44Ks87crrs8_4cc4QQ&s"></div><p>Tame Impala</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://i.scdn.co/image/ab6761610000517419c2790744c792d05570bb71"></div><p>Travis Scott</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://media.pitchfork.com/photos/65770f942ea681f1383d0597/master/pass/Childish-Gambino-Because-the-Internet.jpg"></div><p>Childish Gambino</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://images.squarespace-cdn.com/content/v1/509000c4e4b05d6afd9b7259/33e60f3b-7e69-46b3-b1cc-8ee16d5046cd/3G2A9167-2.jpg"></div><p>DJ Ramon Sucesso</p></div>
+                    <div class="nomeartista"><div class="red"><img src="https://cdn-images.dzcdn.net/images/artist/581af6d2b3412f12fae94c6a4778d585/1900x1900-000000-80-0-0.jpg"></div><p>Djavan</p></div>
                
                 </div>
             </div>
@@ -100,9 +98,8 @@
                 <h2><?= $post->titulo ?></h2>
                 <p class="perfil"><?= $usuario->nome ?></p> 
                 <p class="post-texto" id="texto-<?= $post->id ?>" style="font-size: 13px;"><?= $post->texto ?></p>
-                <a href="#" class="ver-mais" id="ver-mais-<?= $post->id ?>" onclick="toggleText(<?= $post->id ?>)">Ver Mais</a>
-                <a href="post.php?id=<?= $post->id ?>"><button>Ver Mais</button></a>
-         </div>
+                <a href="post-individual/<?= $post->id ?>" class="ver-mais" id="ver-mais-<?= $post->id ?>">Ver Mais</a>
+                </div>
             </div>
                 <?php endforeach;?>
         

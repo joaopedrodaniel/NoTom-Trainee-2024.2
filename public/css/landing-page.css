@@ -11,6 +11,7 @@ body{
   overflow-x: hidden;
 }
 
+
 .container {
   width: 100%;
   position: relative;
@@ -173,35 +174,34 @@ body{
   font-size: 30px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   position: absolute;
-  top: 30%; 
-  transform: translateY(-50%); 
-  z-index: 1;
-}
-
-.swiper-button-next {
-  right: 10px;
-}
-
-.swiper-button-prev {
-  left: 10px; 
+  transform: translateY(-290%); 
+  z-index: 10;
+  color: #ffb433;
 }
 
 .swiper-pagination {
   position: relative;
+  margin-bottom: 18%;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%); 
-  z-index: 10;
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+ background-color:white;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffb433;
 }
 
 .swiper-wrapper{
   display: flex;
 }
-
-
 
 .swiper-slide:hover{
   border: 3px solid #ffb433;
@@ -213,6 +213,11 @@ body{
   max-width: 100%;
   aspect-ratio: 25 / 20;
   object-fit: cover;
+}
+
+.perfil{
+  display: flex;
+  margin-top: 80%;
 }
 
 .car1 button{
@@ -239,23 +244,10 @@ body{
   height: 100px;
 }
 
-button{
-  border: none;
-  text-decoration: none;
-  background-color: #F9CB7A;
-  padding: 2%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-button:hover{
-  background-color:#ffb433;
-  color: white;
-}
 
 .post-texto {
   max-height: 100px; 
+  margin-bottom: 20%;
   overflow: hidden;
   text-overflow: ellipsis;display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -263,9 +255,23 @@ button:hover{
 }
 
 .ver-mais {
-  display: none;
+  display: flex;
   font-size: 12px;
-  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -5%;
+  color: black;
+  border: none;
+  background-color: #F9CB7A;
+  padding: 4%;
+  border-radius: 5px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.ver-mais:hover{
+  background-color:#ffb433;
+  color: white;
 }
 
 .car1 .post-texto {
@@ -286,7 +292,8 @@ button:hover{
   background-color: rgb(255, 253, 223);
   border-radius: 20px;
   max-width: 400px;
-  height: fit-content;
+  max-height: 450px;
+  /*height: fit-content;*/
   text-align: center;
   display: flex;
   padding: 1%;
@@ -308,18 +315,61 @@ button:hover{
  .textos h2{
   font-size: 3vw;
  }
+
+ 
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  transform: translateY(-500%); 
+  z-index: 1;
 }
+
+.perfil{
+  margin-top: 100%;
+}
+
+}
+
+
+@media (max-width: 900px){
+  .textos h2{
+    margin-bottom: 45%;
+  }
+
+}
+
+
+
+@media (max-width: 550px){
+
+  
+.perfil{
+  margin-top: 70%;
+}
+  
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  transform: translateY(-490%); 
+  z-index: 1;
+}
+
+  }
+
+
 
 @media (max-width: 480px){
   .textos h1{
-    font-size: 25vw;
-    margin-top: -100%;
+    font-size: 20vw;
+    /*margin-bottom: 100%;*/
     margin-left: 15%;
   }
 
   .textos h2{
     font-size: 5vw;
     margin-left: 10%;
+    margin-bottom: 130%;
   }
 
   .postagem {
@@ -388,6 +438,18 @@ button:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.719));
   opacity: 0.7; 
   z-index: -1; 
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  transform: translateY(-390%); 
+  z-index: 1;
+}
+
+.perfil{
+  margin-top: 65%;
 }
 
 }
