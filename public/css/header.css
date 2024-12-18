@@ -96,7 +96,7 @@ header {
   height: 70px;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 701px) {
   .nav-item {
     height: 40px;
     width: 58px;
@@ -122,9 +122,8 @@ header {
   }
 
   .nav-item {
-    display: none;
+    display: flex;
     height: 30px;
-    /*width: fit-content;*/
     background-color: black;
     border-radius: 3px;
     text-decoration: none;

@@ -174,28 +174,29 @@ body{
   font-size: 30px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   position: absolute;
   transform: translateY(-290%); 
-  z-index: 1;
-}
-
-.swiper-button-next {
-  right: 3px;
-}
-
-.swiper-button-prev {
-  left: 10px; 
+  z-index: 10;
+  color: #ffb433;
 }
 
 .swiper-pagination {
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 18%;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%); 
   z-index: 1;
+}
+
+.swiper-pagination-bullet {
+ background-color:white;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffb433;
 }
 
 .swiper-wrapper{
@@ -243,18 +244,6 @@ body{
   height: 100px;
 }
 
-button{
-  border: none;
-  text-decoration: none;
-  background-color: #F9CB7A;
-  padding: 2%;
-  border-radius: 5px;
-}
-
-button:hover{
-  background-color:#ffb433;
-  color: white;
-}
 
 .post-texto {
   max-height: 100px; 
@@ -266,9 +255,23 @@ button:hover{
 }
 
 .ver-mais {
-  display: none;
+  display: flex;
   font-size: 12px;
-  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -5%;
+  color: black;
+  border: none;
+  background-color: #F9CB7A;
+  padding: 4%;
+  border-radius: 5px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.ver-mais:hover{
+  background-color:#ffb433;
+  color: white;
 }
 
 .car1 .post-texto {
