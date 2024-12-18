@@ -79,6 +79,24 @@ class UsuarioController
         return view('admin/sidebar' , compact('post', 'usuarios'));
     }
 
+    public function verificarEmail()
+    {
+        $email = $_POST['email'] ?? null;
+    
+        if (!$email) {
+            echo json_encode(['status' => 'error', 'message' => 'Email não informado.']);
+            return;
+        }
+    
+        $usuario = App::get('database')->selectOneWhere('usuarios', ['email' => $email]);
+    
+        if ($usuario) {
+            echo json_encode(['status' => 'exists', 'message' => 'Email já cadastrado.']);
+        } else {
+            echo json_encode(['status' => 'available', 'message' => 'Email disponível.']);
+        }
+    }
+
 }
 
 ?>

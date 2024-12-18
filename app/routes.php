@@ -28,6 +28,7 @@ $router->post('admin/posts/delete', 'PostsController@delete');
  $router->post('logout', 'LoginController@logout');
  $router->get('sidebar', 'SideController@index');
  $router->get('posts', 'PublicPostsPaginacaoController@index' );
+ $router->post('usuario/verificar-email', 'UsuarioController@verificarEmail');
 
  //Rotas Lucas
  $router->get('busca', 'PublicPostsPaginacaoController@search');

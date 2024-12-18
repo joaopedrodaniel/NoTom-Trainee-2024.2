@@ -161,6 +161,29 @@ inputEmail.addEventListener("input", function () {
     avisoEmail.style.color = "#ff0000";
   } else {
     avisoEmail.textContent = "";
+
+    fetch("/usuario/verificar-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: `email=${encodeURIComponent(email)}`,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === "exists") {
+          avisoEmail.textContent = "Email já cadastrado*";
+          avisoEmail.style.color = "#ff0000";
+        } else if (data.status === "available") {
+          avisoEmail.textContent = "Email disponível!";
+          avisoEmail.style.color = "#00ff00";
+        }
+      })
+      .catch((error) => {
+        console.error("Erro na verificação de email:", error);
+        avisoEmail.textContent = "Erro ao verificar email.";
+        avisoEmail.style.color = "#ff0000";
+      });
   }
 });
 
@@ -191,4 +214,123 @@ inputSenha.addEventListener("input", function () {
   console.log("Input Nome:", document.getElementById("input-nome"));
   console.log("Aviso Nome:", document.getElementById("aviso-nome"));
   console.log("Contador Nome:", document.getElementById("contador-nome"));
+});
+
+// contador para o modal de editar
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modaisEdicao = document.querySelectorAll(".modal.edicao"); //pega e implementa em todos modais
+
+  modaisEdicao.forEach((modal) => {
+    //aplica pra todos modais
+
+    // Nome
+    var inputNomeEdicao = modal.querySelector('[data-type="nome"]');
+    var avisoNomeEdicao = modal.querySelector(
+      "#" + inputNomeEdicao.getAttribute("id").replace("input", "aviso")
+    );
+    var contadorNomeEdicao = modal.querySelector(
+      "#" + inputNomeEdicao.getAttribute("id").replace("input", "contador")
+    );
+    var limiteNome = 50;
+
+    if (contadorNomeEdicao) {
+      contadorNomeEdicao.textContent = "0/" + limiteNome;
+      contadorNomeEdicao.style.color = "#ff0000";
+    }
+
+    if (inputNomeEdicao) {
+      inputNomeEdicao.addEventListener("input", function () {
+        var tamanhoNome = inputNomeEdicao.value.length;
+        contadorNomeEdicao.textContent = tamanhoNome + "/" + limiteNome;
+
+        if (tamanhoNome > limiteNome || tamanhoNome === 0) {
+          contadorNomeEdicao.style.color = "#ff0000";
+          avisoNomeEdicao.textContent =
+            tamanhoNome === 0
+              ? "O Nome não pode ficar vazio*"
+              : "O Tamanho Máximo do Nome é de 50 Caracteres*";
+        } else {
+          contadorNomeEdicao.style.color = "#737373";
+          avisoNomeEdicao.textContent = "";
+        }
+      });
+    }
+
+    // Email
+    var inputEmailEdicao = modal.querySelector('[data-type="email"]');
+    var avisoEmailEdicao = modal.querySelector(
+      "#" + inputEmailEdicao.getAttribute("id").replace("input", "aviso")
+    );
+
+    if (inputEmailEdicao) {
+      inputEmailEdicao.addEventListener("input", function () {
+        var email = inputEmailEdicao.value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email)) {
+          avisoEmailEdicao.textContent = "Formato de e-mail inválido*";
+          avisoEmailEdicao.style.color = "#ff0000";
+        } else {
+          avisoEmailEdicao.textContent = "";
+
+          fetch("/usuario/verificar-email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `email=${encodeURIComponent(email)}`,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.status === "exists") {
+                avisoEmailEdicao.textContent = "Email já cadastrado*";
+                avisoEmailEdicao.style.color = "#ff0000";
+              } else if (data.status === "available") {
+                avisoEmailEdicao.textContent = "Email disponível!";
+                avisoEmailEdicao.style.color = "#00ff00";
+              }
+            })
+            .catch((error) => {
+              console.error("Erro na verificação de email:", error);
+              avisoEmailEdicao.textContent = "Erro ao verificar email.";
+              avisoEmailEdicao.style.color = "#ff0000";
+            });
+        }
+      });
+    }
+
+    // Senha
+    var inputSenhaEdicao = modal.querySelector('[data-type="senha"]');
+    var avisoSenhaEdicao = modal.querySelector(
+      "#" + inputSenhaEdicao.getAttribute("id").replace("input", "aviso")
+    );
+    var contadorSenhaEdicao = modal.querySelector(
+      "#" + inputSenhaEdicao.getAttribute("id").replace("input", "contador")
+    );
+    var limiteSenha = 20;
+
+    if (contadorSenhaEdicao) {
+      contadorSenhaEdicao.textContent = "0/" + limiteSenha;
+      contadorSenhaEdicao.style.color = "#ff0000";
+    }
+
+    if (inputSenhaEdicao) {
+      inputSenhaEdicao.addEventListener("input", function () {
+        var tamanhoSenha = inputSenhaEdicao.value.length;
+        contadorSenhaEdicao.textContent = tamanhoSenha + "/" + limiteSenha;
+
+        if (tamanhoSenha > limiteSenha || tamanhoSenha === 0) {
+          contadorSenhaEdicao.style.color = "#ff0000";
+          avisoSenhaEdicao.textContent =
+            tamanhoSenha === 0
+              ? "A Senha não pode ficar vazia*"
+              : "O Tamanho Máximo da Senha é de 20 Caracteres*";
+        } else {
+          contadorSenhaEdicao.style.color = "#737373";
+          avisoSenhaEdicao.textContent = "";
+        }
+      });
+    }
+  });
 });

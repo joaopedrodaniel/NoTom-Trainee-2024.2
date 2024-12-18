@@ -174,4 +174,23 @@ class QueryBuilder
        $sql = "SELECT * FROM posts ORDER BY data_criacao DESC LIMIT 5";
        
     }
+    
+    public function selectOneWhere($table, $conditions)
+    {
+        $columns = array_keys($conditions);
+        $placeholders = array_map(fn($col) => "{$col} = :{$col}", $columns);
+        $whereClause = implode(' AND ', $placeholders);
+
+        $sql = sprintf('SELECT * FROM %s WHERE %s LIMIT 1', $table, $whereClause);
+
+        try {
+            $stmt = $this->pdo->prepare($sql);
+            $stmt->execute($conditions);
+
+            return $stmt->fetch(PDO::FETCH_OBJ);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
 }

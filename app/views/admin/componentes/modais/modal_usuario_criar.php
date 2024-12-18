@@ -24,7 +24,7 @@
 
     <div class="modal-botoes">
       <button type="button" class="botao-destrutivo" onclick="fecharModal('criacao')">Cancelar</button>
-      <button class="botao-construtivo">Criar</button>
+      <button id="botao-criar" class="botao-construtivo">Criar</button>
     </div>
   </form>
 </div>
