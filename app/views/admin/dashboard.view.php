@@ -24,9 +24,9 @@
 <body>
     
 <div class="lateral"><?php require 'sidebar.php' ?></div>
-
+<div class="container">
     <button class="home"><a href="/landing"><img src="../../../public/assets/home.png"></a></button>
-    <div class="container">
+    
         
         <div class="titulo">
             <h1> <img src="../../../public/assets/notomsemnome.png">Dashboard</h1>

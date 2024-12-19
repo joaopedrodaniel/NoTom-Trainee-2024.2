@@ -116,6 +116,11 @@ body{
   gap: 10px;
   transition: transform 0.3s;
   overflow: hidden;
+  
+}
+
+a{
+  text-decoration: none;
 }
 
 .red {

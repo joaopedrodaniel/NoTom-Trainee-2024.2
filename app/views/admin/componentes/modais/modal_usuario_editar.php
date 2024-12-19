@@ -6,10 +6,10 @@
 
     <label class="titulo-conteudo-modal" for="input-nome-<?= $usuario->id ?>">Nome:</label>
     <input required="true" id="input-nome-<?= $usuario->id ?>" data-type="nome" type="text" name="nome" value="<?= htmlspecialchars($usuario->nome) ?>" placeholder="Digite seu nome...">
-
+    <div style="display: flex; flex-direction: row; justify-content: space-between;">
     <span id="aviso-nome-<?= $usuario->id ?>" class="aviso"></span>
     <span id="contador-nome-<?= $usuario->id ?>" class="contador"></span>
-
+    </div>
     <label class="label-com-margem titulo-conteudo-modal" for="email-<?= $usuario->id ?>">E-mail:</label>
     <input required="true" id="email-<?= $usuario->id ?>" data-type="email" type="email" name="email" value="<?= htmlspecialchars($usuario->email) ?>" placeholder="exemplo@email.com">
 

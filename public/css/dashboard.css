@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(22, 30, 22);
+  
 }
 
 .container {
@@ -15,6 +16,8 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 4vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .titulo {
   width: 100%;
@@ -86,14 +89,14 @@ button img {
 .home {
   display: flex;
   align-items: center;
-  width: 40px;
-  height: 40px;
   border-radius: 100%;
   justify-content: center;
-  margin-top: 15px;
   padding: 10px;
-  margin-top: 1.5%;
   height: 47px;
+  width: 47px;
+  position: fixed;
+  top: 7px;
+  left: 20;
 }
 
 .side {
@@ -111,12 +114,17 @@ button img {
     margin: 3%;
   }
 
+  .container{
+    margin-left: 8%;
+  }
   .b {
     flex-direction: column;
   }
 
   .home {
     padding: 15px;
+    transform: translateX(35px);
+    position: absolute;
   }
 
   .home img {

@@ -244,6 +244,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (inputNomeEdicao) {
+      var tamanhoNome = inputNomeEdicao.value.length;
+      contadorNomeEdicao.textContent = tamanhoNome + "/" + limiteNome;
+
+      if (tamanhoNome > limiteNome || tamanhoNome === 0) {
+        contadorNomeEdicao.style.color = "#ff0000";
+        avisoNomeEdicao.textContent =
+          tamanhoNome === 0
+            ? "O Nome não pode ficar vazio*"
+            : "O Tamanho Máximo do Nome é de 50 Caracteres*";
+            avisoNomeEdicao.style.color = "#ff0000";
+      } else {
+        contadorNomeEdicao.style.color = "#737373";
+        avisoNomeEdicao.textContent = "";
+      }
       inputNomeEdicao.addEventListener("input", function () {
         var tamanhoNome = inputNomeEdicao.value.length;
         contadorNomeEdicao.textContent = tamanhoNome + "/" + limiteNome;
@@ -254,6 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tamanhoNome === 0
               ? "O Nome não pode ficar vazio*"
               : "O Tamanho Máximo do Nome é de 50 Caracteres*";
+              avisoNomeEdicao.style.color = "#ff0000";
         } else {
           contadorNomeEdicao.style.color = "#737373";
           avisoNomeEdicao.textContent = "";

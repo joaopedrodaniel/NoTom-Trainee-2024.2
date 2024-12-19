@@ -44,7 +44,7 @@
             <div class="coluna-mae-centro">
                     <h1>Contate-nos!</h1>
                     <h2>contato@notom.com</h2>
-                    <h3 ><a class = "link-escondido" href="/sobre" target="_blank">Desenvolvido por Code Jr</a>
+                    <h3 ><a class = "link-escondido" href="https://www.instagram.com/codejr/" target="_blank">Desenvolvido por Code Jr</a>
                         <img src="\public\assets\easter-egg\macacode-escondido.png" alt="logo code" class="logo-escondida"></h3>
             </div>
 
