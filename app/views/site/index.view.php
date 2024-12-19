@@ -76,8 +76,7 @@
     </div>
 
         <?php
-       
-             $posts = array_slice($posts, -5); 
+             $posts = array_slice($posts, 0,5); 
         ?>
     
     <div class="postagem swiper-container">
