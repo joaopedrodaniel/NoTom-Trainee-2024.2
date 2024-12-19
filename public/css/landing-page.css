@@ -148,10 +148,13 @@ body{
   text-align: center;
   color: #F9CB7A;
   padding-bottom: 50px;
-  margin-top: 6%;
+  margin-top: 3%;
+  padding-top: 3%;
   margin-bottom: 7%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1%;
+  padding-right: 1%;
   align-items: center;
   justify-content: center;
   position: relative; 
@@ -215,7 +218,9 @@ body{
 }
 
 .swiper-slide:hover{
-  border: 3px solid #ffb433;
+  display: absolute;
+  z-index: 5;
+  outline: 3px solid #ffb433;
 }
 
 .swiper-slide img{
@@ -244,9 +249,7 @@ body{
   color: black;
 }
 
-.car1 .perfil{
-  margin-top: 80%;
-}
+
 
 .nav-item{
   height: 100px;
@@ -254,7 +257,8 @@ body{
 
 
 .post-texto {
-  max-height: 100px; 
+
+  height: 70px;
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -301,7 +305,7 @@ body{
   background-color: rgb(255, 253, 223);
   border-radius: 20px;
   max-width: 400px;
-  max-height: 450px;
+  max-height: 550px;
   justify-content: space-between;
   text-align: center;
   align-items:center ;
