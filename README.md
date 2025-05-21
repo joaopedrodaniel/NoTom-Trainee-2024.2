@@ -1,8 +1,10 @@
-# **Trainee 2024.2**
+# **Trainee 2025.1**
 
 # **No Tom**
 
-## **Projeto Trainee, Code Jr, Grupo 3, 2024.2**
+
+## **Projeto Trainee, Code Jr, 2025.1**
+
 
 | **Sumário** |
 |-------------|
@@ -13,13 +15,16 @@
 
 #### Desenvolvedores:
 
+
 * Davi Grossi
 * Fernanda Gomes
 * Lucas Oliveira
 * Guilherme Roldão
 
 
+
 #### Scrum Master:
+
 
 * [João Pedro Daniel](https://github.com/joaopedrodaniel).
 
@@ -29,9 +34,10 @@
 
 
 
+
 ## Descrição do Projeto:
 
-* Blog / Sistema de treinamento e capacitação dos Trainees da [CodeJR](https://codejr.com.br/), na gestão 2024.2;
+* Blog / Sistema de treinamento e capacitação dos Trainees da [CodeJR](https://codejr.com.br/), na gestão 2025.1;
 * Possuirá Front-End em HTML, CSS, JavaScript, Bootstrap e Back-End em PHP (puro), com Banco de Dados MySQL;
 
 
